@@ -5,10 +5,12 @@ La inversion inicial del negocio es el costo de las horas de la gente que
 construye la plataforma. Project lo calcula solo: se le dan los recursos con su
 valor hora, las tareas con su duracion y quien trabaja en cada una.
 
-El valor hora no se inventa: sale de la hoja 'Costos RRHH' del presupuesto
---costo mensual con cargas patronales-- dividido por las 150 horas mensuales
-que fija el anexo de capacidad operativa. Asi el numero que sale de aca es
-coherente con el resto del plan, que es lo que se pide.
+El desarrollo se contrata afuera: los fundadores gestionan la empresa y no
+participan de la construccion, asi que no figuran aca. El relevamiento y la
+aceptacion quedan del lado del cliente, como en cualquier contratacion, y no
+se facturan. El valor hora es el de mercado para clientes argentinos en 2026:
+un senior para arquitectura, modelos y pruebas, y un semi-senior para el
+resto. Al no ser empleados no llevan cargas patronales ni aguinaldo.
 
 Los vinculos van entre tareas, nunca entre fases: vincular tareas de resumen
 funciona pero impide solapar, y la fase 7 (Machine Learning) corre en paralelo
@@ -34,11 +36,10 @@ ARRANQUE = dt.date(2025, 1, 6)          # primer lunes habil del ano
 JORNADA = 8                             # horas por dia
 HORAS_MES = 150                         # del anexo de capacidad operativa
 
-# (nombre, costo mensual con cargas, clave)  -> hoja 'Costos RRHH' L16:L18
+# (nombre, valor hora USD de mercado, clave). Fuentes en LEEME.md.
 EQUIPO = [
-    ("Gerente de Sistemas (CTO)", 2439.80, "CTO"),
-    ("Desarrollador",             2195.94, "DEV"),
-    ("Gerente General (CEO)",     2439.80, "CEO"),
+    ("Desarrollador senior (free lance)",      50.00, "SR"),
+    ("Desarrollador semi-senior (free lance)", 30.00, "SSR"),
 ]
 
 # Cada tarea: (clave, nombre, dias, {recurso: dedicacion}, despues_de)
@@ -47,58 +48,58 @@ EQUIPO = [
 # el de la lista, que es lo que hace posible el solape.
 PLAN = [
  ("1. Definición y arquitectura", [
-   ("1.1", "Relevamiento funcional y alcance del producto", 8, {"CTO":1.0,"CEO":0.5}, None),
-   ("1.2", "Arquitectura de la solución y elección del stack", 7, {"CTO":1.0}, None),
-   ("1.3", "Modelo de datos y diccionario", 5, {"CTO":1.0,"DEV":0.5}, None),
+   ("1.1", "Relevamiento funcional y alcance del producto", 8, {"SR":1.0}, None),
+   ("1.2", "Arquitectura de la solución y elección del stack", 7, {"SR":1.0}, None),
+   ("1.3", "Modelo de datos y diccionario", 5, {"SR":1.0,"SSR":0.5}, None),
  ]),
  ("2. Base de datos y cimientos", [
-   ("2.1", "Esquema, migraciones y series temporales", 8, {"DEV":1.0,"CTO":0.5}, None),
-   ("2.2", "Entorno de desarrollo y automatización de pruebas", 7, {"DEV":1.0}, None),
+   ("2.1", "Esquema, migraciones y series temporales", 8, {"SSR":1.0,"SR":0.5}, None),
+   ("2.2", "Entorno de desarrollo y automatización de pruebas", 7, {"SSR":1.0}, None),
  ]),
  ("3. Integración con sistemas externos", [
-   ("3.1", "Conectores con puntos de venta", 12, {"DEV":1.0,"CTO":0.5}, None),
-   ("3.2", "Ingesta de sensores de conteo", 10, {"DEV":1.0}, None),
-   ("3.3", "Monitoreo de salud de las integraciones", 8, {"DEV":1.0}, None),
+   ("3.1", "Conectores con puntos de venta", 12, {"SSR":1.0,"SR":0.5}, None),
+   ("3.2", "Ingesta de sensores de conteo", 10, {"SSR":1.0}, None),
+   ("3.3", "Monitoreo de salud de las integraciones", 8, {"SSR":1.0}, None),
  ]),
  ("4. Motor de métricas e indicadores", [
-   ("4.1", "Cálculo de tráfico, conversión, ventas y vacancia", 12, {"DEV":1.0,"CTO":0.5}, None),
-   ("4.2", "Agregados por hora, zona y locatario", 8, {"DEV":1.0}, None),
+   ("4.1", "Cálculo de tráfico, conversión, ventas y vacancia", 12, {"SSR":1.0,"SR":0.5}, None),
+   ("4.2", "Agregados por hora, zona y locatario", 8, {"SSR":1.0}, None),
  ]),
  ("5. Panel web del centro", [
-   ("5.1", "Sistema de diseño y navegación", 6, {"DEV":1.0}, None),
-   ("5.2", "Tablero de indicadores y series", 12, {"DEV":1.0}, None),
-   ("5.3", "Mapa del centro y ficha de locatarios", 10, {"DEV":1.0}, None),
+   ("5.1", "Sistema de diseño y navegación", 6, {"SSR":1.0}, None),
+   ("5.2", "Tablero de indicadores y series", 12, {"SSR":1.0}, None),
+   ("5.3", "Mapa del centro y ficha de locatarios", 10, {"SSR":1.0}, None),
  ]),
  ("6. Motor de reglas y alertas", [
-   ("6.1", "Definición y evaluación de reglas por umbral", 10, {"DEV":1.0,"CTO":0.5}, None),
-   ("6.2", "Centro de alertas y ciclo de atención", 10, {"DEV":1.0}, None),
-   ("6.3", "Canales de notificación", 5, {"DEV":1.0}, None),
+   ("6.1", "Definición y evaluación de reglas por umbral", 10, {"SSR":1.0,"SR":0.5}, None),
+   ("6.2", "Centro de alertas y ciclo de atención", 10, {"SSR":1.0}, None),
+   ("6.3", "Canales de notificación", 5, {"SSR":1.0}, None),
  ]),
  # La fase 7 es del CTO. Arranca cuando el CTO se libera de 6.1 y corre en
  # paralelo con lo que sigue del desarrollador. Sin horas del desarrollador:
  # la integracion de los modelos en el panel se hace en la fase 11.
  ("7. Modelos de Machine Learning", [
-   ("7.1", "Predicción de riesgo de vacancia", 10, {"CTO":1.0}, ["6.1"]),
-   ("7.2", "Recomendación de mix de locatarios", 8, {"CTO":1.0}, None),
-   ("7.3", "Detección de anomalías en la operación", 12, {"CTO":1.0}, None),
+   ("7.1", "Predicción de riesgo de vacancia", 10, {"SR":1.0}, ["6.1"]),
+   ("7.2", "Recomendación de mix de locatarios", 8, {"SR":1.0}, None),
+   ("7.3", "Detección de anomalías en la operación", 12, {"SR":1.0}, None),
  ]),
  ("8. Portal del locatario", [
-   ("8.1", "Tablero del local y comparación con la categoría", 12, {"DEV":1.0}, ["6.3"]),
-   ("8.2", "Consentimiento sobre el uso de datos", 5, {"DEV":1.0}, None),
+   ("8.1", "Tablero del local y comparación con la categoría", 12, {"SSR":1.0}, ["6.3"]),
+   ("8.2", "Consentimiento sobre el uso de datos", 5, {"SSR":1.0}, None),
  ]),
  ("9. Vista móvil de operaciones", [
-   ("9.1", "Resolución de alertas en terreno", 10, {"DEV":1.0}, None),
-   ("9.2", "Historial de turno del operario", 6, {"DEV":1.0}, None),
+   ("9.1", "Resolución de alertas en terreno", 10, {"SSR":1.0}, None),
+   ("9.2", "Historial de turno del operario", 6, {"SSR":1.0}, None),
  ]),
  ("10. Seguridad, permisos y auditoría", [
-   ("10.1", "Autenticación y matriz de permisos", 8, {"DEV":1.0,"CTO":0.5}, None),
-   ("10.2", "Auditoría de accesos a datos sensibles", 7, {"DEV":1.0}, None),
+   ("10.1", "Autenticación y matriz de permisos", 8, {"SSR":1.0,"SR":0.5}, None),
+   ("10.2", "Auditoría de accesos a datos sensibles", 7, {"SSR":1.0}, None),
  ]),
  ("11. Pruebas y salida a producción", [
-   ("11.1", "Integración de los modelos de ML en el panel y las alertas", 6, {"DEV":1.0}, ["10.2", "7.3"]),
-   ("11.2", "Pruebas integrales y corrección", 12, {"DEV":1.0,"CTO":1.0}, None),
-   ("11.3", "Documentación y manual de uso", 5, {"DEV":1.0}, None),
-   ("11.4", "Despliegue y puesta en marcha", 6, {"CTO":1.0,"DEV":1.0,"CEO":0.25}, None),
+   ("11.1", "Integración de los modelos de ML en el panel y las alertas", 6, {"SSR":1.0}, ["10.2", "7.3"]),
+   ("11.2", "Pruebas integrales y corrección", 12, {"SSR":1.0,"SR":1.0}, None),
+   ("11.3", "Documentación y manual de uso", 5, {"SSR":1.0}, None),
+   ("11.4", "Despliegue y puesta en marcha", 6, {"SR":1.0,"SSR":1.0}, None),
  ]),
 ]
 
@@ -214,9 +215,7 @@ def main() -> int:
     ident, tarifa = {}, {}
     for i, (nombre, mensual, clave) in enumerate(EQUIPO, start=1):
         ident[clave] = i
-        # la tarifa se redondea a centavos ANTES de multiplicar, igual que la
-        # que lleva el XML: si no, el total impreso no coincide con Project
-        tarifa[i] = round(mensual / HORAS_MES, 2)
+        tarifa[i] = round(mensual, 2)      # aca `mensual` ya es el valor hora
         r = sub(recursos, "Resource")
         sub(r, "UID", i); sub(r, "ID", i); sub(r, "Name", nombre)
         sub(r, "Type", 1); sub(r, "IsNull", 0)
