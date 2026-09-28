@@ -33,7 +33,6 @@
 [00:02:45] Acompisación es una apuesta contable, una apuesta de pérdida.
 [00:02:49] Pero ¿para qué sirve? ¿Para qué se utiliza?
 [00:02:55] ¿Qué es? ¿Se conoce una pérdida de qué?
-[00:03:00] Pero de un bien, ¿no?
 [00:03:02] Un bien, un bien de uso.
 [00:03:07] pueden ser cargos, muebles y útiles, pueden ser instalaciones,
 [00:03:17] como lo mencionado, frontería, pueden ser instalaciones, maquinarias, rodados, inmuebles,
@@ -52,12 +51,10 @@
 [00:04:22] reconozco que
 [00:04:24] con el uso
 [00:04:26] incluso ese bien va a tener valor. ¿Cómo se funciona esto contablemente generando esta
-[00:04:30] contablemente generando esta cuenta de pérdida que regulariza el valor del bien.
 [00:04:32] cuenta de tercio? Que regulariza el valor del bien. Estoy reconociendo económicamente
 [00:04:40] Estoy reconociendo, económicamente, que ese bien va teniendo un menor valor a partir del
 [00:04:44] que ese bien va teniendo menor valor a partir de ese. Entonces, como ven acá en el cuadro,
 [00:04:50] Entonces, como ven acá en el cuadro, se habían definido las cuotas de amortización para cada día
-[00:04:53] se habían definido las cuotas de amortización para cada día.
 [00:04:59] y esas cuotas de amortización están reguladas, no es que yo arbitrariamente puse tres años, diez,
 [00:05:09] no, están reguladas por una resolución técnica contable que dice que el cargo se amortiza en tres años,
 [00:05:18] de los muebles inútiles a 10, de las matrinales a 10 años, de los rodados a 10 años, de los inmuebles a 50 años.
@@ -96,12 +93,9 @@
 [00:08:36] si ustedes tienen varios servicios, esos son insumos que tienen que instalar en vehículos, en bancos, en oficinas
 [00:08:46] son insumos, la gente es de trabajo, no tiene nada que dar con un bien de uso, no es amortizable.
 [00:08:53] Acá se puede trabajar al costo del servicio, que es insumo, es un código para él,
-[00:08:59] cuando vos armás la estructura de costos y armás los costos variables,
 [00:09:00] Cuando vos armás la estructura de costos, y armás los costos variables,
 [00:09:08] vas a tener un costo variable unitario, que está compuesto por estos insumos,
-[00:09:08] vas a tener un costo variable militario, que está compuesto por los insumos,
 [00:09:13] y el costo fijo es un total, lo que todo va a tirar por cantidad de...
-[00:09:13] y el costo fijo es un total por cantidad de costos.
 [00:09:20] Entonces vos tenés una estructura de costos. ¿Qué vas a hacer ahí?
 [00:09:21] Vos tenés una estructura de costos.
 [00:09:23] ¿Qué vas a hacer ahí?
@@ -172,7 +166,6 @@
 [00:13:09] Entonces, es más fácil para ellos. Antes no era tan fácil, ahora es más fácil porque tampoco es una moneda.
 [00:13:15] Entonces, si yo, esto es lo que estamos calculando acá, para mí como norma es neto de IVA.
 [00:13:24] Si no tendríamos que hacer también la liberación de IVA.
-[00:13:32] si quieren lo hacen
 [00:13:33] Si quieren lo hacen.
 [00:13:34] Entonces, quizás terminar el año no viene, pero se hacen los presupuestos.
 [00:13:34] pero
@@ -250,7 +243,6 @@
 [00:17:32] 2026, un pedazo, la amortización, el primer año de amortización, 2027, 2028, después queda fuera.
 [00:17:43] Lo demás. Si lo compro el tercer año, bueno, voy a tener, o el segundo, voy a tener una foto de amortización, nada más.
 [00:17:55] y lo que compro en el tercer año
-[00:17:57] lo que se dio en el tercer año
 [00:17:58] la amortización va a ser de 100
 [00:18:00] la amortización va a ser de 100, en este caso del 20 al 29, me quedará para el otro análisis estratégico
 [00:18:02] en este caso del 20 al 29
@@ -295,7 +287,6 @@
 [00:20:14] impuesto a los ingresos
 [00:20:16] juntos, alguien sabe que es
 [00:20:17] sobre
-[00:20:22] sobre
 [00:20:24] sobre las ventas
 [00:20:27] impuesto es lo más agresivo que hay
 [00:20:30] yo puedo tener algún
@@ -321,8 +312,6 @@
 [00:22:17] En este caso hay un cuadrito que dice que el monto imponible en este, si no lo va a mantener,
 [00:22:27] el monto imponible es el monto que se le aplica al impuesto y minimizando el tema.
 [00:22:30] impuestos y minimizando el tema. Bastante estamos haciendo algún esfuerzo en calcular las amortizaciones
-[00:22:33] Bastante le estamos haciendo algún esfuerzo en calcular las amortizaciones de los remontes de la moneda,
-[00:22:37] de los remitidos mínimos, pero el impuesto a las ganancias es muy complejo y quizás hay otras cosas para
 [00:22:39] pero el impuesto a la ganancia es muy complejo y quizás hay otras cosas para lo que se haga la telemática.
 [00:22:45] comunicar a la telemática. Nosotros lo simplificamos. Para calcular el aumento imponible, es el monto al que se le va a quitar el impuesto,
 [00:22:47] Nosotros lo simplificamos.
@@ -408,7 +397,6 @@
 [00:26:51] ¿Y en caso de que empiecen a haber ganancias a partir del tercer año?
 [00:26:59] no se pone nada
 [00:27:00] o se juega con el público para que se muera.
-[00:27:00] o se juega con el público
 [00:27:02] para que se mueva
 [00:27:03] si nos va a pasar
 [00:27:04] Y si nos va a pasar que no nos va a dar, no nos va a dar rentabilidad,
@@ -439,7 +427,6 @@
 [00:28:42] bien
 [00:28:43] con esto que puedo hacer
 [00:28:48] y obtener la utilidad
-[00:28:50] de este impuesto
 [00:28:51] utilidad de este impuesto
 [00:28:52] en este caso
 [00:28:57] se agrava la pérdida
@@ -496,7 +483,6 @@
 [00:32:56] absorben mejor los costos fijos a partir de tener millones de ventas, eso suele pasar.
 [00:33:06] Entonces nos sirve bastante para hacer algún análisis de relacionalidad en el proyecto.
 [00:33:16] Esto que está acá, que está arriba, que es la de la cúpula regional, también es importante para mí.
-[00:33:23] ¿Qué está tomando acá? Los costos de promoción, de la estrategia de promoción.
 [00:33:28] Y seguramente está tomando los costos fijos que pusimos en promoción, en la estrategia de promoción,
 [00:33:37] que están ampliados a publicidad, algunos gastos en ferias,
 [00:33:49] eso lo tomamos como fijo, pero también los costos variables tomamos promociones de venta.
@@ -529,9 +515,7 @@
 [00:35:48] si es que me han generado esto atrás, lo voy a analizar,
 [00:35:52] porque es loco, dice, me da el 3% de relación del importe de transmisión con la...
 [00:36:00] Ya está, seguramente tengo que subir esa relación, o bajar, o no bajar.
-[00:36:00] Bueno, ya está, seguramente tengo que subir esa relación,
 [00:36:06] como que lo baja, como que baja. Entonces, ¿cuál orden sirve para ir haciendo estos
-[00:36:11] Entonces, ¿cuál onda sirve para ir haciendo estos aspectos?
 [00:36:14] atletas? Hasta acá estamos. ¿Qué me falta? Tiene falta saber si el negocio ambiental
 [00:36:16] Hasta acá estamos.
 [00:36:21] ¿Tiene falta saber si el negocio es rentable o no a partir de este flujo de fondos que hay en la mente?
@@ -547,7 +531,6 @@
 [00:36:58] que interprete esta inversión
 [00:37:00] que es una tasa
 [00:37:01] por encima
-[00:37:04] de otras inversiones
 [00:37:07] ¿Qué otras inversiones
 [00:37:08] podría haber?
 [00:37:13] un paso fijo, una inversión de bajos viejos
@@ -567,11 +550,8 @@
 [00:38:15] No, estoy dentro del sector de los medios de servicio a los ojos, estoy dentro del sector de la energía,
 [00:38:22] ¿cuál es la rentabilidad promedio del sector?
 [00:38:25] ¿Qué es esto? ¿Qué es esto? ¿Qué es esto?
-[00:38:28] ¿Qué es esto? ¿Qué es esto?
 [00:38:32] ¿Qué es esto? ¿Qué es esto?
-[00:38:35] ¿Qué es esto?
 [00:38:39] ¿Qué es esto?
-[00:38:43] ¿Qué es esto?
 [00:38:53] ¿Qué es esto?
 [00:38:54] Entonces, yo ya ahí tengo los dos datos que necesito para saber si el negocio está bien.
 [00:39:04] El flujo de fondos y la tasa de fondos.
@@ -595,9 +575,7 @@
 [00:40:10] valor actualmente de poder retrotraer estos flujos de mundo a el momento cero, se dice
 [00:40:19] que si el Banda cero es un número positivo, ahí en este caso el negocio es diario. ¿Por
 [00:40:30] es diario
-[00:40:31] ¿por qué? ¿qué va a pasar cuando
 [00:40:32] qué? ¿Qué va a pasar cuando el Banda cero? ¿Qué pasa cuando el Banda cero?
-[00:40:33] el banco a cero?
 [00:40:35] ¿qué pasaba cuando el banco a cero?
 [00:40:41] Gracias.
 [00:40:56] cuando el banco a cero
@@ -623,7 +601,6 @@
 [00:41:48] va a dar justo la tasa de corte
 [00:41:50] quizás le estoy pidiendo una tasa de corte
 [00:41:53] extravalaria
-[00:41:54] me la dio
 [00:41:55] justo pero me la dio
 [00:41:57] ahora si quiero hacer un análisis de riesgos a partir de este escenario que yo considero normal
 [00:42:07] si ya no tengo ningún efecto entre la casa de corte y la tienda
@@ -647,7 +624,6 @@
 [00:43:40] lo que tenemos que solucionar
 [00:43:43] para el segundo avance
 [00:43:46] tener
-[00:43:48] el presupuesto hasta
 [00:43:50] el presupuesto financiero
 [00:43:52] resuelto y tener
 [00:43:54] el proyecto que justifique
@@ -684,11 +660,9 @@
 [00:45:14] en el avance
 [00:45:15] tiene que estar relacionado a la propuesta
 [00:45:18] a la propuesta del valor que ustedes están haciendo.
-[00:45:19] del valor que ustedes están haciendo
 [00:45:21] si ustedes me dicen
 [00:45:21] Si ustedes me dicen, no, tengo un desarrollo
 [00:45:23] no, tengo un desarrollo
-[00:45:25] que tiene tales funcionalidades
 [00:45:25] que tiene tales funcionalidades, ¿tienen cuáles?
 [00:45:28] que tienen
 [00:45:29] si es algo que requiere
@@ -760,8 +734,6 @@
 [00:49:27] teniendo
 [00:49:31] para ver si existe o no el negocio hacia estos riesgos y después tenemos que trabajar el tema de la viabilidad.
 [00:49:41] Lo más importante para mí de la viabilidad es el tema de la viabilidad legal y la privacidad.
-[00:49:41] Lo más importante para mí es el tema de la viabilidad legal y la comercial.
-[00:49:50] La falta en una parte del curso es el 28 de octubre.
 [00:49:50] Nos falta una parte del curso de CEDEDALES, que es el 28 de octubre,
 [00:50:00] y le pedimos que hagan una especie de resumen que nos facilite algún material para que nosotros podamos
 [00:50:10] definir ahí

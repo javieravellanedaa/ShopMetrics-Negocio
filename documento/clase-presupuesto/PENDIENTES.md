@@ -21,14 +21,47 @@ verde = viene de otra hoja · amarillo = celda que falta completar.
 
 ## Lo que tenés que completar
 
-Son tres cosas, todas en amarillo:
+Revisadas las 21 hojas una por una, **faltan dos cosas**, las dos en amarillo:
 
-1. **Cantidad y precio unitario** de cada concepto en `Mod. inversión`, en los
-   cuatro bloques. Con eso se llenan solas las amortizaciones y la fila de
-   inversión del presupuesto.
+1. **Cantidad y precio unitario** en `Mod. inversión`, 48 celdas en los cuatro
+   bloques. De esas, la que manda es `D11` (*Desarrollo de la plataforma*),
+   que sale del total del cronograma de Project.
 2. **La tasa de corte**, en `Presupuesto financiero!C31`. El VAN y la TIR
-   aparecen al cargarla.
-3. **Revisar las vidas útiles** en `Amortizaciones` columna F si agregás rubros.
+   aparecen solos al cargarla. En dólares: el 75 % del ejemplo es de pesos.
+
+El resto de las hojas del bloque presupuestario están completas y sus totales
+viajan bien hasta el flujo de fondos. La única fórmula que hoy devuelve vacío
+es el VAN, esperando la tasa.
+
+> Corrección respecto de una versión anterior de este archivo: se habían
+> marcado `Costos RRHH`, `Proy. ventas`, `Mod. ingresos` y `Costos variables`
+> como incompletas comparando cantidad de celdas contra el ejemplo. Es mal
+> indicador: el ejemplo es una empresa bastante más grande. Verificadas celda
+> por celda, están completas —`Costos RRHH` tiene 360 celdas cargadas y
+> ninguna vacía—.
+
+## Un cabo suelto: el Anexo de capacidad operativa no lo usa nadie
+
+En el ejemplo, el anexo calcula por plan cuántas horas lleva cada servicio y
+cuánto cuesta esa unidad, y la hoja de costos variables **lee de ahí**: 252
+celdas apuntan al anexo. El costo variable del servicio *es* el trabajo que
+lleva prestarlo.
+
+En ShopMetrics el anexo hace la misma cuenta —le da 3, 18 y 72 dólares por
+instalación para los planes Básico, Vidriera y Cadena— pero **ninguna celda
+del libro lo lee**. Los costos variables listan gastos de bolsillo con precios
+escritos a mano (comisión, movilidad, nube, pasarela, medios de pago,
+reposición) y toman las cantidades directo de la proyección de ventas.
+
+No está mal: son dos formas distintas de costear. En el ejemplo la mano de obra
+del servicio es costo variable; acá está en la estructura fija, como el técnico
+de instalación y soporte. Pero deja el anexo calculando algo que no se usa, y
+esa es la clase de hilo del que se tira en una corrección: si el anexo
+justifica la dotación, conviene que se vea el vínculo, y si justifica el costo
+unitario del servicio, conviene que los costos variables lo lean.
+
+Lo dice en 09:08: «vas a tener un **costo variable unitario**, que está
+compuesto por estos insumos, y el costo fijo es un total».
 
 ## Dos advertencias
 
