@@ -669,25 +669,19 @@
 [00:47:23] ¿En análisis de la...
 [00:47:25] Claro, exacto eso
 [00:47:27] Me pasa que hay algunos que se tientan y me dicen bueno no, porque acá en el desarrollo tenía dos o cinco, y me lo haría acá.
-[00:47:37] No, no, no, no, no es un desarrollo. Si yo tengo que hacer otro desarrollo, quizás me trato a ver.
-[00:47:45] Mi equipo es a ver, no voy a poner un equipo dentro de mi estructura, si esto es una empresa.
-[00:47:52] Ahora, si Dresil es una empresa importante, tengo que estar lanzando servicios todo el tiempo,
-[00:47:59] igual me hago departamento de desarrollo pago, contrató y me mató, tengo falda para invertir,
-[00:48:06] no me voy a dar dinero.
-[00:48:08] A lo mejor traslado uno de los desarrolladores como para que tenga experiencia en el desarrollo,
-[00:48:15] lo ponga como iniciar.
-[00:48:17] ¿Lo puedo meter dentro de la estructura o lo puedo contratar como un filar?
-[00:48:22] Para no tener que pagar los costos laborales.
-[00:48:27] Todo lo que agregue en esta estructura va a tener los aportes patronales y el sueldo anual complementario.
-[00:48:35] Eso es el filar.
-[00:48:38] Claro.
-[00:48:40] Ahí definirán ustedes cómo arman la estructura de costos.
-[00:48:46] necesito tener los ios
-[00:48:49] necesito tener
-[00:48:54] bien
-[00:48:58] hasta la próxima
-[00:49:06] creo que se la puse
-[00:49:09] para el lunes
+# --- tramo recuperado: la primera pasada devolvio «No sé» repetido.
+# --- El audio tiene el mismo nivel que el resto (-31 dB), no era silencio.
+[00:47:28] Me pasa que hay algunos que se tientan y me dicen: bueno, acá en el desarrollo yo tenía [tantos], y me lo llevaría acá.
+[00:47:40] No. Si yo tengo que hacer otro desarrollo...
+[00:47:48] ¿Un equipo dentro de mi estructura? Y eso si esto es una empresa.
+[00:47:52] Ahora, si crecí, soy una empresa importante, tengo que estar lanzando servicios todo el tiempo, entonces hago un departamento de desarrollo, contrato, tengo espaldas para invertir.
+[00:48:08] A lo mejor traslado a uno de los desarrolladores, como para que tenga experiencia en el desarrollo, y lo pongo como iniciante.
+[00:48:17] ¿Lo puedo meter dentro de la estructura o lo puedo contratar como un free lance? Para no tener que pagar los costos laborales.
+[00:48:26] Todo lo que agregue en esta estructura va a tener los aportes patronales y el sueldo anual complementario.
+[00:48:35] Eso es un free lance.
+[00:48:39] Ahí definirán ustedes cómo armar la estructura de costos.
+[00:48:58] Bien.
+[00:49:04] Hasta la próxima. Creo que se la puse para el lunes.
 [00:49:10] y la salud y la salud.
 [00:49:16] Definido esto, tenemos que avanzar sobre la matriz de riesgo,
 [00:49:21] que es un poco aplicar a un escenario normal ciertos riesgos que nosotros vamos definiendo,

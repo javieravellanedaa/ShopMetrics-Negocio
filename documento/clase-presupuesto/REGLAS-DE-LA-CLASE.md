@@ -197,3 +197,53 @@ Es una decisión a tomar y a justificar, no un detalle.
 
 También (44:08): el desarrollo es **previo** a poder vender. Hay que ubicar en
 el tiempo cuánto lleva; si arranca hoy, el año cero es el año de desarrollo.
+
+---
+
+## Estructura propia o free lance: la decisión sobre el equipo de desarrollo
+
+Entre 46:00 y 48:46 responde una pregunta sobre dónde va el equipo que
+construye el software. Es un tramo que en la primera transcripción se había
+perdido —devolvía «No sé» repetido— y que se recuperó después; el audio tenía
+el mismo nivel que el resto, así que no era silencio.
+
+Lo primero que aclara es que el esfuerzo de desarrollo **sí es inversión**
+(46:06):
+
+> yo arranco con recursos mínimos una vez que inicio el proyecto, pero si
+> requiero más recursos para el desarrollo, inversión, lo tengo que contemplar.
+
+Lo segundo es que eso **no significa inflar la estructura permanente**
+(46:13 y 47:48). Un departamento de desarrollo propio se justifica en una
+empresa que ya creció y lanza servicios todo el tiempo, no en un
+emprendimiento que arranca. Y advierte contra la tentación de pasar a la
+estructura toda la gente que aparece en el cronograma.
+
+Lo tercero es la disyuntiva concreta, y la deja explícitamente en manos del
+alumno (48:17 y 48:26):
+
+> ¿Lo puedo meter dentro de la estructura o lo puedo contratar como un free
+> lance? Para no tener que pagar los costos laborales. Todo lo que agregue en
+> esta estructura va a tener los aportes patronales y el sueldo anual
+> complementario. (…) Ahí definirán ustedes cómo armar la estructura de costos.
+
+Esto es directamente aplicable al problema del ratio de RRHH: contratar el
+desarrollo afuera saca esos aportes de la estructura y baja el costo
+recurrente, sin que deje de contarse la inversión del año cero.
+
+---
+
+## Qué está verificado y qué no
+
+Un compañero pasó por mensaje tres cosas que habría pedido el profesor.
+Contrastadas contra la grabación:
+
+| Lo que se dijo | Estado |
+|---|---|
+| «El Excel hasta el presupuesto financiero» | **Confirmado.** Textual en 43:37. |
+| «Pidió un Project para justificar la inversión inicial del software» | **Parcial.** El pedido está en 43:53 y lo que describe en 44:21–45:00 es un cronograma: tiempos, recursos, alcance y fecha de salida. Pero no dice «Microsoft Project» ni lo muestra en pantalla en ningún momento de los 52 minutos. |
+| «La inversión va a ser el costo de las horas de los involucrados» | **No está dicho así.** Lo más cerca es 46:06, que pone los recursos de desarrollo del lado de la inversión. El método —horas por valor hora— es compatible con lo que explica, pero no aparece en esta clase. |
+
+Los tres son razonables y el segundo y el tercero encajan con todo lo demás.
+Conviene confirmarlos con el profesor antes de la entrega, porque el tercero
+es el que define el número, y es el que menos respaldo tiene en la grabación.
