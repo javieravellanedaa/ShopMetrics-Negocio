@@ -235,15 +235,26 @@ recurrente, sin que deje de contarse la inversión del año cero.
 
 ## Qué está verificado y qué no
 
-Un compañero pasó por mensaje tres cosas que habría pedido el profesor.
-Contrastadas contra la grabación:
+Que la herramienta es **Microsoft Project** está establecido por fuera de esta
+grabación: es lo que la cátedra pide. No hace falta buscarlo en el audio.
 
-| Lo que se dijo | Estado |
-|---|---|
-| «El Excel hasta el presupuesto financiero» | **Confirmado.** Textual en 43:37. |
-| «Pidió un Project para justificar la inversión inicial del software» | **Parcial.** El pedido está en 43:53 y lo que describe en 44:21–45:00 es un cronograma: tiempos, recursos, alcance y fecha de salida. Pero no dice «Microsoft Project» ni lo muestra en pantalla en ningún momento de los 52 minutos. |
-| «La inversión va a ser el costo de las horas de los involucrados» | **No está dicho así.** Lo más cerca es 46:06, que pone los recursos de desarrollo del lado de la inversión. El método —horas por valor hora— es compatible con lo que explica, pero no aparece en esta clase. |
+Lo que la grabación sí aporta, y que es lo que hay que respetar al armarlo, es
+**qué tiene que mostrar** ese cronograma. En 43:53 pide «tener el proyecto que
+justifique en el modelo de inversión esa inversión inicial con respecto a la
+solución tecnológica», y entre 44:21 y 45:00 dice de qué depende:
 
-Los tres son razonables y el segundo y el tercero encajan con todo lo demás.
-Conviene confirmarlos con el profesor antes de la entrega, porque el tercero
-es el que define el número, y es el que menos respaldo tiene en la grabación.
+> El desarrollo del proyecto va a depender de los tiempos que lo fijes, de los
+> recursos que se requieran, del alcance que van a tener las soluciones, de
+> cuándo quiere salir al mercado.
+
+Cuatro cosas: **tiempos, recursos, alcance y fecha de salida**. Y en 45:16
+agrega la quinta, que es la que ata todo: tiene que estar relacionado con la
+propuesta de valor que se declaró en el plan.
+
+El costo que sale de ahí es el que va al modelo de inversión. Con 46:06 detrás
+—«si requiero más recursos para el desarrollo, inversión, lo tengo que
+contemplar»— el criterio de valuar el desarrollo por los recursos que consume
+queda respaldado por la propia clase.
+
+Lo único que conviene chequear con el profesor es el detalle de **cómo** se
+valúan esas horas, porque el método exacto no aparece dicho en esta clase.
