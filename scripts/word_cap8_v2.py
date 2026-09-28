@@ -218,14 +218,7 @@ idx = [i for i, p in enumerate(ps) if p._p is h841._p][0]
 if ps[idx - 1]._p.find(".//" + qn("a:blip")) is not None:
     reemplazar_imagen(ps[idx - 1], "16_egresos_grafico_2.png")
 
-# ---- 2) las figuras de riesgos corren su numero
-for p in d.paragraphs:
-    m = re.match(r"Figura 8\.(3[1-8])\.", p.text.strip())
-    if m:
-        nuevo = "Figura 8.%d." % (int(m.group(1)) + NUEVAS)
-        for r in p.runs:
-            if "Figura 8." in r.text:
-                r.text = r.text.replace(m.group(0), nuevo, 1); break
+# ---- 2) (las figuras de riesgos se sacan mas abajo; no hace falta renumerar)
 
 # ---- 3) texto del capitulo
 texto(buscar("El presupuesto financiero de ShopMetrics se desarrolla"),
@@ -461,25 +454,45 @@ p = parrafo(p, lectura_van, "Valor actual neto y tasa interna de retorno. ")
 p = figura(p, "PRE04_van_tir.png", 7.0, "Figura 8.42. Tasa de corte, valor actual neto y tasa interna de retorno.")
 p = figura(p, "INV03_inversion_resumen.png", 10.0, "Figura 8.43. Inversión por ejercicio, tal como entra al presupuesto financiero.")
 
-# ---- 7) punto 9
-texto(buscar("El análisis de viabilidad se completa"),
-      "El análisis de viabilidad se apoya en el presupuesto financiero del punto 8.7 y se completa en el tercer avance con los "
-      "escenarios y la viabilidad legal. Viabilidad económica: el resultado operativo es negativo en el primer ejercicio y "
-      "positivo desde el segundo, con USD %s en 2027 y USD %s en 2028; el punto de equilibrio se alcanza durante 2027. "
-      "Viabilidad operativa: el anexo de capacidad muestra holgura positiva en los treinta y seis meses del horizonte con la "
-      "dotación técnica presupuestada, y la estructura comercial se dimensiona a la productividad esperada por vendedor. "
-      + ("Viabilidad financiera: la inversión inicial de USD %s se recupera dentro del horizonte, con un flujo acumulado de "
-         "USD %s al cierre de 2028; el valor actual neto a la tasa de corte del %s es positivo (USD %s) y la tasa interna de "
-         "retorno del período, del %s, supera la de corte. El proyecto es viable en los tres ejercicios, con un margen que "
-         "depende de sostener el ritmo de captación de 2027, que es la hipótesis que los escenarios del tercer avance deben "
-         "poner a prueba. " % (n(-inv[0]), n(acum), pct(tasa), n(van), pct(tir, 1)) if van >= 0 else
-         "Viabilidad financiera: la inversión inicial de USD %s se recupera dentro del horizonte, con un flujo acumulado de "
-         "USD %s al cierre de 2028; sin embargo, el valor actual neto a la tasa de corte del %s es negativo (USD %s) y la tasa "
-         "interna de retorno del período es del %s, porque el retorno se concentra a partir del tercer ejercicio y el "
-         "siguiente queda fuera del análisis. El negocio necesita algo más de recorrido que los tres años del horizonte, y "
-         "esa es la condición que los escenarios del tercer avance deben poner a prueba. " % (n(-inv[0]), n(acum), pct(tasa), n(van), pct(tir, 1)))
-      + "El punto crítico identificado en el primer avance —la relación entre el ingreso del tercer ejercicio y el costo de "
-        "la dotación— queda resuelto: el costo de recursos humanos representa el %s de los ingresos en 2028." % pct(r_rrhh[2]))
+# ---- 7) 8.8, 8.9 y 9 pertenecen al tercer avance: se sacan del informe
+W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+ps = d.paragraphs
+i0 = next(i for i, q in enumerate(ps) if q.text.strip().startswith("8.8 Matriz de riesgos"))
+i1 = next(i for i, q in enumerate(ps) if q.text.strip().startswith("Bibliografía"))
+# dentro del tramo hay dos saltos de seccion (las paginas apaisadas de la
+# matriz). El ultimo parrafo del tramo cierra la seccion apaisada y vuelve a
+# vertical; si se borra sin mas, la Bibliografia hereda la orientacion
+# equivocada. Se conserva ese sectPr en un parrafo vacio antes de Bibliografia.
+sect_final = None
+for q in ps[i0:i1]:
+    pPr = q._p.find(W + "pPr")
+    sp = pPr.find(W + "sectPr") if pPr is not None else None
+    if sp is not None:
+        sect_final = copy.deepcopy(sp)
+for q in ps[i0:i1]:
+    q._p.getparent().remove(q._p)
+if sect_final is not None:
+    vac = despues(ps[i0 - 1])
+    poner_sectpr(vac, sect_final)
+# la bibliografia pasa a ser el punto 9 no: queda sin numero, como estaba
+
+# ---- 8) referencias cruzadas a lo que se saco
+for q in d.paragraphs:
+    if "La matriz de riesgos se adelantó en el primer avance porque no depende de los importes. " in q.text:
+        for r in q.runs:
+            r.text = r.text.replace("los escenarios y el plan de mejoras corresponden al tercero. La matriz de riesgos se adelantó en el primer avance porque no depende de los importes. ",
+                                    "la matriz de riesgos, los escenarios, el plan de mejoras y el análisis de viabilidad corresponden al tercero. ")
+    if "(riesgo R2 de la matriz)" in q.text:
+        for r in q.runs:
+            r.text = r.text.replace("(riesgo R2 de la matriz)", "(uno de los riesgos que se valoran en el tercer avance)")
+    if "y la matriz de riesgos valora las desviaciones posibles sobre ese mismo conjunto" in q.text:
+        for r in q.runs:
+            r.text = r.text.replace(", y la matriz de riesgos valora las desviaciones posibles sobre ese mismo conjunto", "")
+    if "La lectura se completa en el punto 9." in q.text:
+        for r in q.runs:
+            r.text = r.text.replace(" La lectura se completa en el punto 9.", " La lectura de viabilidad se completa en el tercer avance, junto con los escenarios.")
+    if "que los escenarios del tercer avance van a poner a prueba" in q.text or "Ese margen es el que los escenarios del tercer avance van a poner a prueba." in q.text:
+        pass   # esas menciones son correctas: anuncian lo que viene
 
 d.save(DOCX)
 print("Word actualizado: figuras reemplazadas, 8.5-8.7 y 9 escritos.")

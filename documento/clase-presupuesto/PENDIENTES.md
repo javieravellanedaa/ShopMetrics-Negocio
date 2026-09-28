@@ -5,7 +5,8 @@ Archivos de la entrega, todos en el repo y en Drive (`STF/Primera entrega/`):
 - `Presupuesto financiero ShopMetrics.xlsx` — el Excel, hasta el presupuesto
   financiero inclusive. 3.127 fórmulas, cero errores.
 - `STF_Gomez_Javier_E1_v1.docx` y `.pdf` — el informe, con el capítulo 8
-  completo (8.1 a 8.8) y el punto 9 con la viabilidad financiera.
+  hasta el presupuesto financiero (8.1 a 8.7). La matriz de riesgos, los
+  escenarios y la viabilidad se sacaron: son del tercer avance.
 - `project/ShopMetrics-desarrollo.xml` — el cronograma de desarrollo, con su
   verificación en Microsoft Project (`ShopMetrics-desarrollo-verificado.xml`
   y `project/capturas/`).
@@ -49,8 +50,10 @@ brutos en 2026 y 2027.
 
 **Word.** Capítulo 8 puesto al día con los números nuevos (cada cifra del
 texto se lee de la planilla al generar), 13 figuras nuevas en 8.5–8.7, las
-figuras existentes reemplazadas adentro del .docx, las de riesgos
-renumeradas (8.44–8.51), encabezado con fecha 28/09/2026.
+figuras existentes reemplazadas adentro del .docx, encabezado con fecha
+28/09/2026. Los puntos 8.8, 8.9 y 9 se quitaron por pertenecer al tercer
+avance; el texto de 8.8 sigue en el original del primer avance en git
+(843d78f) para retomarlo entonces.
 
 ## Qué queda para Javier
 
