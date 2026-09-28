@@ -1,122 +1,76 @@
-# Presupuesto financiero — qué quedó armado y qué falta
+# Segundo avance — estado al 28/09/2026
 
-Archivo: `Presupuesto financiero ShopMetrics.xlsx` (el V1 queda intacto).
+Archivos de la entrega, todos en el repo y en Drive (`STF/Primera entrega/`):
 
-## Lo que ya está
+- `Presupuesto financiero ShopMetrics.xlsx` — el Excel, hasta el presupuesto
+  financiero inclusive. 3.127 fórmulas, cero errores.
+- `STF_Gomez_Javier_E1_v1.docx` y `.pdf` — el informe, con el capítulo 8
+  completo (8.1 a 8.8) y el punto 9 con la viabilidad financiera.
+- `project/ShopMetrics-desarrollo.xml` — el cronograma de desarrollo, con su
+  verificación en Microsoft Project (`ShopMetrics-desarrollo-verificado.xml`
+  y `project/capturas/`).
 
-Las tres hojas que estaban vacías quedaron armadas y con las fórmulas
-conectadas. 2.852 fórmulas, cero errores de cálculo.
+## Qué quedó hecho
 
-- **Mod. inversión** — cuatro bloques (año cero, 2026, 2027, 2028) con los
-  conceptos de ShopMetrics. Los totales suben al encabezado y de ahí al
-  presupuesto.
-- **Amortizaciones** — sólo bienes de uso, con las vidas útiles de la
-  resolución técnica: informática 3 años, muebles 10. Cada bien amortiza desde
-  el año en que se compra y sólo por los años que caen dentro del horizonte.
-- **Presupuesto financiero** — la cascada completa, los cuatro ratios de
-  control y VAN/TIR.
+**Excel.** Las tres hojas que faltaban (modelo de inversión, amortizaciones,
+presupuesto financiero) con el formato clonado del ejemplo de la cátedra; el
+Anexo en la disposición de la plantilla más las filas de capacidad y holgura;
+el costo del kit de instalación como costo variable, que faltaba; la captura
+del informe de recursos de Project y el gráfico de inversión pegados en
+`Mod. inversión`, como en la plantilla; los botones, el logo y los gráficos
+originales recuperados. Tasa de corte 30% en dólares.
 
-**Código de colores:** azul = dato que cargás a mano · negro = fórmula ·
-verde = viene de otra hoja · amarillo = celda que falta completar.
+**Modelo.** Rentable desde el segundo año, inversión recuperada dentro de 2028:
 
-## Lo que tenés que completar
-
-Revisadas las 21 hojas una por una, **faltan dos cosas**, las dos en amarillo:
-
-1. **Cantidad y precio unitario** en `Mod. inversión`, 46 celdas en los cuatro
-   bloques. `D11` (*Desarrollo de la plataforma*) **ya está cargada**: US$
-   85.000, el total del cronograma con el desarrollo contratado afuera en
-   cuatro roles —arquitecto y machine learning a US$ 50/h, backend y
-   frontend a US$ 30/h, tarifas de mercado 2026—. Los fundadores no
-   participan de la construcción. Termina el 01/09/2025.
-2. **La tasa de corte**, en `Presupuesto financiero!C31`. El VAN y la TIR
-   aparecen solos al cargarla. En dólares: el 75 % del ejemplo es de pesos.
-
-El resto de las hojas del bloque presupuestario están completas y sus totales
-viajan bien hasta el flujo de fondos. La única fórmula que hoy devuelve vacío
-es el VAN, esperando la tasa.
-
-> Corrección respecto de una versión anterior de este archivo: se habían
-> marcado `Costos RRHH`, `Proy. ventas`, `Mod. ingresos` y `Costos variables`
-> como incompletas comparando cantidad de celdas contra el ejemplo. Es mal
-> indicador: el ejemplo es una empresa bastante más grande. Verificadas celda
-> por celda, están completas —`Costos RRHH` tiene 360 celdas cargadas y
-> ninguna vacía—.
-
-## Un cabo suelto: el Anexo de capacidad operativa no lo usa nadie
-
-En el ejemplo, el anexo calcula por plan cuántas horas lleva cada servicio y
-cuánto cuesta esa unidad, y la hoja de costos variables **lee de ahí**: 252
-celdas apuntan al anexo. El costo variable del servicio *es* el trabajo que
-lleva prestarlo.
-
-En ShopMetrics el anexo hace la misma cuenta —le da 3, 18 y 72 dólares por
-instalación para los planes Básico, Vidriera y Cadena— pero **ninguna celda
-del libro lo lee**. Los costos variables listan gastos de bolsillo con precios
-escritos a mano (comisión, movilidad, nube, pasarela, medios de pago,
-reposición) y toman las cantidades directo de la proyección de ventas.
-
-No está mal: son dos formas distintas de costear. En el ejemplo la mano de obra
-del servicio es costo variable; acá está en la estructura fija, como el técnico
-de instalación y soporte. Pero deja el anexo calculando algo que no se usa, y
-esa es la clase de hilo del que se tira en una corrección: si el anexo
-justifica la dotación, conviene que se vea el vínculo, y si justifica el costo
-unitario del servicio, conviene que los costos variables lo lean.
-
-Lo dice en 09:08: «vas a tener un **costo variable unitario**, que está
-compuesto por estos insumos, y el costo fijo es un total».
-
-## Dos advertencias
-
-### Los sensores no van en inversión
-
-El ejemplo del profesor los amortiza, y en clase dice que eso está mal (minuto
-08:20): un sensor que se instala en el comercio para prestar el servicio es
-**insumo**, no bien de uso. Tu modelo ya lo tiene bien: está como *Reposición
-de equipamiento no recuperable* en costos variables. No lo muevas.
-
-El desarrollo de la plataforma y la registración de marca **sí** van en el
-modelo de inversión, pero **no se amortizan**. Por eso están en la hoja de
-inversión y no en la de amortizaciones.
-
-### La tasa de corte del ejemplo no te sirve
-
-El 75 % del ejemplo es una tasa en pesos. Tu proyecto está en dólares —la
-hipótesis, la facturación y los costos están todos en USD— así que la tasa
-tiene que ser de dólares, bastante más baja. El profesor lo aclara en 37:26 y
-en 39:10 insiste en que si el proyecto se define en dólares, **todo** tiene que
-estar en dólares.
-
-## El problema de fondo: el negocio no cierra a tres años
-
-Con los costos que están cargados hoy, el flujo de fondos da negativo los tres
-años y no hay TIR posible:
-
-|  | 2026 | 2027 | 2028 |
+| | 2026 | 2027 | 2028 |
 |---|---:|---:|---:|
-| Ingresos | 20.863 | 79.130 | 160.047 |
-| Costos de RRHH | 122.985 | 144.954 | 168.386 |
-| **RRHH / ingresos** | **589 %** | **183 %** | **105 %** |
-| Flujo de fondos | −133.590 | −112.563 | −68.175 |
+| Ingresos | 41.263 | 208.244 | 415.751 |
+| UAII | −68.326 | +23.852 | +168.045 |
+| Flujo de fondos | −71.814 | +15.355 | +149.007 |
+| RRHH / ingresos | 160% | 42% | 31% |
+| Promoción / ingresos | 16% | 16% | 10% |
 
-El ratio de RRHH sobre ingresos es exactamente el que el profesor dijo que
-mira al corregir (30:30 y 32:06). En su ejemplo arranca en 71 % y le pareció
-alto. Acá arranca en 589 % y **no baja de 100 % en ningún año**: la estructura
-se come todos los ingresos durante todo el horizonte.
+Inversión año cero 87.825 (85.000 de desarrollo). Acumulado a fin de 2028:
++4.723. VAN al 30%: −66.158; TIR 1,2% — el retorno cae después del horizonte,
+y así se explica en el 8.7 y en el punto 9 con la frase del profesor (27:26).
 
-**Ajuste ya aplicado (28/09).** El anexo de capacidad operativa mostraba que los técnicos entraban un año antes de hacer falta: el segundo en septiembre de 2027 con un solo técnico cubriendo hasta diciembre, y el tercero en febrero de 2028 con dos cubriendo todo el año. Se corrió el segundo a enero de 2028 y se sacó el tercero del horizonte. Son US$ 20.137 menos en tres años, y el anexo ahora muestra mes a mes la capacidad de la dotación y la holgura, conectado por fórmula a `Costos RRHH`. Los números de la tabla ya reflejan el ajuste.
+**Decisiones tomadas** (todas documentadas en `scripts/cerrar_presupuesto.py`):
+precios 40/120/450 y 30/59/159; gasto de referencia del comercio 960/año con
+fuente; altas de 2027 ×1,5 y de 2028 ×1,25 con promoción del 16% de los
+ingresos; participación final 19,4%; un vendedor en 2026, dos en 2027, tres
+desde julio de 2028; segundo técnico en agosto de 2027 (cuando el anexo lo
+pide); desarrollo y mantenimiento contratados afuera; fundadores a 1.200
+brutos en 2026 y 2027.
 
-Dicho de otro modo: tal como está, el VAN va a dar negativo con cualquier tasa
-de corte y el negocio no es viable. Hay tres salidas y son decisiones tuyas:
+**Project.** Cuatro roles contratados (arquitecto, backend, frontend, ML),
+2.324 h, 06/01 → 01/09/2025, US$ 85.000. Verificado tres veces en Project
+2016; Project no movió ninguna fecha.
 
-- **Arrancar con menos estructura.** Es lo que él sugiere (32:06): *"yo voy a
-  intentar arrancar con la menor estructura posible"*. Menos gente el primer
-  año, creciendo con las ventas.
-- **Contratar el desarrollo afuera** en vez de tenerlo en la estructura
-  (48:22). Sin aportes patronales ni sueldo anual complementario, y además el
-  desarrollo pasa a ser inversión del año cero en vez de costo recurrente.
-- **Revisar la proyección de ventas.** 102 comercios el primer año sobre un
-  mercado meta de 3.400 es un 3 %; si el embudo da para más, los ingresos
-  suben sin tocar los costos.
+**Word.** Capítulo 8 puesto al día con los números nuevos (cada cifra del
+texto se lee de la planilla al generar), 13 figuras nuevas en 8.5–8.7, las
+figuras existentes reemplazadas adentro del .docx, las de riesgos
+renumeradas (8.44–8.51), encabezado con fecha 28/09/2026.
 
-Lo que no conviene es dejarlo así: es el primer número que va a mirar.
+## Qué queda para Javier
+
+1. **Abrir el Excel en Excel (Windows) y confirmar que no pide reparación.**
+   LibreOffice lo abre y recalcula, pero Excel es más estricto y no se pudo
+   probar desde la Mac.
+2. **Abrir el Word y actualizar el índice** (F9 sobre la tabla de contenido):
+   los números de página del índice son los del primer avance.
+3. **Revisar las decisiones del modelo**, sobre todo el 19,4% de participación
+   y el sueldo reducido de los fundadores: son defendibles, pero son suyas.
+4. **QA Tester como quinto rol** del cronograma: el ejemplo del profesor lo
+   tiene; nuestro Project no. Si se agrega, se regenera y se vuelve a
+   verificar en Windows.
+5. El margen con que se recupera la inversión (+4.723) es estrecho: los
+   escenarios del tercer avance lo van a poner a prueba.
+
+## Cómo regenerar todo
+
+    python3 scripts/cerrar_presupuesto.py        # sobre el Excel previo al cierre
+    python3 <skill>/recalc.py documento/Presupuesto\ financiero\ ShopMetrics.xlsx
+    python3 scripts/restaurar_objetos.py documento/Presupuesto\ financiero\ ShopMetrics.xlsx
+    python3 scripts/figuras_cap8.py
+    git checkout HEAD~N -- documento/STF_Gomez_Javier_E1_v1.docx   # el del primer avance
+    python3 scripts/word_cap8_v2.py

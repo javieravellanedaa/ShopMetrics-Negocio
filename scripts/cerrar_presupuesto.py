@@ -22,7 +22,7 @@ Hace cuatro cosas sobre el archivo, en este orden, y deja escrito por que:
        1,25, con la promocion que lo sostiene (mas 1.500 y 2.000 por mes en
        campanias). Se llega al 19% del mercado meta a fin de 2028.
      - estructura: 1 vendedor en 2026, 2 en 2027, 2 y luego 3 en 2028; el
-       segundo tecnico entra cuando el anexo lo pide; el desarrollador sale de
+       segundo tecnico entra en agosto de 2027, cuando el anexo lo pide; el desarrollador sale de
        la dotacion y el mantenimiento se contrata afuera (20/40/60 h por mes);
        los fundadores cobran 1.200 brutos en 2026 y 2027 y 2.000 desde 2028.
      - costo del hardware: cada alta Vidriera lleva USD 34 de kit y cada alta
@@ -323,7 +323,7 @@ def costos_rrhh(r):
         r.cell(row=30, column=c).value = 1                                  # vendedores 2026
         r.cell(row=48, column=c).value = 2                                  # 2027
         r.cell(row=66, column=c).value = 2 if c - 2 <= 6 else 3             # 2028: 2, y 3 desde julio
-        r.cell(row=47, column=c).value = 1 if c - 2 <= 5 else 2             # tecnicos 2027: 2 desde junio
+        r.cell(row=47, column=c).value = 1 if c - 2 <= 7 else 2             # tecnicos 2027: 2 desde agosto, cuando el anexo lo pide
         r.cell(row=65, column=c).value = 2                                  # 2028
         for f in (28, 46, 64):                                              # desarrollador: contratado
             r.cell(row=f, column=c).value = 0

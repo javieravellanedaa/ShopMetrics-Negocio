@@ -85,3 +85,12 @@ en la hoja de amortizaciones—. Va a la inversión y de ahí al flujo de fondos
 Editar `PLAN` y `EQUIPO` dentro de `armar_project.py` y volver a correrlo
 rehace el XML. Conviene si el cambio es grande; para ajustes finos es más
 cómodo hacerlo directamente en Project.
+
+## Verificación
+
+Verificado tres veces en Microsoft Project 2016 (Windows), la última sobre esta
+versión de cuatro roles: costo 85.000,00, fin 01/09/2025, cero sobreasignación,
+y las 41 fechas coinciden al minuto con las del XML. El exportado desde Project
+es `ShopMetrics-desarrollo-verificado.xml`; las capturas están en `capturas/`.
+La hoja de recursos va pegada en `Mod. inversión` del presupuesto, como en la
+plantilla de la cátedra.
