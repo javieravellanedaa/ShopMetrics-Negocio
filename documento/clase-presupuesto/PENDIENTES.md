@@ -25,10 +25,10 @@ Revisadas las 21 hojas una por una, **faltan dos cosas**, las dos en amarillo:
 
 1. **Cantidad y precio unitario** en `Mod. inversión`, 46 celdas en los cuatro
    bloques. `D11` (*Desarrollo de la plataforma*) **ya está cargada**: US$
-   84.600, el total del cronograma con el desarrollo contratado afuera —un
-   senior a US$ 50/h y un semi-senior a US$ 30/h, tarifas de mercado 2026—.
-   Los fundadores no participan de la construcción y no figuran. El
-   cronograma termina el 31/10/2025.
+   85.000, el total del cronograma con el desarrollo contratado afuera en
+   cuatro roles —arquitecto y machine learning a US$ 50/h, backend y
+   frontend a US$ 30/h, tarifas de mercado 2026—. Los fundadores no
+   participan de la construcción. Termina el 01/09/2025.
 2. **La tasa de corte**, en `Presupuesto financiero!C31`. El VAN y la TIR
    aparecen solos al cargarla. En dólares: el 75 % del ejemplo es de pesos.
 

@@ -11,29 +11,30 @@ plataforma. Project lo calcula solo a partir de los recursos con su valor hora,
 las tareas con su duración y quién trabaja en cada una.
 
 El desarrollo se contrata afuera. Los fundadores gestionan la empresa y no
-participan de la construcción, así que no figuran en el cronograma; el
-relevamiento inicial y la aceptación final quedan del lado del cliente, como
-en cualquier contratación, y no se facturan. Al no ser empleados, los
-contratados no llevan aportes patronales ni aguinaldo.
+participan de la construcción, así que no figuran; el relevamiento inicial y
+la aceptación final quedan del lado del cliente, como en cualquier
+contratación. Son cuatro roles, los imprescindibles para este software, y al
+no ser empleados no llevan aportes patronales ni aguinaldo:
 
-El valor hora es el de mercado para clientes argentinos en 2026: semi-senior
-US$ 25–45, senior US$ 45–60. Se toma un senior para arquitectura, modelos y
-pruebas, y un semi-senior para el resto.
+| Rol | Qué hace | USD/h | Horas | Costo |
+|---|---|---:|---:|---:|
+| Arquitecto de software | relevamiento, arquitectura, modelo de datos; acompaña al backend en lo crítico; lidera pruebas y despliegue | 50 | 524 | 26.200 |
+| Desarrollador backend | API, base de series temporales, integraciones POS e IoT, métricas, reglas, seguridad | 30 | 944 | 28.320 |
+| Desarrollador frontend | panel web, centro de alertas, portal del locatario, vista móvil | 30 | 616 | 18.480 |
+| Ingeniero de machine learning | los tres modelos de la fase 7 | 50 | 240 | 12.000 |
+| **Inversión inicial** | | | **2.324** | **85.000** |
 
-| Recurso | USD/hora | Horas | Costo |
-|---|---:|---:|---:|
-| Desarrollador senior (free lance) | 50,00 | 744 | 37.200,00 |
-| Desarrollador semi-senior (free lance) | 30,00 | 1.580 | 47.400,00 |
-| **Inversión inicial** | | **2.324** | **84.600,00** |
+Del 6 de enero al 1 de septiembre de 2025: 29 tareas en 11 fases más el hito
+de salida, 41 filas. Backend y frontend son cadenas independientes: el
+frontend arranca cuando hay API con datos que consumir (fines de abril) y
+desde ahí corre sin cortes; los modelos arrancan cuando están las métricas.
+Por eso las fases 5, 6, 7 y 10 se superponen entre mayo y junio. El backend
+queda libre unas semanas entre fines de junio y mediados de agosto, esperando
+que el frontend termine para las pruebas integrales: se contrata por bloques.
 
-Del 6 de enero al 31 de octubre de 2025: 29 tareas en 11 fases más el hito de
-salida, 41 filas en total. La fase 7 (Machine Learning) corre en paralelo con
-la 6 y la 8 porque carga sobre el senior y no compite por el semi-senior, que
-es el recurso escaso; eso acorta cinco semanas sin cambiar el costo, porque
-las horas son las mismas. Los vínculos van entre tareas, nunca entre fases.
-
-Fuentes de las tarifas: [Teclab, cuánto cobra un programador en Argentina 2026](https://teclab.edu.ar/tecnologia-y-desarrollo/cuanto-cobra-un-programador-en-argentina/)
-y [Cristian Tait, programador freelance Argentina 2026](https://cristiantait.com/blog/programador-web-freelance-argentina-2026).
+Valor hora de mercado para clientes argentinos en 2026: semi-senior US$ 25–45,
+senior US$ 45–60. Fuentes: [Teclab](https://teclab.edu.ar/tecnologia-y-desarrollo/cuanto-cobra-un-programador-en-argentina/)
+y [Cristian Tait](https://cristiantait.com/blog/programador-web-freelance-argentina-2026).
 
 ## Por qué el año cero es 2025
 

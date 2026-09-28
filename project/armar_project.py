@@ -6,20 +6,13 @@ construye la plataforma. Project lo calcula solo: se le dan los recursos con su
 valor hora, las tareas con su duracion y quien trabaja en cada una.
 
 El desarrollo se contrata afuera: los fundadores gestionan la empresa y no
-participan de la construccion, asi que no figuran aca. El relevamiento y la
-aceptacion quedan del lado del cliente, como en cualquier contratacion, y no
-se facturan. El valor hora es el de mercado para clientes argentinos en 2026:
-un senior para arquitectura, modelos y pruebas, y un semi-senior para el
-resto. Al no ser empleados no llevan cargas patronales ni aguinaldo.
-
-Los vinculos van entre tareas, nunca entre fases: vincular tareas de resumen
-funciona pero impide solapar, y la fase 7 (Machine Learning) corre en paralelo
-con la 6 porque carga sobre el CTO y no compite por el desarrollador, que es el
-recurso escaso.
-
-    python3 armar_project.py
-
-Deja ShopMetrics-desarrollo.xml, que se abre con Archivo -> Abrir en Project.
+participan de la construccion, asi que no figuran aca. Son cuatro roles, los
+imprescindibles para este software: un arquitecto, que define y valida; un
+backend, que hace la API, la base y las integraciones; un frontend, que hace
+el panel y las vistas; y un ingeniero de machine learning para los modelos.
+Backend y frontend son cadenas independientes y corren en paralelo. El valor
+hora es el de mercado para clientes argentinos en 2026, sin cargas patronales
+ni aguinaldo porque no son empleados.
 """
 from __future__ import annotations
 
@@ -38,8 +31,10 @@ HORAS_MES = 150                         # del anexo de capacidad operativa
 
 # (nombre, valor hora USD de mercado, clave). Fuentes en LEEME.md.
 EQUIPO = [
-    ("Desarrollador senior (free lance)",      50.00, "SR"),
-    ("Desarrollador semi-senior (free lance)", 30.00, "SSR"),
+    ("Arquitecto de software (free lance)",       50.00, "ARQ"),
+    ("Desarrollador backend (free lance)",        30.00, "BACK"),
+    ("Desarrollador frontend (free lance)",       30.00, "FRONT"),
+    ("Ingeniero de machine learning (free lance)", 50.00, "ML"),
 ]
 
 # Cada tarea: (clave, nombre, dias, {recurso: dedicacion}, despues_de)
@@ -48,58 +43,58 @@ EQUIPO = [
 # el de la lista, que es lo que hace posible el solape.
 PLAN = [
  ("1. Definición y arquitectura", [
-   ("1.1", "Relevamiento funcional y alcance del producto", 8, {"SR":1.0}, None),
-   ("1.2", "Arquitectura de la solución y elección del stack", 7, {"SR":1.0}, None),
-   ("1.3", "Modelo de datos y diccionario", 5, {"SR":1.0,"SSR":0.5}, None),
+   ("1.1", "Relevamiento funcional y alcance del producto", 8, {"ARQ":1.0}, None),
+   ("1.2", "Arquitectura de la solución y elección del stack", 7, {"ARQ":1.0}, None),
+   ("1.3", "Modelo de datos y diccionario", 5, {"ARQ":1.0,"BACK":0.5}, None),
  ]),
  ("2. Base de datos y cimientos", [
-   ("2.1", "Esquema, migraciones y series temporales", 8, {"SSR":1.0,"SR":0.5}, None),
-   ("2.2", "Entorno de desarrollo y automatización de pruebas", 7, {"SSR":1.0}, None),
+   ("2.1", "Esquema, migraciones y series temporales", 8, {"BACK":1.0,"ARQ":0.5}, None),
+   ("2.2", "Entorno de desarrollo y automatización de pruebas", 7, {"BACK":1.0}, None),
  ]),
  ("3. Integración con sistemas externos", [
-   ("3.1", "Conectores con puntos de venta", 12, {"SSR":1.0,"SR":0.5}, None),
-   ("3.2", "Ingesta de sensores de conteo", 10, {"SSR":1.0}, None),
-   ("3.3", "Monitoreo de salud de las integraciones", 8, {"SSR":1.0}, None),
+   ("3.1", "Conectores con puntos de venta", 12, {"BACK":1.0,"ARQ":0.5}, None),
+   ("3.2", "Ingesta de sensores de conteo", 10, {"BACK":1.0}, None),
+   ("3.3", "Monitoreo de salud de las integraciones", 8, {"BACK":1.0}, None),
  ]),
  ("4. Motor de métricas e indicadores", [
-   ("4.1", "Cálculo de tráfico, conversión, ventas y vacancia", 12, {"SSR":1.0,"SR":0.5}, None),
-   ("4.2", "Agregados por hora, zona y locatario", 8, {"SSR":1.0}, None),
+   ("4.1", "Cálculo de tráfico, conversión, ventas y vacancia", 12, {"BACK":1.0,"ARQ":0.5}, None),
+   ("4.2", "Agregados por hora, zona y locatario", 8, {"BACK":1.0}, None),
  ]),
+ # El frontend arranca cuando hay API con datos que consumir, y desde ahi
+ # corre sin cortes en su propia cadena.
  ("5. Panel web del centro", [
-   ("5.1", "Sistema de diseño y navegación", 6, {"SSR":1.0}, None),
-   ("5.2", "Tablero de indicadores y series", 12, {"SSR":1.0}, None),
-   ("5.3", "Mapa del centro y ficha de locatarios", 10, {"SSR":1.0}, None),
+   ("5.1", "Sistema de diseño y navegación", 6, {"FRONT":1.0}, ["4.1"]),
+   ("5.2", "Tablero de indicadores y series", 12, {"FRONT":1.0}, None),
+   ("5.3", "Mapa del centro y ficha de locatarios", 10, {"FRONT":1.0}, None),
  ]),
  ("6. Motor de reglas y alertas", [
-   ("6.1", "Definición y evaluación de reglas por umbral", 10, {"SSR":1.0,"SR":0.5}, None),
-   ("6.2", "Centro de alertas y ciclo de atención", 10, {"SSR":1.0}, None),
-   ("6.3", "Canales de notificación", 5, {"SSR":1.0}, None),
+   ("6.1", "Definición y evaluación de reglas por umbral", 10, {"BACK":1.0,"ARQ":0.5}, ["4.2"]),
+   ("6.2", "Canales de notificación", 5, {"BACK":1.0}, None),
+   ("6.3", "Centro de alertas y ciclo de atención", 10, {"FRONT":1.0}, ["5.3", "6.1"]),
  ]),
- # La fase 7 es del CTO. Arranca cuando el CTO se libera de 6.1 y corre en
- # paralelo con lo que sigue del desarrollador. Sin horas del desarrollador:
- # la integracion de los modelos en el panel se hace en la fase 11.
+ # Los modelos necesitan las metricas calculadas; el resto es independiente.
  ("7. Modelos de Machine Learning", [
-   ("7.1", "Predicción de riesgo de vacancia", 10, {"SR":1.0}, ["6.1"]),
-   ("7.2", "Recomendación de mix de locatarios", 8, {"SR":1.0}, None),
-   ("7.3", "Detección de anomalías en la operación", 12, {"SR":1.0}, None),
+   ("7.1", "Predicción de riesgo de vacancia", 10, {"ML":1.0}, ["4.2"]),
+   ("7.2", "Recomendación de mix de locatarios", 8, {"ML":1.0}, None),
+   ("7.3", "Detección de anomalías en la operación", 12, {"ML":1.0}, None),
  ]),
  ("8. Portal del locatario", [
-   ("8.1", "Tablero del local y comparación con la categoría", 12, {"SSR":1.0}, ["6.3"]),
-   ("8.2", "Consentimiento sobre el uso de datos", 5, {"SSR":1.0}, None),
+   ("8.1", "Tablero del local y comparación con la categoría", 12, {"FRONT":1.0}, ["6.3"]),
+   ("8.2", "Consentimiento sobre el uso de datos", 5, {"FRONT":1.0}, None),
  ]),
  ("9. Vista móvil de operaciones", [
-   ("9.1", "Resolución de alertas en terreno", 10, {"SSR":1.0}, None),
-   ("9.2", "Historial de turno del operario", 6, {"SSR":1.0}, None),
+   ("9.1", "Resolución de alertas en terreno", 10, {"FRONT":1.0}, None),
+   ("9.2", "Historial de turno del operario", 6, {"FRONT":1.0}, None),
  ]),
  ("10. Seguridad, permisos y auditoría", [
-   ("10.1", "Autenticación y matriz de permisos", 8, {"SSR":1.0,"SR":0.5}, None),
-   ("10.2", "Auditoría de accesos a datos sensibles", 7, {"SSR":1.0}, None),
+   ("10.1", "Autenticación y matriz de permisos", 8, {"BACK":1.0,"ARQ":0.5}, ["6.2"]),
+   ("10.2", "Auditoría de accesos a datos sensibles", 7, {"BACK":1.0}, None),
  ]),
  ("11. Pruebas y salida a producción", [
-   ("11.1", "Integración de los modelos de ML en el panel y las alertas", 6, {"SSR":1.0}, ["10.2", "7.3"]),
-   ("11.2", "Pruebas integrales y corrección", 12, {"SSR":1.0,"SR":1.0}, None),
-   ("11.3", "Documentación y manual de uso", 5, {"SSR":1.0}, None),
-   ("11.4", "Despliegue y puesta en marcha", 6, {"SR":1.0,"SSR":1.0}, None),
+   ("11.1", "Integración de los modelos de ML en el panel y las alertas", 6, {"BACK":1.0}, ["10.2", "7.3"]),
+   ("11.2", "Pruebas integrales y corrección", 12, {"ARQ":1.0,"BACK":0.5,"FRONT":0.5}, ["11.1", "9.2"]),
+   ("11.3", "Documentación y manual de uso", 5, {"ARQ":0.5,"BACK":0.5}, None),
+   ("11.4", "Despliegue y puesta en marcha", 6, {"ARQ":1.0,"BACK":1.0}, None),
  ]),
 ]
 
