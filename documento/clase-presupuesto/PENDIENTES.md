@@ -30,8 +30,8 @@ originales recuperados. Tasa de corte 30% en dólares.
 | RRHH / ingresos | 160% | 42% | 31% |
 | Promoción / ingresos | 16% | 16% | 10% |
 
-Inversión año cero 87.825 (85.000 de desarrollo). Acumulado a fin de 2028:
-+4.723. VAN al 30%: −66.158; TIR 1,2% — el retorno cae después del horizonte,
+Inversión año cero 68.125 (64.880 de desarrollo). Acumulado a fin de 2028:
++24.423. VAN al 30%: −46.458; TIR 6,9% — el retorno cae después del horizonte,
 y así se explica en el 8.7 y en el punto 9 con la frase del profesor (27:26).
 
 **Decisiones tomadas** (todas documentadas en `scripts/cerrar_presupuesto.py`):
@@ -43,7 +43,7 @@ pide); desarrollo y mantenimiento contratados afuera; fundadores a 1.200
 brutos en 2026 y 2027.
 
 **Project.** Cuatro roles contratados (arquitecto, backend, frontend, ML),
-2.324 h, 06/01 → 01/09/2025, US$ 85.000. Verificado tres veces en Project
+2.324 h, 06/01 → 01/09/2025, US$ 64.880 (arquitecto y ML a US$ 40/h, backend y frontend a US$ 22/h). Verificado tres veces en Project
 2016; Project no movió ninguna fecha.
 
 **Word.** Capítulo 8 puesto al día con los números nuevos (cada cifra del
@@ -63,7 +63,7 @@ renumeradas (8.44–8.51), encabezado con fecha 28/09/2026.
 4. **QA Tester como quinto rol** del cronograma: el ejemplo del profesor lo
    tiene; nuestro Project no. Si se agrega, se regenera y se vuelve a
    verificar en Windows.
-5. El margen con que se recupera la inversión (+4.723) es estrecho: los
+5. El margen con que se recupera la inversión (+24.423) es moderado: los
    escenarios del tercer avance lo van a poner a prueba.
 
 ## Cómo regenerar todo

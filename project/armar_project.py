@@ -31,10 +31,10 @@ HORAS_MES = 150                         # del anexo de capacidad operativa
 
 # (nombre, valor hora USD de mercado, clave). Fuentes en LEEME.md.
 EQUIPO = [
-    ("Arquitecto de software (free lance)",       50.00, "ARQ"),
-    ("Desarrollador backend (free lance)",        30.00, "BACK"),
-    ("Desarrollador frontend (free lance)",       30.00, "FRONT"),
-    ("Ingeniero de machine learning (free lance)", 50.00, "ML"),
+    ("Arquitecto de software (free lance)",       40.00, "ARQ"),
+    ("Desarrollador backend (free lance)",        22.00, "BACK"),
+    ("Desarrollador frontend (free lance)",       22.00, "FRONT"),
+    ("Ingeniero de machine learning (free lance)", 40.00, "ML"),
 ]
 
 # Cada tarea: (clave, nombre, dias, {recurso: dedicacion}, despues_de)

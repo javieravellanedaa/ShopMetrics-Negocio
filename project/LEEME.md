@@ -18,11 +18,11 @@ no ser empleados no llevan aportes patronales ni aguinaldo:
 
 | Rol | Qué hace | USD/h | Horas | Costo |
 |---|---|---:|---:|---:|
-| Arquitecto de software | relevamiento, arquitectura, modelo de datos; acompaña al backend en lo crítico; lidera pruebas y despliegue | 50 | 524 | 26.200 |
-| Desarrollador backend | API, base de series temporales, integraciones POS e IoT, métricas, reglas, seguridad | 30 | 944 | 28.320 |
-| Desarrollador frontend | panel web, centro de alertas, portal del locatario, vista móvil | 30 | 616 | 18.480 |
-| Ingeniero de machine learning | los tres modelos de la fase 7 | 50 | 240 | 12.000 |
-| **Inversión inicial** | | | **2.324** | **85.000** |
+| Arquitecto de software | relevamiento, arquitectura, modelo de datos; acompaña al backend en lo crítico; lidera pruebas y despliegue | 40 | 524 | 20.960 |
+| Desarrollador backend | API, base de series temporales, integraciones POS e IoT, métricas, reglas, seguridad | 22 | 944 | 20.768 |
+| Desarrollador frontend | panel web, centro de alertas, portal del locatario, vista móvil | 22 | 616 | 13.552 |
+| Ingeniero de machine learning | los tres modelos de la fase 7 | 40 | 240 | 9.600 |
+| **Inversión inicial** | | | **2.324** | **64.880** |
 
 Del 6 de enero al 1 de septiembre de 2025: 29 tareas en 11 fases más el hito
 de salida, 41 filas. Backend y frontend son cadenas independientes: el
@@ -89,7 +89,7 @@ cómodo hacerlo directamente en Project.
 ## Verificación
 
 Verificado tres veces en Microsoft Project 2016 (Windows), la última sobre esta
-versión de cuatro roles: costo 85.000,00, fin 01/09/2025, cero sobreasignación,
+versión de cuatro roles: costo 64.880,00, fin 01/09/2025, cero sobreasignación,
 y las 41 fechas coinciden al minuto con las del XML. El exportado desde Project
 es `ShopMetrics-desarrollo-verificado.xml`; las capturas están en `capturas/`.
 La hoja de recursos va pegada en `Mod. inversión` del presupuesto, como en la
