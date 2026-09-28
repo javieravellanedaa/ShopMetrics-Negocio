@@ -92,14 +92,16 @@ años y no hay TIR posible:
 |  | 2026 | 2027 | 2028 |
 |---|---:|---:|---:|
 | Ingresos | 20.863 | 79.130 | 160.047 |
-| Costos de RRHH | 122.985 | 150.323 | 183.153 |
-| **RRHH / ingresos** | **589 %** | **190 %** | **114 %** |
-| Flujo de fondos | −133.590 | −117.933 | −82.941 |
+| Costos de RRHH | 122.985 | 144.954 | 168.386 |
+| **RRHH / ingresos** | **589 %** | **183 %** | **105 %** |
+| Flujo de fondos | −133.590 | −112.563 | −68.175 |
 
 El ratio de RRHH sobre ingresos es exactamente el que el profesor dijo que
 mira al corregir (30:30 y 32:06). En su ejemplo arranca en 71 % y le pareció
 alto. Acá arranca en 589 % y **no baja de 100 % en ningún año**: la estructura
 se come todos los ingresos durante todo el horizonte.
+
+**Ajuste ya aplicado (28/09).** El anexo de capacidad operativa mostraba que los técnicos entraban un año antes de hacer falta: el segundo en septiembre de 2027 con un solo técnico cubriendo hasta diciembre, y el tercero en febrero de 2028 con dos cubriendo todo el año. Se corrió el segundo a enero de 2028 y se sacó el tercero del horizonte. Son US$ 20.137 menos en tres años, y el anexo ahora muestra mes a mes la capacidad de la dotación y la holgura, conectado por fórmula a `Costos RRHH`. Los números de la tabla ya reflejan el ajuste.
 
 Dicho de otro modo: tal como está, el VAN va a dar negativo con cualquier tasa
 de corte y el negocio no es viable. Hay tres salidas y son decisiones tuyas:
