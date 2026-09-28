@@ -20,24 +20,25 @@ del informe de recursos de Project y el gráfico de inversión pegados en
 `Mod. inversión`, como en la plantilla; los botones, el logo y los gráficos
 originales recuperados. Tasa de corte 30% en dólares.
 
-**Modelo.** Rentable desde el segundo año, inversión recuperada dentro de 2028:
+**Modelo.** Rentable desde el segundo año, inversión recuperada en 2028, VAN
+positivo al 30%:
 
 | | 2026 | 2027 | 2028 |
 |---|---:|---:|---:|
-| Ingresos | 41.263 | 208.244 | 415.751 |
-| UAII | −68.326 | +23.852 | +168.045 |
-| Flujo de fondos | −71.814 | +15.355 | +149.007 |
-| RRHH / ingresos | 160% | 42% | 31% |
-| Promoción / ingresos | 16% | 16% | 10% |
+| Ingresos | 45.843 | 233.021 | 468.014 |
+| UAII | −63.029 | +56.738 | +243.959 |
+| Flujo de fondos | −66.701 | +47.178 | +211.397 |
+| RRHH / ingresos | 139% | 36% | 26% |
 
-Inversión año cero 68.125 (64.880 de desarrollo). Acumulado a fin de 2028:
-+24.423. VAN al 30%: −46.458; TIR 6,9% — el retorno cae después del horizonte,
-y así se explica en el 8.7 y en el punto 9 con la frase del profesor (27:26).
+Inversión año cero 67.705 (64.880 de desarrollo). Acumulado a fin de 2028:
++124.169. **VAN al 30%: +5.123 (7,6% de la inversión); TIR 32,4%.** El ajuste
+final para que el VAN diera positivo fue abonos +10% (33/65/175) y volumen
++11%; la participación a fin de 2028 queda en 21,6%.
 
 **Decisiones tomadas** (todas documentadas en `scripts/cerrar_presupuesto.py`):
-precios 40/120/450 y 30/59/159; gasto de referencia del comercio 960/año con
-fuente; altas de 2027 ×1,5 y de 2028 ×1,25 con promoción del 16% de los
-ingresos; participación final 19,4%; un vendedor en 2026, dos en 2027, tres
+precios 40/120/450 y 33/65/175; gasto de referencia del comercio 960/año con
+fuente; altas de 2027 ×1,5 y de 2028 ×1,25, y todas ×1,11, con promoción del 15% de los
+ingresos; participación final 21,6%; un vendedor en 2026, dos en 2027, tres
 desde julio de 2028; segundo técnico en agosto de 2027 (cuando el anexo lo
 pide); desarrollo y mantenimiento contratados afuera; fundadores a 1.200
 brutos en 2026 y 2027.
@@ -53,9 +54,8 @@ renumeradas (8.44–8.51), encabezado con fecha 28/09/2026.
 
 ## Qué queda para Javier
 
-1. **Abrir el Excel en Excel (Windows) y confirmar que no pide reparación.**
-   LibreOffice lo abre y recalcula, pero Excel es más estricto y no se pudo
-   probar desde la Mac.
+1. ~~Abrir el Excel en Excel~~ Hecho el 28/09 desde Windows: abre sin
+   reparación, se ven el logo, las imágenes y los botones (ahora en las 19 hojas).
 2. **Abrir el Word y actualizar el índice** (F9 sobre la tabla de contenido):
    los números de página del índice son los del primer avance.
 3. **Revisar las decisiones del modelo**, sobre todo el 19,4% de participación
@@ -63,8 +63,10 @@ renumeradas (8.44–8.51), encabezado con fecha 28/09/2026.
 4. **QA Tester como quinto rol** del cronograma: el ejemplo del profesor lo
    tiene; nuestro Project no. Si se agrega, se regenera y se vuelve a
    verificar en Windows.
-5. El margen con que se recupera la inversión (+24.423) es moderado: los
-   escenarios del tercer avance lo van a poner a prueba.
+5. El VAN positivo depende de sostener el volumen de 2027 (402 comercios a
+   diciembre): es la hipótesis que los escenarios del tercer avance van a golpear.
+   Holgura técnica mínima 6,7 h (diciembre de 2027): con más volumen, el segundo
+   técnico tendría que entrar antes.
 
 ## Cómo regenerar todo
 

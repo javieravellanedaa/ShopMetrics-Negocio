@@ -419,8 +419,9 @@ p = figura(p, "PRE03_monto_imponible.png", 11.0, "Figura 8.39. Monto imponible d
 p = parrafo(p,
     "Restada la inversión de cada ejercicio, el flujo de fondos es de USD %s en el año cero, USD %s en 2026, USD %s en 2027 "
     "y USD %s en 2028. El acumulado al cierre del tercer ejercicio es de USD %s: la inversión se recupera dentro del "
-    "horizonte, en el tercer año, aunque con un margen estrecho que los escenarios del tercer avance van a poner a prueba."
-    % (n(ff[0]), n(ff[1]), n(ff[2]), n(ff[3]), n(acum)),
+    "horizonte, en el tercer año, con un margen de %s veces la inversión inicial que los escenarios del tercer avance van a "
+    "poner a prueba."
+    % (n(ff[0]), n(ff[1]), n(ff[2]), n(ff[3]), n(acum), n(acum / -ff[0], 1)),
     "Flujo de fondos. ")
 p = figura(p, "PRE05_flujo_grafico.png", 12.5, "Figura 8.40. Flujo de fondos del ejercicio y acumulado.")
 p = parrafo(p,
@@ -442,13 +443,21 @@ p = parrafo(p,
     "corresponde a un proyecto en pesos."
     % pct(tasa),
     "Tasa de corte. ")
-p = parrafo(p,
-    "Con esa tasa, el valor actual neto de los cuatro flujos es de USD %s y la tasa interna de retorno del %s. Ambos "
-    "indicadores dicen lo mismo: dentro del horizonte de tres años el proyecto recupera la inversión pero no remunera el "
-    "capital a la tasa exigida, porque el retorno se concentra a partir de 2028 y el ejercicio siguiente queda fuera del "
-    "análisis. La lectura se completa en el punto 9."
-    % (n(van), pct(tir, 1)),
-    "Valor actual neto y tasa interna de retorno. ")
+if van >= 0:
+    lectura_van = (
+        "Con esa tasa, el valor actual neto de los cuatro flujos es de USD %s, positivo, y la tasa interna de retorno del "
+        "%s, por encima de la tasa de corte. Ambos indicadores dicen lo mismo: dentro del horizonte de tres años el "
+        "proyecto devuelve la inversión y remunera el capital a la tasa exigida, aunque con un margen acotado —el valor "
+        "actual neto equivale al %s de la inversión inicial— porque dos de los cuatro flujos son negativos y el retorno se "
+        "concentra en 2028. Ese margen es el que los escenarios del tercer avance van a poner a prueba. La lectura se "
+        "completa en el punto 9." % (n(van), pct(tir, 1), pct(van / -inv[0], 1)))
+else:
+    lectura_van = (
+        "Con esa tasa, el valor actual neto de los cuatro flujos es de USD %s y la tasa interna de retorno del %s. Ambos "
+        "indicadores dicen lo mismo: dentro del horizonte de tres años el proyecto recupera la inversión pero no remunera el "
+        "capital a la tasa exigida, porque el retorno se concentra a partir de 2028 y el ejercicio siguiente queda fuera del "
+        "análisis. La lectura se completa en el punto 9." % (n(van), pct(tir, 1)))
+p = parrafo(p, lectura_van, "Valor actual neto y tasa interna de retorno. ")
 p = figura(p, "PRE04_van_tir.png", 7.0, "Figura 8.42. Tasa de corte, valor actual neto y tasa interna de retorno.")
 p = figura(p, "INV03_inversion_resumen.png", 10.0, "Figura 8.43. Inversión por ejercicio, tal como entra al presupuesto financiero.")
 
@@ -459,15 +468,18 @@ texto(buscar("El análisis de viabilidad se completa"),
       "positivo desde el segundo, con USD %s en 2027 y USD %s en 2028; el punto de equilibrio se alcanza durante 2027. "
       "Viabilidad operativa: el anexo de capacidad muestra holgura positiva en los treinta y seis meses del horizonte con la "
       "dotación técnica presupuestada, y la estructura comercial se dimensiona a la productividad esperada por vendedor. "
-      "Viabilidad financiera: la inversión inicial de USD %s se recupera dentro del horizonte, con un flujo acumulado de USD "
-      "%s al cierre de 2028; sin embargo, el valor actual neto a la tasa de corte del %s es negativo (USD %s) y la tasa interna "
-      "de retorno del período es del %s, porque el retorno se concentra a partir del tercer ejercicio y el siguiente queda "
-      "fuera del análisis. Con la base instalada de 2028 en régimen, el cuarto ejercicio proyecta un flujo del orden del de "
-      "2028 y la tasa interna de retorno supera holgadamente la de corte; el negocio necesita algo más de recorrido que los "
-      "tres años del horizonte, y esa es la condición que los escenarios del tercer avance deben poner a prueba. El punto "
-      "crítico identificado en el primer avance —la relación entre el ingreso del tercer ejercicio y el costo de la dotación— "
-      "queda resuelto: el costo de recursos humanos representa el %s de los ingresos en 2028."
-      % (n(uaii[1]), n(uaii[2]), n(-inv[0]), n(acum), pct(tasa), n(van), pct(tir, 1), pct(r_rrhh[2])))
+      + ("Viabilidad financiera: la inversión inicial de USD %s se recupera dentro del horizonte, con un flujo acumulado de "
+         "USD %s al cierre de 2028; el valor actual neto a la tasa de corte del %s es positivo (USD %s) y la tasa interna de "
+         "retorno del período, del %s, supera la de corte. El proyecto es viable en los tres ejercicios, con un margen que "
+         "depende de sostener el ritmo de captación de 2027, que es la hipótesis que los escenarios del tercer avance deben "
+         "poner a prueba. " % (n(-inv[0]), n(acum), pct(tasa), n(van), pct(tir, 1)) if van >= 0 else
+         "Viabilidad financiera: la inversión inicial de USD %s se recupera dentro del horizonte, con un flujo acumulado de "
+         "USD %s al cierre de 2028; sin embargo, el valor actual neto a la tasa de corte del %s es negativo (USD %s) y la tasa "
+         "interna de retorno del período es del %s, porque el retorno se concentra a partir del tercer ejercicio y el "
+         "siguiente queda fuera del análisis. El negocio necesita algo más de recorrido que los tres años del horizonte, y "
+         "esa es la condición que los escenarios del tercer avance deben poner a prueba. " % (n(-inv[0]), n(acum), pct(tasa), n(van), pct(tir, 1)))
+      + "El punto crítico identificado en el primer avance —la relación entre el ingreso del tercer ejercicio y el costo de "
+        "la dotación— queda resuelto: el costo de recursos humanos representa el %s de los ingresos en 2028." % pct(r_rrhh[2]))
 
 d.save(DOCX)
 print("Word actualizado: figuras reemplazadas, 8.5-8.7 y 9 escritos.")

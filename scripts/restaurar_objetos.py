@@ -100,6 +100,12 @@ def pegar_imagenes(partes, mapa, raiz):
     return puestas
 
 
+# Hojas de la plantilla que no traian boton "Volver al indice"; se les da el
+# mismo dibujo que Costos fijos (un boton solo, arriba a la izquierda).
+HOJAS_SIN_BOTON = ("Estructura", "Riesgos", "Matriz de riesgos", "Cuadro de evaluación de riesgos",
+                   "Escenario 1", "Escenario 2", "Escenario 3", "Plan de Contingencia")
+
+
 def leer_mapa():
     mapa = {}
     with io.open(os.path.join(DONANTE, "mapa.txt"), encoding="utf-8") as f:
@@ -152,6 +158,19 @@ def main(ruta: str) -> int:
 
     # 3) cada hoja apunta a su dibujo
     mapa = leer_mapa()
+    # las hojas sin boton reciben una copia del dibujo de Costos fijos
+    base = partes["xl/drawings/" + mapa["Costos fijos"]]
+    base_rels = partes.get("xl/drawings/_rels/" + mapa["Costos fijos"] + ".rels")
+    n_dib = max(int(re.search(r"drawing(\d+)", k).group(1)) for k in partes if re.match(r"xl/drawings/drawing\d+\.xml$", k))
+    for hoja in HOJAS_SIN_BOTON:
+        if hoja in mapa:
+            continue
+        n_dib += 1
+        nombre = "drawing%d.xml" % n_dib
+        partes["xl/drawings/" + nombre] = base
+        if base_rels:
+            partes["xl/drawings/_rels/" + nombre + ".rels"] = base_rels
+        mapa[hoja] = nombre
     puestos = 0
     for nombre, ruta_hoja in hojas_del_libro(partes):
         xml = partes[ruta_hoja].decode("utf-8")

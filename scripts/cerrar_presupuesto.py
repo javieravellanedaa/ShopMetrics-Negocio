@@ -14,12 +14,12 @@ Hace cuatro cosas sobre el archivo, en este orden, y deja escrito por que:
 
 2. Aplica el modelo que hace rentable el negocio, tal como se decidio despues
    de correr los escenarios sobre copias:
-     - precios: altas 40/120/450 y abonos 30/59/159 (Basico/Vidriera/Cadena).
+     - precios: altas 40/120/450 y abonos 33/65/175 (Basico/Vidriera/Cadena).
        El alta cubre el kit que se instala; el abono se justifica contra la
        competencia (6.2.2 del informe) y un gasto de referencia del comercio
        de USD 960 al anio en software de gestion, facturacion y analitica.
      - volumen: las altas de 2027 se multiplican por 1,5 y las de 2028 por
-       1,25, con la promocion que lo sostiene (mas 1.500 y 2.000 por mes en
+       1,25, y despues todas por 1,11 (ajuste final para VAN positivo), con la promocion que lo sostiene (mas 1.500 y 2.000 por mes en
        campanias). Se llega al 19% del mercado meta a fin de 2028.
      - estructura: 1 vendedor en 2026, 2 en 2027, 2 y luego 3 en 2028; el
        segundo tecnico entra en agosto de 2027, cuando el anexo lo pide; el desarrollador sale de
@@ -284,7 +284,7 @@ def anexo(an, costos_rrhh="Costos RRHH"):
 
 
 def hipotesis(h, comercios):
-    for i, v in zip((58, 59, 60, 61, 62, 63), (40, 120, 450, 30, 59, 159)):
+    for i, v in zip((58, 59, 60, 61, 62, 63), (40, 120, 450, 33, 65, 175)):
         h["C%d" % i] = v
     h["C12"] = 960
     for f, (n, share) in zip((24, 25, 26), comercios):
@@ -306,7 +306,7 @@ def proyeccion(pv):
     """Escala las altas mensuales de 2027 y 2028 y devuelve los comercios
     activos a diciembre de cada anio (altas acumuladas)."""
     tot = {}
-    for anio, f0, esc in ((2026, 19, 1.0), (2027, 82, 1.5), (2028, 144, 1.25)):
+    for anio, f0, esc in ((2026, 19, 1.11), (2027, 82, 1.5 * 1.11), (2028, 144, 1.25 * 1.11)):
         s = 0
         for f in (f0, f0 + 1, f0 + 2):
             for c in PV_MESES:
