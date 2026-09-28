@@ -28,6 +28,18 @@ import zipfile
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DONANTE = os.path.join(AQUI, "objetos-plantilla")
 
+# Imagenes de ShopMetrics que van pegadas en una hoja, como en el ejemplo de la
+# catedra, que trae la captura del informe de recursos de Project en Mod.
+# inversion: (hoja, celda de anclaje, ruta del png, ancho en cm, nombre).
+IMAGENES = [
+    ("Mod. inversión", "H9", "project/capturas/hoja-de-recursos.png", 22.0,
+     "Informe de recursos de Microsoft Project"),
+    ("Mod. inversión", "H30", "documento/img_cierre/inversion-por-anio.png", 12.0,
+     "Inversión por año"),
+]
+EMU_CM = 360000
+REL_IMAGE = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+
 TIPOS = {
     "drawing": "application/vnd.openxmlformats-officedocument.drawing+xml",
     "chart": "application/vnd.openxmlformats-officedocument.drawingml.chart+xml",
@@ -36,6 +48,56 @@ REL_DRAWING = "http://schemas.openxmlformats.org/officeDocument/2006/relationshi
 # el elemento <drawing> tiene que ir antes de estos, si estan
 DESPUES_DE_DRAWING = ("<legacyDrawing", "<legacyDrawingHF", "<picture", "<oleObjects",
                       "<controls", "<webPublishItems", "<tableParts", "<extLst")
+
+
+def col_fila(celda):
+    m = re.match(r"([A-Z]+)(\d+)", celda)
+    col = 0
+    for ch in m.group(1):
+        col = col * 26 + (ord(ch) - 64)
+    return col - 1, int(m.group(2)) - 1
+
+
+def pegar_imagenes(partes, mapa, raiz):
+    """Agrega cada imagen de IMAGENES al dibujo de su hoja."""
+    from PIL import Image
+    n_img = max([int(re.search(r"image(\d+)", n).group(1)) for n in partes if n.startswith("xl/media/image")] + [0])
+    puestas = 0
+    for hoja, celda, ruta, ancho_cm, nombre in IMAGENES:
+        ruta = os.path.join(raiz, ruta)
+        if not os.path.exists(ruta) or hoja not in mapa:
+            print("  (no esta %s, se saltea)" % os.path.basename(ruta)); continue
+        n_img += 1
+        media = "xl/media/image%d.png" % n_img
+        partes[media] = open(ruta, "rb").read()
+        px_w, px_h = Image.open(ruta).size
+        cx = int(ancho_cm * EMU_CM); cy = int(cx * px_h / px_w)
+        dib = "xl/drawings/" + mapa[hoja]
+        rels_ruta = "xl/drawings/_rels/" + mapa[hoja] + ".rels"
+        rels = partes.get(rels_ruta, b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
+                          b'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"></Relationships>').decode("utf-8")
+        usados = [int(x) for x in re.findall(r'Id="rId(\d+)"', rels)]
+        rid = "rId%d" % (max(usados) + 1 if usados else 1)
+        rels = rels.replace("</Relationships>", '<Relationship Id="%s" Type="%s" Target="../media/image%d.png"/></Relationships>' % (rid, REL_IMAGE, n_img))
+        partes[rels_ruta] = rels.encode("utf-8")
+        xml = partes[dib].decode("utf-8")
+        # el prefijo r: tiene que estar declarado en la RAIZ; los botones lo
+        # declaran localmente y eso no alcanza para el anclaje nuevo
+        tag = re.search(r"<xdr:wsDr\b[^>]*>", xml)
+        if tag and "xmlns:r=" not in tag.group(0):
+            xml = xml.replace(tag.group(0), tag.group(0)[:-1] + ' xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">', 1)
+        col, fila = col_fila(celda)
+        ancla = ('<xdr:oneCellAnchor><xdr:from><xdr:col>%d</xdr:col><xdr:colOff>0</xdr:colOff>'
+                 '<xdr:row>%d</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:from><xdr:ext cx="%d" cy="%d"/>'
+                 '<xdr:pic><xdr:nvPicPr><xdr:cNvPr id="%d" name="%s"/><xdr:cNvPicPr><a:picLocks noChangeAspect="1"/></xdr:cNvPicPr></xdr:nvPicPr>'
+                 '<xdr:blipFill><a:blip r:embed="%s"/><a:stretch><a:fillRect/></a:stretch></xdr:blipFill>'
+                 '<xdr:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="%d" cy="%d"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></xdr:spPr>'
+                 '</xdr:pic><xdr:clientData/></xdr:oneCellAnchor>'
+                 % (col, fila, cx, cy, 100 + n_img, nombre, rid, cx, cy))
+        xml = xml.replace("</xdr:wsDr>", ancla + "</xdr:wsDr>")
+        partes[dib] = xml.encode("utf-8")
+        puestas += 1
+    return puestas
 
 
 def leer_mapa():
@@ -115,6 +177,9 @@ def main(ruta: str) -> int:
         partes[ruta_hoja] = xml.encode("utf-8")
         partes[rels_ruta] = rels.encode("utf-8")
 
+    # 3b) las imagenes propias
+    pegadas = pegar_imagenes(partes, mapa, os.path.dirname(AQUI))
+
     # 4) tipos de contenido: sacar los de partes que ya no estan, agregar los nuevos
     ct = partes["[Content_Types].xml"].decode("utf-8")
     ct = re.sub(r'<Override\b[^>]*PartName="/xl/(?:drawings/(?!vmlDrawing)|charts/|media/)[^"]*"[^>]*/>', "", ct)
@@ -144,6 +209,7 @@ def main(ruta: str) -> int:
           % (puestos, sum(1 for n in nombres if re.match(r"xl/drawings/drawing\d+\.xml$", n)),
              sum(1 for n in nombres if re.match(r"xl/charts/chart\d+\.xml$", n)),
              sum(1 for n in nombres if n.startswith("xl/media/"))))
+    print("imagenes propias pegadas: %d" % pegadas)
     print("copia previa en: %s" % os.path.basename(copia))
     return 0
 
