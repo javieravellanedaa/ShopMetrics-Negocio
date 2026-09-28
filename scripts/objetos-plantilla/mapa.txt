@@ -1,0 +1,12 @@
+Portada	drawing1.xml
+Hipótesis	drawing2.xml
+Proy. ventas	drawing3.xml
+Anexo capacidad operativa	drawing4.xml
+Mod. ingresos	drawing5.xml
+Costos fijos	drawing6.xml
+Costos variables	drawing7.xml
+Costos RRHH	drawing8.xml
+Mod. egresos	drawing9.xml
+Mod. inversión	drawing10.xml
+Amortizaciones	drawing11.xml
+Presupuesto financiero	drawing12.xml
