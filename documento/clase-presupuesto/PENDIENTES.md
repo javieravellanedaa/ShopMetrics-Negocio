@@ -26,7 +26,9 @@ Revisadas las 21 hojas una por una, **faltan dos cosas**, las dos en amarillo:
 1. **Cantidad y precio unitario** en `Mod. inversión`, 46 celdas en los cuatro
    bloques. `D11` (*Desarrollo de la plataforma*) **ya está cargada**: US$
    35.951,96, que es el total del cronograma verificado en Microsoft Project el
-   28/09. Si el desarrollo se contrata afuera, cambia la tarifa y se regenera.
+   28/09. El cronograma se regeneró después con la fase 7 en paralelo: termina
+   el 31/10/2025 en vez del 4/12, mismo costo. Si el desarrollo se contrata
+   afuera, cambia la tarifa y se regenera.
 2. **La tasa de corte**, en `Presupuesto financiero!C31`. El VAN y la TIR
    aparecen solos al cargarla. En dólares: el 75 % del ejemplo es de pesos.
 

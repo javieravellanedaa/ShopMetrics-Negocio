@@ -21,9 +21,11 @@ capacidad operativa. Por eso el resultado es coherente con el resto del plan.
 | Gerente General (CEO) | 16,27 | 44 | 715,88 |
 | **Inversión inicial** | | **2.368** | **35.951,96** |
 
-Del 6 de enero al 4 de diciembre de 2025, 40 tareas en 11 fases. El total es el
-que muestra Microsoft Project al abrirlo (verificado el 28/09 en Project 2016;
-el archivo exportado desde Project está en `ShopMetrics-desarrollo-verificado.xml`).
+Del 6 de enero al 31 de octubre de 2025: 29 tareas en 11 fases más el hito de
+salida, 41 filas en total. La fase 7 (Machine Learning) corre en paralelo con
+la 6 y la 8 porque carga sobre el CTO y no compite por el desarrollador, que
+es el recurso escaso; eso acorta cinco semanas sin cambiar el costo, porque
+las horas son las mismas. Los vínculos van entre tareas, nunca entre fases.
 
 ## Por qué el año cero es 2025
 
@@ -48,9 +50,10 @@ usarlo tal cual.
    es media jornada. Si el CTO no puede estar al 100 %, el plazo se estira.
 3. **El alcance.** Las once fases cubren los 31 casos de uso especificados. Si
    salís al mercado con menos, sacá fases y el costo baja.
-4. **Las dependencias.** Hoy todo va en cadena, una fase detrás de la otra. En
-   la realidad varias se solapan; solaparlas acorta el plazo sin bajar el
-   costo, porque las horas son las mismas.
+4. **Las dependencias.** Ya no van en cadena: la fase 7 se solapa con la 6 y
+   la 8. Lo que queda encadenado es la línea del desarrollador (2, 3, 4, 5,
+   6, 8, 9, 10, 11), que no se puede solapar consigo misma. Acortar más
+   exige un segundo desarrollador, y eso sí cambia la inversión.
 
 ## Cómo devolverlo
 
