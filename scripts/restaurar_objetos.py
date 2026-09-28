@@ -196,6 +196,18 @@ def main(ruta: str) -> int:
         partes[ruta_hoja] = xml.encode("utf-8")
         partes[rels_ruta] = rels.encode("utf-8")
 
+    # 3a) sin paneles inmovilizados: la plantilla trae filas congeladas en varias
+    #     hojas --el Anexo hasta la fila 12, Hipotesis hasta la 30-- que en una
+    #     pantalla normal no dejan bajar. Se quitan en todas.
+    quitados = 0
+    for n in list(partes):
+        if re.match(r"xl/worksheets/sheet\d+\.xml$", n):
+            xml = partes[n].decode("utf-8")
+            nuevo = re.sub(r"<pane\b[^>]*/>", "", xml)
+            nuevo = re.sub(r'<selection\b[^>]*pane="(?:topRight|bottomLeft|bottomRight)"[^>]*/>', "", nuevo)
+            if nuevo != xml:
+                partes[n] = nuevo.encode("utf-8"); quitados += 1
+
     # 3b) las imagenes propias
     pegadas = pegar_imagenes(partes, mapa, os.path.dirname(AQUI))
 
@@ -228,7 +240,7 @@ def main(ruta: str) -> int:
           % (puestos, sum(1 for n in nombres if re.match(r"xl/drawings/drawing\d+\.xml$", n)),
              sum(1 for n in nombres if re.match(r"xl/charts/chart\d+\.xml$", n)),
              sum(1 for n in nombres if n.startswith("xl/media/"))))
-    print("imagenes propias pegadas: %d" % pegadas)
+    print("imagenes propias pegadas: %d   hojas sin paneles inmovilizados: %d" % (pegadas, quitados))
     print("copia previa en: %s" % os.path.basename(copia))
     return 0
 
