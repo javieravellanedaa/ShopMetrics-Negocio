@@ -23,9 +23,10 @@ verde = viene de otra hoja · amarillo = celda que falta completar.
 
 Revisadas las 21 hojas una por una, **faltan dos cosas**, las dos en amarillo:
 
-1. **Cantidad y precio unitario** en `Mod. inversión`, 48 celdas en los cuatro
-   bloques. De esas, la que manda es `D11` (*Desarrollo de la plataforma*),
-   que sale del total del cronograma de Project.
+1. **Cantidad y precio unitario** en `Mod. inversión`, 46 celdas en los cuatro
+   bloques. `D11` (*Desarrollo de la plataforma*) **ya está cargada**: US$
+   35.951,96, que es el total del cronograma verificado en Microsoft Project el
+   28/09. Si el desarrollo se contrata afuera, cambia la tarifa y se regenera.
 2. **La tasa de corte**, en `Presupuesto financiero!C31`. El VAN y la TIR
    aparecen solos al cargarla. En dólares: el 75 % del ejemplo es de pesos.
 

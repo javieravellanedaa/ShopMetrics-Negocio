@@ -282,7 +282,9 @@ def main() -> int:
     # ---- asignaciones
     asig = sub(p, "Assignments")
     total = 0.0
-    tarifa = {ident[c]: m / HORAS_MES for _, m, c in EQUIPO}
+    # la tarifa se redondea a centavos ANTES de multiplicar, igual que la que
+    # lleva el XML: si no, el total impreso no coincide con el que muestra Project
+    tarifa = {ident[c]: round(m / HORAS_MES, 2) for _, m, c in EQUIPO}
     for i, (ut, ur, ded, dias, ini, fin) in enumerate(asignaciones, start=1):
         horas = dias * JORNADA * ded
         total += horas * tarifa[ur]
@@ -314,9 +316,8 @@ def main() -> int:
         u = ident[clave]
         h = horas_por.get(u, 0)
         print("  %-32s %8.0f %10.2f %12s"
-              % (clave, h, mensual / HORAS_MES,
-                 "{:,.0f}".format(h * mensual / HORAS_MES)))
-    print("  %-32s %8s %10s %12s" % ("INVERSIÓN INICIAL", "", "", "{:,.0f}".format(total)))
+              % (clave, h, tarifa[u], "{:,.2f}".format(h * tarifa[u])))
+    print("  %-32s %8s %10s %12s" % ("INVERSIÓN INICIAL", "", "", "{:,.2f}".format(total)))
     return 0
 
 

@@ -16,12 +16,14 @@ capacidad operativa. Por eso el resultado es coherente con el resto del plan.
 
 | Recurso | USD/hora | Horas | Costo |
 |---|---:|---:|---:|
-| Gerente de Sistemas (CTO) | 16,27 | 744 | 12.101 |
-| Desarrollador | 14,64 | 1.580 | 23.131 |
-| Gerente General (CEO) | 16,27 | 44 | 716 |
-| **Inversión inicial** | | **2.368** | **35.948** |
+| Gerente de Sistemas (CTO) | 16,27 | 744 | 12.104,88 |
+| Desarrollador | 14,64 | 1.580 | 23.131,20 |
+| Gerente General (CEO) | 16,27 | 44 | 715,88 |
+| **Inversión inicial** | | **2.368** | **35.951,96** |
 
-Del 6 de enero al 5 de diciembre de 2025, 40 tareas en 11 fases.
+Del 6 de enero al 4 de diciembre de 2025, 40 tareas en 11 fases. El total es el
+que muestra Microsoft Project al abrirlo (verificado el 28/09 en Project 2016;
+el archivo exportado desde Project está en `ShopMetrics-desarrollo-verificado.xml`).
 
 ## Por qué el año cero es 2025
 
