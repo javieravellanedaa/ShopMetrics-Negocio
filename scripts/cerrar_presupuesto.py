@@ -159,7 +159,7 @@ def formato_de_plantilla(wb, ej, orig):
 
 # --------------------------------------------------------- 2) el contenido
 CONCEPTOS = [   # (nombre, cantidad por bloque [anio0, 2026, 2027, 2028], precio, referencia)
-    ("Desarrollo de la plataforma", [1, 0, 0, 0], 85000,
+    ("Desarrollo de la plataforma", [1, 0, 0, 0], 64880,
      "Cronograma en Microsoft Project: cuatro roles contratados, 2.324 h (ver informe de recursos abajo)"),
     ("Notebooks", [2, 2, 2, 1], 940,
      "Acer Aspire Go 15, Ryzen 7, 16 GB / 512 GB. Mercado Libre 9/2026: $1.450.000 a $1.545 por dólar"),
