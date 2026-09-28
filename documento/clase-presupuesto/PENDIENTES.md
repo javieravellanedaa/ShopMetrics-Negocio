@@ -1,6 +1,6 @@
 # Presupuesto financiero — qué quedó armado y qué falta
 
-Archivo: `Presupuesto financiero ShopMetrics V2.xlsx` (el V1 queda intacto).
+Archivo: `Presupuesto financiero ShopMetrics.xlsx` (el V1 queda intacto).
 
 ## Lo que ya está
 
