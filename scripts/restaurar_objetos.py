@@ -34,7 +34,7 @@ DONANTE = os.path.join(AQUI, "objetos-plantilla")
 IMAGENES = [
     ("Mod. inversión", "H9", "project/capturas/hoja-de-recursos.png", 22.0,
      "Informe de recursos de Microsoft Project"),
-    ("Mod. inversión", "H30", "documento/img_cierre/inversion-por-anio.png", 12.0,
+    ("Mod. inversión", "H30", "documento/img_punto8/INV04_inversion_grafico.png", 12.0,
      "Inversión por año"),
 ]
 EMU_CM = 360000

@@ -104,10 +104,9 @@ def main() -> int:
     rango("Mod. inversión", "B9:F28", f"{IMG}/INV01_inversion_anio0.png", quitar_vacias=True)
     rango("Mod. inversión", "B30:E81", f"{IMG}/INV02_inversion_2026_2028.png", quitar_vacias=True)
     rango("Mod. inversión", "G3:J5", f"{IMG}/INV03_inversion_resumen.png")
-    # el grafico de inversion por anio ya existe en img_cierre; se copia con nombre del capitulo
+    # INV04 (inversion por anio) lo escribe restaurar_objetos al pegarlo en el
+    # Excel, e INV05 (Gantt) lo escribe gantt_project.py; los dos ya viven aca
     import shutil
-    shutil.copy(os.path.join(RAIZ, "documento", "img_cierre", "inversion-por-anio.png"), f"{IMG}/INV04_inversion_grafico.png")
-    shutil.copy(os.path.join(RAIZ, "documento", "img_cierre", "project-gantt-fases.png"), f"{IMG}/INV05_gantt_fases.png")
     shutil.copy(os.path.join(RAIZ, "project", "capturas", "hoja-de-recursos.png"), f"{IMG}/INV06_project_recursos.png")
 
     # ---------------------------------------------------------- 8.6 amortizaciones

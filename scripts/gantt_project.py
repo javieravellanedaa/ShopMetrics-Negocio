@@ -26,7 +26,7 @@ from matplotlib.patches import Patch
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 XML = os.path.join(RAIZ, "project", "ShopMetrics-desarrollo.xml")
-SALIDA = os.path.join(RAIZ, "documento", "img_cierre", "project-gantt-fases.png")
+SALIDA = os.path.join(RAIZ, "documento", "img_punto8", "INV05_gantt_fases.png")
 NS = "{http://schemas.microsoft.com/project}"
 
 COLOR = {                       # un color por rol; sobrio, se distingue en gris

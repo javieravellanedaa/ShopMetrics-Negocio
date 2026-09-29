@@ -76,6 +76,7 @@ avance; el texto de 8.8 sigue en el original del primer avance en git
     python3 scripts/cerrar_presupuesto.py        # sobre el Excel previo al cierre
     python3 <skill>/recalc.py documento/Presupuesto\ financiero\ ShopMetrics.xlsx
     python3 scripts/restaurar_objetos.py documento/Presupuesto\ financiero\ ShopMetrics.xlsx
+    python3 scripts/gantt_project.py && python3 scripts/grafico_inversion.py
     python3 scripts/figuras_cap8.py
     git checkout HEAD~N -- documento/STF_Gomez_Javier_E1_v1.docx   # el del primer avance
     python3 scripts/word_cap8_v2.py
