@@ -2,7 +2,7 @@
 
 Este repositorio guarda **la documentación** del trabajo final. La
 implementación del sistema vive aparte, en
-[javieravellanedaa/shopmetrics](https://github.com/javieravellanedaa/shopmetrics):
+[javieravellanedaa/ShopMetrics-Tecnologia](https://github.com/javieravellanedaa/ShopMetrics-Tecnologia):
 esquema de base de datos, entorno de desarrollo y código.
 
 | Carpeta | Contenido |
@@ -34,3 +34,19 @@ python3 scripts/diagramas/validar.py <archivo.drawio> <imagen.png> <escala>
 
 Controla sobre un diagrama que el acomodo automático haya corrido, que ninguna
 caja se superponga y que la exportación contenga el dibujo completo.
+
+## Los dos repositorios
+
+- **ShopMetrics-Negocio** (este): el plan de negocios y todo lo que corrige Scali —
+  el informe, el presupuesto financiero, el cronograma de desarrollo en Project que
+  justifica la inversión, las clases transcriptas y los scripts que generan el
+  capítulo 8 desde la planilla.
+- **[ShopMetrics-Tecnologia](https://github.com/javieravellanedaa/ShopMetrics-Tecnologia)**:
+  el sistema y todo lo que corrige Vilaboa — la API, el panel, la base, los
+  simuladores, los diagramas de Enterprise Architect, el informe de construcción y
+  el video del recorrido.
+
+El informe (`documento/STF_Gomez_Javier_E1_v1.docx`) es un solo documento con las
+dos partes, porque así lo pide la cátedra; el capítulo 10 es el plan de desarrollo
+tecnológico. Los scripts de Tecnología que lo leen esperan encontrar este repo al
+lado, en `../ShopMetrics-Negocio`.
