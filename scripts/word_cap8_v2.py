@@ -58,7 +58,7 @@ altas_ing = [sum(g(MI, c + str(r)) for r in (17, 18, 19)) for c in "CDE"]; abono
 vidriera28 = g(MI, "E21")
 precios = [g(H, "C%d" % r) for r in range(58, 64)]
 gasto, mercado = g(H, "C12"), g(H, "D12")
-comercios = [n(int(str(H["B%d" % r].value).replace(" comercios", ""))) for r in (24, 25, 26)]; shares = [g(H, "C%d" % r) for r in (24, 25, 26)]
+comercios = [str(H["B%d" % r].value).replace(" comercios", "").strip() for r in (24, 25, 26)]; shares = [g(H, "C%d" % r) for r in (24, 25, 26)]
 captado = [g(H, "D%d" % r) for r in (24, 25, 26)]
 # ticket ponderado 2028: abonos / comercio-meses
 cm28 = sum(g(MI, "E%d" % r) / p for r, p in zip((20, 21, 22), precios[3:]))

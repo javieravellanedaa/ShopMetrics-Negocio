@@ -156,3 +156,75 @@ Inversión año cero 67.705. La inversión se recupera en 2027. VAN al 30 %:
 - Capítulo 8 regenerado con las figuras nuevas (`scripts/figuras_cap8.py` y
   `scripts/word_cap8_v2.py`).
 - El punto 6.2 (precios) no cambia porque la lista de precios no se tocó.
+
+---
+
+## Segunda pasada: la tabla del mercado, el universo y la nivelación con el informe
+
+Revisando de nuevo el pasaje de los minutos 02:07 a 04:50 quedó claro que la
+primera lectura fue incorrecta. No pedía explicar la desagregación: pedía
+sacarla. Sus palabras son «vos me estás desagregando los datos acá» (02:07) y
+«¿cómo entiendo estos varios acá?» (02:23); recién al llegar al número final
+dice «bien, y esto ya es el segmento» (04:42). Su propia plantilla tiene tres
+celdas y ninguna desagregación: clientes, gasto promedio anual y total mercado.
+
+### La tabla del mercado queda como la de la plantilla
+
+Se sacaron las filas de «Relevados / Ocupados / Indumentaria» de la hoja
+Hipótesis. Queda una sola fila, con la misma forma que el ejemplo de la
+cátedra, y una línea de referencia debajo que remite al punto 4 del informe.
+
+### El universo se amplía de 3.400 a 14.000
+
+El mercado meta del punto 4.5 del informe define el AMBA, pero el universo del
+Excel eran 3.400 comercios de un solo rubro de los ejes de la Ciudad. Esa es la
+incoherencia que el profesor persiguió sin encontrarle respuesta: «¿de la AMBA
+o en Avellaneda?» (03:43), «yo veo este número y digo, este número no me lo
+decía» (04:18).
+
+El universo ampliado no se inventó: ya estaba en el informe. El punto 4.4
+define el segmento B, «otros rubros con vidriera en los mismos ejes», en unos
+10.600 locales ocupados, y la matriz de crecimiento lo pone en prioridad alta.
+Sumado al rubro de arranque son los 14.000 locales ocupados que el relevamiento
+cuenta en los 53 ejes de mayor densidad, todos con local a la calle y vidriera,
+que es la condición para instalar el servicio.
+
+| | Antes | Ahora |
+|---|---:|---:|
+| Universo | 3.400 | 14.000 |
+| Mercado total | USD 3.264.000 | USD 13.440.000 |
+| Participación 2026 / 2027 / 2028 | 3,2% / 11,8% / 21,6% | 0,8% / 2,9% / 5,2% |
+| Facturación objetivo 2028 | USD 705.677 | USD 698.880 |
+
+La facturación no cambia: lo que cambia es sobre qué universo se mide. Una
+participación del 5,2% es además mucho más defendible para un emprendimiento
+que arranca que una del 22%, y responde a la observación de que el mercado
+«empieza a hacer ruido por lo chico» (05:23). Para referencia, el mercado del
+ejemplo de la cátedra son 427 clientes por $12.000.000 anuales, unos USD 3,3
+millones: el nuestro pasó de ser del mismo tamaño a ser cuatro veces mayor.
+
+El universo del Gran Buenos Aires ampliaría todavía más la cifra, pero no
+existe un operativo equivalente que lo mida con la misma fuente, de modo que
+queda declarado como expansión y fuera del dimensionamiento.
+
+### El informe y la planilla quedaron nivelados
+
+El punto 6.2.5 del informe declara que su lista de precios «alimenta
+directamente la hoja de hipótesis» y tenía la mitad de los valores vigentes.
+El profesor lo había avisado: «hiciste un análisis de precios en el 6.2 (…) y
+si lo cambiás, acordate de cambiarlo en el 6.2» (23:09 y 23:16).
+
+| | Informe, antes | Planilla y ahora el informe |
+|---|---:|---:|
+| Altas | 25 / 60 / 250 | 40 / 120 / 450 |
+| Abonos | 15 / 29 / 79 | 33 / 65 / 175 |
+
+Los precios vigentes siguen siendo de mercado, que es la condición que puso:
+el abono del Plan Básico queda por debajo del sistema de punto de venta que el
+comercio ya paga, del orden de USD 40 por sucursal, y el del Plan Vidriera por
+debajo del gasto de referencia de USD 80 mensuales.
+
+Se actualizaron además la tabla 4.3 de dimensionamiento, la ficha 4.4 del
+mercado meta, la tabla 6.4 de comparación con la competencia, la tabla 6.5 de
+lista de precios y el punto 6.2.1.1, que seguía describiendo un equipo propio
+con desarrollador, técnicos y vendedores en relación de dependencia.
