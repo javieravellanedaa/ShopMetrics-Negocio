@@ -223,8 +223,13 @@ def modelo_inversion(mi):
     for f in (68, 70, 71, 72, 73):
         for col in "BCDE":
             mi["%s%d" % (col, f)] = None
-    mi["B69"] = "Notebooks (renovación de las dos del año cero, amortizadas a los 3 años)"
+    mi["B69"] = "Notebooks (renovación a los 3 años)"
     mi["C69"] = 2; mi["D69"] = 940; mi["E69"] = "=C69*D69"
+    # y ninguna fila vacía con «$ 0,00»: el total suma el rango y tolera blancos
+    for bloque, total in ((32, 45), (50, 63), (68, 81)):
+        for f in range(bloque, total):
+            if mi["B%d" % f].value is None:
+                mi["E%d" % f] = None
 
 
 def main() -> int:
