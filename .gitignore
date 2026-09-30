@@ -12,3 +12,6 @@ Backups/
 
 # Salidas intermedias de los generadores de diagramas
 scripts/diagramas/__pycache__/
+*.MOV
+*.mov
+*.mp4

@@ -1,4 +1,9 @@
-# Segundo avance — estado al 28/09/2026
+# Segundo avance — estado al 30/09/2026
+
+**Revisión de Scali del 29/09 aplicada** (detalle en `../clase-correcciones-29-09/CORRECCIONES-DE-SCALI.md`): la proyección de ventas da la facturación objetivo (105.865 / 386.897 / 705.506), la estructura queda con los dos fundadores y todo lo demás tercerizado o por hora, SAC en junio y diciembre, despliegue de puestos en Costos RRHH, inversiones sólo donde entran, notas de mercado en Hipótesis. Resultado: UAII −15.414 / +199.762 / +433.613; VAN al 30 % +186.348; TIR 114 %; recupero en 2027. Plazo de reentrega: 30/09 a las 12:00.
+
+---
+
 
 Archivos de la entrega, todos en el repo y en Drive (`STF/Primera entrega/`):
 

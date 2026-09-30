@@ -58,7 +58,7 @@ altas_ing = [sum(g(MI, c + str(r)) for r in (17, 18, 19)) for c in "CDE"]; abono
 vidriera28 = g(MI, "E21")
 precios = [g(H, "C%d" % r) for r in range(58, 64)]
 gasto, mercado = g(H, "C12"), g(H, "D12")
-comercios = [H["B%d" % r].value for r in (24, 25, 26)]; shares = [g(H, "C%d" % r) for r in (24, 25, 26)]
+comercios = [n(int(str(H["B%d" % r].value).replace(" comercios", ""))) for r in (24, 25, 26)]; shares = [g(H, "C%d" % r) for r in (24, 25, 26)]
 captado = [g(H, "D%d" % r) for r in (24, 25, 26)]
 # ticket ponderado 2028: abonos / comercio-meses
 cm28 = sum(g(MI, "E%d" % r) / p for r, p in zip((20, 21, 22), precios[3:]))
@@ -71,6 +71,9 @@ for f in (86, 97, 108):
     vals = [g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c in H_]
     m = max(range(12), key=lambda i: vals[i]); hh_pico.append((vals[m], MES[m]))
 holg_min = [min(g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c in H_) for f in (88, 99, 110)]
+hh_contratadas = [[g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c in H_] for f in (87, 98, 109)]
+bloques = [(min(x) / 150, max(x) / 150) for x in hh_contratadas]
+recupero = next((2025 + i for i in range(1, 4) if sum(ff[:i + 1]) >= 0), None)
 tec27 = [RR.cell(row=47, column=c).value for c in range(3, 15)]
 mes_tec2 = MES[tec27.index(2)] if 2 in tec27 else None
 vend = [[RR.cell(row=f, column=c).value for c in range(3, 15)] for f in (30, 48, 66)]
@@ -191,7 +194,7 @@ for sec in d.sections:
                     for p in cell.paragraphs:
                         for r in p.runs:
                             if "15/08/2026" in r.text:
-                                r.text = r.text.replace("15/08/2026", "28/09/2026")
+                                r.text = r.text.replace("15/08/2026", "30/09/2026").replace("28/09/2026", "30/09/2026")
 
 # ---- 1) figuras existentes que cambian (por su epigrafe)
 CAMBIAN = {
@@ -235,15 +238,20 @@ texto(buscar("Origen de los datos."),
       "fórmula, de modo que ninguna se carga dos veces. La hoja Hipótesis fija los tres parámetros de partida: el tamaño del "
       "universo de comercios, el porcentaje de participación que se pretende alcanzar en cada ejercicio y la lista de precios de "
       "los seis servicios. De ahí se desprende la hoja Proy. ventas, que distribuye mes a mes las altas de cada plan y acumula "
-      "los abonos vigentes, y que es la única hoja donde se cargan cantidades a mano. El costo de desarrollo de la plataforma, "
-      "que es el grueso de la inversión inicial, proviene del cronograma en Microsoft Project que acompaña al informe.",
+      "los abonos vigentes, y que es la única hoja donde se cargan cantidades a mano. Esas cantidades no se eligen: la "
+      "facturación de cada ejercicio tiene que dar el valor del mercado captado que fija la participación pretendida, y las "
+      "altas por mes son las que hacen falta para llegar a ese número con la lista de precios vigente. El costo de desarrollo "
+      "de la plataforma, que es el grueso de la inversión inicial, proviene del cronograma en Microsoft Project que acompaña "
+      "al informe.",
       "Origen de los datos. ")
 texto(buscar("Mercado meta y participación."),
       "El universo de arranque es de 3.400 comercios de indumentaria, textiles y calzado, cifra que surge de aplicar la "
       "participación publicada del rubro (24,3%%) sobre los 14.083 locales ocupados que releva el Instituto de Estadística y "
       "Censos de la Ciudad de Buenos Aires en sus ejes comerciales. Sobre ese universo se plantea una participación del %s al "
-      "cierre del tercer año, con una progresión del %s, %s y %s: %s, %s y %s activos a diciembre de cada ejercicio. Es una "
-      "meta exigente para un solo rubro, y por eso la estructura de costos comerciales incluye el esfuerzo de promoción que la "
+      "cierre del tercer año, con una progresión del %s, %s y %s. Esa participación, aplicada al mercado total, es el objetivo "
+      "de facturación de cada ejercicio, y la cantidad de comercios que hace falta para alcanzarlo con la lista de precios "
+      "—%s, %s y %s abonados a diciembre de cada año— se deduce de la proyección de ventas, no al revés. Es una meta "
+      "exigente para un solo rubro, y por eso la estructura de costos comerciales incluye el esfuerzo de promoción que la "
       "sostiene, como se detalla en el modelo de egresos."
       % (pct(shares[2]), pct(shares[0]), pct(shares[1]), pct(shares[2]), comercios[0], comercios[1], comercios[2]),
       "Mercado meta y participación. ")
@@ -253,19 +261,20 @@ texto(buscar("Valorización del mercado y su diferencia"),
       "analítica. La referencia se construye sobre dos precios públicos de 2026: los planes de punto de venta con facturación "
       "electrónica y stock multi-tienda, en el orden de los USD 79 mensuales, y el plan de entrada de Fudo, uno de los sistemas "
       "con los que la plataforma se integra, en el orden de los USD 40 mensuales por sucursal. Ese valor mide el tamaño del "
-      "bolsillo disponible, no la facturación de ShopMetrics: el ticket promedio ponderado de la propia lista de precios es de "
-      "USD %s mensuales, unos USD %s anuales, porque el grueso de la cartera se concentra en el Plan Vidriera. Por eso el "
-      "ingreso del modelo (USD %s en 2028) se ubica por debajo del valor del mercado captado (USD %s): ShopMetrics toma "
-      "alrededor de dos tercios del gasto tecnológico del comercio que capta, y la diferencia es el margen disponible para "
+      "bolsillo disponible del segmento, y con la participación pretendida se convierte en el objetivo de facturación. La "
+      "proyección de ventas se construye para alcanzarlo: el ingreso del modelo es de USD %s en 2028 contra un valor captado de "
+      "USD %s. Como el ticket promedio ponderado de la propia lista de precios es de USD %s mensuales, unos USD %s anuales, "
+      "porque el grueso de la cartera se concentra en el Plan Vidriera, hacen falta más comercios abonados que los que "
+      "resultarían de dividir el mercado captado por el gasto de referencia; la diferencia es el margen disponible para "
       "servicios adicionales una vez consolidada la base instalada."
-      % (n(gasto), n(gasto / 12), n(arpu, 1), n(arpu * 12), n(ing[2]), n(captado[2])),
+      % (n(gasto), n(gasto / 12), n(ing[2]), n(captado[2]), n(arpu, 1), n(arpu * 12)),
       "Valorización del mercado y su diferencia con el ingreso propio. ")
 texto(buscar("Capacidad de operación."),
-      "Cada incorporación de personal responde al momento en que la proyección de ventas supera la capacidad del puesto "
-      "existente, y no a un cronograma predefinido. El anexo de capacidad operativa calcula las horas laborables mensuales "
-      "por empleado (150), el tiempo que consume cada alta según el plan (media hora en el Básico, tres horas en el Vidriera y "
-      "doce en el Cadena) y las horas de soporte por comercio activo (entre 0,15 y 0,60 horas mensuales según el plan). Al pie "
-      "de cada ejercicio compara las horas requeridas con la capacidad de la dotación técnica presupuestada.",
+      "La estructura se mantiene lo más plana posible: en relación de dependencia están únicamente los dos fundadores, y "
+      "todo lo demás se terceriza o se contrata a demanda. El anexo de capacidad operativa calcula el tiempo que consume cada "
+      "alta según el plan (media hora en el Básico, tres horas en el Vidriera y doce en el Cadena) y las horas de soporte por "
+      "comercio activo (entre 0,15 y 0,60 horas mensuales según el plan). Al pie de cada ejercicio muestra cuántas horas se "
+      "contratan a técnicos freelance —por mes completo de 150 horas, según lo que pide la cartera— y la holgura que queda.",
       "Capacidad de operación. ")
 texto(buscar("Lectura del modelo. El ingreso se multiplica"),
       "El ingreso se multiplica por %s entre 2026 y 2027 y por %s entre 2027 y 2028, un perfil coherente con un negocio de "
@@ -282,47 +291,51 @@ texto(buscar("Criterios adoptados."),
       "En primer lugar, el equipamiento que se instala en cada local —sensor de vidriera, contador de puerta, gateway y kit de "
       "montaje— es un insumo del servicio y no un bien de uso: se imputa como costo variable por cada alta (USD %s en el Plan "
       "Vidriera y USD %s en el Plan Cadena, que cubre cinco locales), no forma parte del modelo de inversión y no se amortiza. "
-      "El cargo de alta e instalación está fijado de modo de cubrirlo. En segundo lugar, las horas de instalación del técnico "
-      "no se cargan como costo variable, porque el técnico está en relación de dependencia y su costo ya está íntegramente en "
-      "la estructura de recursos humanos; imputarlas dos veces duplicaría el gasto. En tercer lugar, el desarrollo y "
-      "mantenimiento evolutivo de la plataforma se contrata por fuera de la estructura y figura como costo fijo, con un "
-      "volumen de horas que crece con la base instalada. En costos variables quedan, además del kit, la comisión del vendedor "
-      "por alta, la movilidad de instalación, el consumo de infraestructura por comercio activo, las notificaciones, las "
-      "comisiones de los medios de pago y las bonificaciones de las campañas de captación."
+      "El cargo de alta e instalación está fijado de modo de cubrirlo. En segundo lugar, la instalación y el soporte los "
+      "hacen técnicos freelance contratados por hora según las horas que pide el anexo de capacidad, y por eso son costo "
+      "variable y no de recursos humanos: se pagan según las altas y la cartera de cada mes, sin cargas patronales. Lo mismo "
+      "vale para la venta, que se paga por comisión sobre cada alta concretada. En tercer lugar, el desarrollo y mantenimiento "
+      "evolutivo de la plataforma, la contabilidad y el marketing se contratan por fuera de la estructura y figuran como "
+      "costos fijos. En costos variables quedan entonces los insumos IoT de cada instalación, las horas del técnico, la "
+      "comisión del vendedor, la movilidad de instalación, el consumo de infraestructura por comercio activo, las "
+      "notificaciones, las comisiones de los medios de pago y las bonificaciones de las campañas de captación."
       % (n(kit_vid - 18), n(kit_cad - 72)),
       "Criterios adoptados. ")
 texto(buscar("Lectura del modelo. Los recursos humanos"),
       "Los recursos humanos explican entre el %s y el %s de los egresos en los tres ejercicios; los costos fijos, que incluyen "
       "el mantenimiento contratado de la plataforma y las campañas de promoción, entre el %s y el %s; y los variables, que "
-      "incluyen el kit de cada instalación, entre el %s y el %s. La estructura arranca mínima —dos fundadores, un técnico y un "
-      "vendedor— y crece cuando el volumen lo justifica: el segundo vendedor en 2027, el tercero a mitad de 2028, y el "
-      "segundo técnico en %s de 2027, que es el primer mes en que el anexo de capacidad muestra que uno solo no alcanza. Los "
-      "fundadores perciben una remuneración reducida durante los dos primeros ejercicios; la diferencia con el valor de su "
-      "puesto es aporte de trabajo de los socios."
-      % (pct(min(comp[2])), pct(max(comp[2])), pct(min(comp[0])), pct(max(comp[0])), pct(min(comp[1])), pct(max(comp[1])), mes_tec2),
+      "incluyen los insumos de cada instalación y las horas de los técnicos freelance, entre el %s y el %s. La estructura "
+      "de recursos humanos es la mínima posible durante todo el horizonte: los dos fundadores, que cubren entre ambos la "
+      "gerencia general y la de sistemas y absorben los puestos administrativos, comerciales y técnicos que no se "
+      "tercerizan; la hoja de recursos humanos despliega los quince puestos de la estructura y dice quién cubre cada uno y "
+      "dónde está su costo. Los fundadores perciben una remuneración reducida durante los dos primeros ejercicios; la "
+      "diferencia con el valor de su puesto es aporte de trabajo de los socios. El sueldo anual complementario se paga en "
+      "junio y en diciembre."
+      % (pct(min(comp[2])), pct(max(comp[2])), pct(min(comp[0])), pct(max(comp[0])), pct(min(comp[1])), pct(max(comp[1]))),
       "Lectura del modelo. ")
 texto(buscar("Costo del servicio."),
-      "Valorizadas al costo horario del técnico, seis dólares la hora, las altas cuestan 3, 18 y 72 dólares de mano de obra "
-      "contra precios de lista de %s, %s y %s dólares. Sumado el equipamiento que se instala en el local, el kit completo "
-      "asciende a 3, %s y %s dólares respectivamente, de modo que el cargo de alta cubre el esfuerzo técnico y el material "
-      "comprometido en los tres planes con margen. El soporte mensual cuesta 0,90, 1,50 y 3,60 dólares por comercio, contra "
-      "abonos de %s, %s y %s dólares."
-      % (n(precios[0]), n(precios[1]), n(precios[2]), n(kit_vid), n(kit_cad), n(precios[3]), n(precios[4]), n(precios[5])),
+      "Valorizadas al costo horario del técnico freelance, siete dólares la hora, las altas cuestan 3,50, 21 y 84 dólares de "
+      "mano de obra contra precios de lista de %s, %s y %s dólares. Sumado el equipamiento que se instala en el local, el "
+      "costo completo del alta asciende a 3,50, 55 y 254 dólares respectivamente, de modo que el cargo de alta cubre el "
+      "esfuerzo técnico y el material comprometido en los tres planes con margen. El soporte mensual cuesta 1,05, 1,75 y 4,20 "
+      "dólares por comercio, contra abonos de %s, %s y %s dólares."
+      % (n(precios[0]), n(precios[1]), n(precios[2]), n(precios[3]), n(precios[4]), n(precios[5])),
       "Costo del servicio. ")
 texto(buscar("Lectura del anexo."),
       "El total de horas hombre asciende a %s en 2026, %s en 2027 y %s en 2028. Lo que define la dotación no es ese total "
-      "sino el mes de mayor exigencia: %s horas en %s de 2026, %s en %s de 2027 y %s en %s de 2028. Contra las 150 horas "
-      "mensuales de un empleado, un solo técnico cubre 2026 y los primeros siete meses de 2027; el segundo se incorpora en "
-      "%s de 2027, y los dos cubren todo 2028. Las dos filas al pie de cada ejercicio muestran la capacidad de la dotación "
-      "presupuestada y la holgura mes a mes; la holgura mínima del horizonte es de %s horas."
+      "sino el mes de mayor exigencia: %s horas en %s de 2026, %s en %s de 2027 y %s en %s de 2028. Las horas se contratan "
+      "a técnicos freelance por mes completo de 150: entre %s y %s técnicos-mes en 2026, entre %s y %s en 2027 y entre %s y "
+      "%s en 2028. Las dos filas al pie de cada ejercicio muestran las horas contratadas y la holgura mes a mes; la holgura "
+      "mínima del horizonte es de %s horas."
       % (n(hh_tot[0], 2), n(hh_tot[1], 2), n(hh_tot[2], 2), n(hh_pico[0][0], 2), hh_pico[0][1], n(hh_pico[1][0], 2), hh_pico[1][1],
-         n(hh_pico[2][0], 2), hh_pico[2][1], mes_tec2, n(min(holg_min), 1)),
+      n(hh_pico[2][0], 2), hh_pico[2][1], n(bloques[0][0]), n(bloques[0][1]), n(bloques[1][0]), n(bloques[1][1]),
+      n(bloques[2][0]), n(bloques[2][1]), n(min(holg_min), 1)),
       "Lectura del anexo. ")
 texto(buscar("Alcance. El anexo dimensiona"),
-      "El anexo dimensiona el área técnica, no el área comercial. La productividad esperada por vendedor se fija en la "
-      "estructura de recursos humanos: un vendedor en 2026, dos en 2027 y tres desde mitad de 2028, para %s, %s y %s altas "
-      "anuales respectivamente. La conciliación entre la dotación que arroja este cálculo y la que se presupuesta queda "
-      "resuelta con las filas de capacidad y holgura, tomadas por fórmula de la hoja de costos de recursos humanos."
+      "El anexo dimensiona el área técnica, no el área comercial. La venta se paga por comisión sobre cada alta concretada "
+      "—%s, %s y %s altas anuales respectivamente—, de modo que el esfuerzo comercial es variable y no exige dotación. Las "
+      "horas contratadas de la fila al pie son las que toma por fórmula la hoja de costos variables para valorizar el trabajo "
+      "de los técnicos."
       % (n(altas_ing[0] and sum(g(MI, "C%d" % r) / p for r, p in zip((17, 18, 19), precios[:3]))),
          n(sum(g(MI, "D%d" % r) / p for r, p in zip((17, 18, 19), precios[:3]))),
          n(sum(g(MI, "E%d" % r) / p for r, p in zip((17, 18, 19), precios[:3])))),
@@ -330,10 +343,11 @@ texto(buscar("Alcance. El anexo dimensiona"),
 texto(buscar("Contraste con los ingresos."),
       "La comparación entre ambas curvas muestra el perfil buscado: el resultado operativo es negativo en el primer ejercicio, "
       "con un déficit de USD %s en 2026, y positivo desde el segundo, con USD %s en 2027 y USD %s en 2028. Los egresos pasan "
-      "de representar %s veces los ingresos a %s veces. Los dos desajustes señalados en el primer avance quedaron corregidos: "
-      "la dotación técnica sigue al anexo de capacidad, y la estructura comercial se ajustó a la productividad esperada por "
-      "vendedor. A eso se sumaron la revisión del ticket medio, la contratación externa del desarrollo y la incorporación del "
-      "costo del kit de instalación, que el modelo anterior omitía. El punto de equilibrio operativo se alcanza en 2027."
+      "de representar %s veces los ingresos a %s veces. La revisión de la cátedra sobre la versión anterior dejó dos "
+      "correcciones que este modelo incorpora: la proyección de ventas se construye desde la facturación objetivo que fija la "
+      "participación pretendida, y la estructura se reduce a los dos fundadores, con la instalación, el soporte y la venta "
+      "pagados según el volumen. A eso se sumaron la contratación externa del desarrollo y la incorporación del costo de los "
+      "insumos de instalación. El punto de equilibrio operativo se alcanza en 2027."
       % (n(-uaii[0]), n(uaii[1]), n(uaii[2]), n(egresos[0] / ing[0], 1), n(egresos[2] / ing[2], 1)),
       "Contraste con los ingresos. ")
 
@@ -343,10 +357,11 @@ p = parrafo(h,
     "El modelo de inversión reúne lo que la empresa tiene que adquirir antes de vender y lo que suma en cada ejercicio para "
     "sostener el crecimiento. La inversión inicial —el año cero, que es 2025— asciende a USD %s y está dominada por el "
     "desarrollo de la plataforma, USD %s; el resto es el equipamiento informático y de oficina de los fundadores, el "
-    "equipamiento de red y la registración de la marca y la constitución de la sociedad. En 2026, 2027 y 2028 se agregan "
-    "USD %s, USD %s y USD %s por el puesto de trabajo de cada incorporación. El equipamiento que se instala en los locales no "
-    "figura aquí: es insumo del servicio y se imputa como costo variable, según el criterio explicado en el punto 8.4."
-    % (n(inv_anios[0]), n(desarrollo), n(inv_anios[1]), n(inv_anios[2]), n(inv_anios[3])))
+    "equipamiento de red y la registración de la marca y la constitución de la sociedad. Como la estructura es la de los "
+    "dos fundadores durante todo el horizonte, en 2026 y 2027 no hay inversiones, y en 2028 se renuevan las dos notebooks, "
+    "amortizadas a los tres años, por USD %s. El equipamiento que se instala en los locales no figura aquí: es insumo del "
+    "servicio y se imputa como costo variable, según el criterio explicado en el punto 8.4."
+    % (n(inv_anios[0]), n(desarrollo), n(inv_anios[3])))
 p = figura_apaisada(p, "INV01_inversion_anio0.png", "Figura 8.31. Inversión inicial (año cero), con la referencia de precio de cada concepto. Fuente: planilla de presupuesto financiero, hoja Mod. inversión.")
 p = parrafo(p,
     "El desarrollo se contrata por fuera de la estructura: los fundadores gestionan la empresa y no participan de la "
@@ -368,7 +383,7 @@ p = parrafo(p,
     "abril, y desde ahí no se corta; los modelos arrancan cuando están las métricas. Por eso las fases 5, 6, 7 y 10 se "
     "superponen entre mayo y junio y el desarrollo termina cuatro meses antes de la salida al mercado, en enero de 2026. "
     "Ninguno de los cuatro roles supera el cien por ciento de dedicación en ningún día del cronograma.")
-p = figura(p, "INV02_inversion_2026_2028.png", ANCHO, "Figura 8.34. Inversión de los ejercicios 2026, 2027 y 2028: el puesto de trabajo de cada incorporación. Fuente: planilla de presupuesto financiero, hoja Mod. inversión.")
+p = figura(p, "INV02_inversion_2026_2028.png", ANCHO, "Figura 8.34. Inversión de los ejercicios 2026, 2027 y 2028: sólo lo que entra en cada año. Fuente: planilla de presupuesto financiero, hoja Mod. inversión.")
 p = figura(p, "INV04_inversion_grafico.png", 12.0, "Figura 8.35. Inversión por año.")
 
 # ---- 5) 8.6 amortizaciones
@@ -412,9 +427,9 @@ p = figura(p, "PRE03_monto_imponible.png", 11.0, "Figura 8.39. Monto imponible d
 p = parrafo(p,
     "Restada la inversión de cada ejercicio, el flujo de fondos es de USD %s en el año cero, USD %s en 2026, USD %s en 2027 "
     "y USD %s en 2028. El acumulado al cierre del tercer ejercicio es de USD %s: la inversión se recupera dentro del "
-    "horizonte, en el tercer año, con un margen de %s veces la inversión inicial que los escenarios del tercer avance van a "
+    "horizonte, en %s, con un margen de %s veces la inversión inicial que los escenarios del tercer avance van a "
     "poner a prueba."
-    % (n(ff[0]), n(ff[1]), n(ff[2]), n(ff[3]), n(acum), n(acum / -ff[0], 1)),
+    % (n(ff[0]), n(ff[1]), n(ff[2]), n(ff[3]), n(acum), recupero or "el tercer año", n(acum / -ff[0], 1)),
     "Flujo de fondos. ")
 p = figura(p, "PRE05_flujo_grafico.png", 12.5, "Figura 8.40. Flujo de fondos del ejercicio y acumulado.")
 p = parrafo(p,
@@ -440,10 +455,10 @@ if van >= 0:
     lectura_van = (
         "Con esa tasa, el valor actual neto de los cuatro flujos es de USD %s, positivo, y la tasa interna de retorno del "
         "%s, por encima de la tasa de corte. Ambos indicadores dicen lo mismo: dentro del horizonte de tres años el "
-        "proyecto devuelve la inversión y remunera el capital a la tasa exigida, aunque con un margen acotado —el valor "
-        "actual neto equivale al %s de la inversión inicial— porque dos de los cuatro flujos son negativos y el retorno se "
-        "concentra en 2028. Ese margen es el que los escenarios del tercer avance van a poner a prueba. La lectura se "
-        "completa en el punto 9." % (n(van), pct(tir, 1), pct(van / -inv[0], 1)))
+        "proyecto devuelve la inversión y remunera el capital a la tasa exigida; el valor actual neto equivale al %s de la "
+        "inversión inicial. El resultado descansa en que la facturación alcance la participación pretendida: ese supuesto es "
+        "el que los escenarios del tercer avance van a poner a prueba. La lectura se completa en el punto 9."
+        % (n(van), pct(tir, 1), pct(van / -inv[0], 1)))
 else:
     lectura_van = (
         "Con esa tasa, el valor actual neto de los cuatro flujos es de USD %s y la tasa interna de retorno del %s. Ambos "
