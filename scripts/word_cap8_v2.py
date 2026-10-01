@@ -24,7 +24,7 @@ from docx.text.paragraph import Paragraph
 from PIL import Image
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E1_v1.docx")
+DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E2_v2.docx")
 XLSX = os.path.join(RAIZ, "documento", "Presupuesto financiero ShopMetrics.xlsx")
 IMG = os.path.join(RAIZ, "documento", "img_punto8")
 ANCHO = 16.3          # cm, el ancho que usan las figuras del capitulo

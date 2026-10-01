@@ -36,7 +36,7 @@ import openpyxl
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 XLSX = os.path.join(RAIZ, "documento", "Presupuesto financiero ShopMetrics.xlsx")
-DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E1_v1.docx")
+DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E2_v2.docx")
 
 UNIVERSO = 14000          # locales ocupados de los 53 ejes relevados: 3.400 indumentaria + 10.600 otros rubros con vidriera
 GASTO = 960               # gasto anual de referencia por comercio, USD

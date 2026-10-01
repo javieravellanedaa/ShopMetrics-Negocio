@@ -14,7 +14,7 @@ import sys
 import docx
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E1_v1.docx")
+DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E2_v2.docx")
 
 # (fragmento que identifica el parrafo, texto nuevo completo)
 CAMBIOS = [

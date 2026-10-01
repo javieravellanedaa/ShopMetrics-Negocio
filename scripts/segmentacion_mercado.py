@@ -23,7 +23,7 @@ import openpyxl
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 XLSX = os.path.join(RAIZ, "documento", "Presupuesto financiero ShopMetrics.xlsx")
-DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E1_v1.docx")
+DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E2_v2.docx")
 
 RELEVADOS = 14083        # locales ocupados que releva el IDECBA en los 53 ejes
 EJES = 53

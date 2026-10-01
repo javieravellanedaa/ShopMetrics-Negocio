@@ -32,7 +32,7 @@ import openpyxl
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVO = os.path.join(RAIZ, "documento", "Presupuesto financiero ShopMetrics.xlsx")
-DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E1_v1.docx")
+DOCX = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E2_v2.docx")
 
 # ejercicio -> (primera fila libre del bloque, fila de altas Vidriera, fila de altas Cadena)
 # en 2028 se arranca en la 70 porque la 69 ya lleva la renovacion de notebooks
