@@ -74,7 +74,7 @@ holg_min = [min(g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c i
 hh_contratadas = [[g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c in H_] for f in (87, 98, 109)]
 bloques = [(min(x) / 150, max(x) / 150) for x in hh_contratadas]
 recupero = next((2025 + i for i in range(1, 4) if sum(ff[:i + 1]) >= 0), None)
-fund = g(RR, "D15")
+fund = g(RR, "D14")
 inv_anios = [g(INV, c + "5") for c in "GHIJ"]; amort = [g(AM, c + "5") for c in "IJK"]
 desarrollo = g(INV, "D11")
 kit_vid, kit_cad = g(AN, "W47"), g(AN, "W65")
@@ -304,11 +304,12 @@ texto(buscar("Lectura del modelo. Los recursos humanos"),
       "incluyen los insumos de cada instalación y las horas de los técnicos freelance, entre el %s y el %s. La estructura "
       "de recursos humanos es la mínima posible durante todo el horizonte: los dos fundadores, que cubren entre ambos la "
       "gerencia general y la de sistemas y absorben los puestos administrativos, comerciales y técnicos que no se "
-      "tercerizan. La hoja de recursos humanos despliega los catorce puestos de las seis áreas de la estructura y marca cada "
-      "uno con el color de la referencia: rosa si lo cubre otro puesto, amarillo si está tercerizado y sin color si está en "
-      "relación de dependencia; la última columna dice quién lo cubre y en qué hoja se imputa su costo. Los dos fundadores "
-      "perciben un sueldo de fundador de USD %s mensuales, plano en los tres ejercicios y por debajo del valor de mercado "
-      "de su puesto; la diferencia es aporte de trabajo de los socios. El sueldo anual complementario se paga en junio y en "
+      "tercerizan. La hoja de recursos humanos despliega los catorce puestos de las seis áreas de la estructura, agrupados "
+      "por área, con el sueldo bruto de referencia de cada uno y su costo mensual completo para la empresa —jubilación, "
+      "Ley 19.032, obra social, fondo nacional de empleo, asignaciones familiares, seguro de vida y ART—; la última "
+      "columna indica quién cubre el puesto y en qué hoja se imputa su costo. Los dos fundadores perciben el valor de "
+      "mercado de su puesto, USD %s mensuales de sueldo bruto, en los tres ejercicios, de modo que el resultado no está "
+      "subsidiado por una remuneración ficticia de los socios. El sueldo anual complementario se paga en junio y en "
       "diciembre, con medio sueldo adicional en cada uno de esos meses."
       % (pct(min(comp[2])), pct(max(comp[2])), pct(min(comp[0])), pct(max(comp[0])), pct(min(comp[1])), pct(max(comp[1])), n(fund)),
       "Lectura del modelo. ")
