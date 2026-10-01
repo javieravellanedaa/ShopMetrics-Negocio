@@ -108,7 +108,17 @@ def proyeccion(pv):
 
 # -------------------------------------------------------------- 3) Costos RRHH
 def costos_rrhh(r):
-    """15:12-17:30 y 29:14-35:00: «¿por qué necesito 5 personas? no lo pueden hacer los
+    """OBSOLETA desde el 30/09/2026: la reemplaza scripts/rrhh_formato_lucas.py.
+
+    Esta version armaba el despliegue de puestos en una tabla propia a la derecha
+    (Q13:T30) y partia cada anio en dos bloques (Dotacion / Costo).  Ninguna de las
+    dos cosas respeta el formato del template, que Lucas Fraguaga si respeto en
+    'PresupuestoFinanciero - Lucas Fraguaga.xlsx': el despliegue va dentro del
+    cuadro 'Costo mensual por puesto' marcado con los colores de la leyenda, y
+    cada anio es un unico bloque con Cantidad y Costo intercalados.
+    NO volver a llamarla.
+
+    15:12-17:30 y 29:14-35:00: «¿por qué necesito 5 personas? no lo pueden hacer los
     dos socios?»; estructura lo más plana posible, tercerizar; 34:20: el sueldo anual
     complementario se paga en junio y diciembre; 35:00: el despliegue de todos los
     puestos de toda área, marcando quién los cubre."""
@@ -236,7 +246,7 @@ def main() -> int:
     wb = openpyxl.load_workbook(ARCHIVO)
     hipotesis(wb["Hipótesis"])
     proyeccion(wb["Proy. ventas"])
-    costos_rrhh(wb["Costos RRHH"])
+    # costos_rrhh(wb["Costos RRHH"])   -> obsoleta, ver rrhh_formato_lucas.py
     anexo(wb["Anexo capacidad operativa"])
     costos_variables(wb["Costos variables"])
     costos_fijos(wb["Costos fijos"])

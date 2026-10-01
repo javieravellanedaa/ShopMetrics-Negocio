@@ -74,10 +74,7 @@ holg_min = [min(g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c i
 hh_contratadas = [[g(AN, "%s%d" % (openpyxl.utils.get_column_letter(c), f)) for c in H_] for f in (87, 98, 109)]
 bloques = [(min(x) / 150, max(x) / 150) for x in hh_contratadas]
 recupero = next((2025 + i for i in range(1, 4) if sum(ff[:i + 1]) >= 0), None)
-tec27 = [RR.cell(row=47, column=c).value for c in range(3, 15)]
-mes_tec2 = MES[tec27.index(2)] if 2 in tec27 else None
-vend = [[RR.cell(row=f, column=c).value for c in range(3, 15)] for f in (30, 48, 66)]
-fund = [g(RR, "N15"), g(RR, "N17")]
+fund = g(RR, "D15")
 inv_anios = [g(INV, c + "5") for c in "GHIJ"]; amort = [g(AM, c + "5") for c in "IJK"]
 desarrollo = g(INV, "D11")
 kit_vid, kit_cad = g(AN, "W47"), g(AN, "W65")
@@ -307,11 +304,13 @@ texto(buscar("Lectura del modelo. Los recursos humanos"),
       "incluyen los insumos de cada instalación y las horas de los técnicos freelance, entre el %s y el %s. La estructura "
       "de recursos humanos es la mínima posible durante todo el horizonte: los dos fundadores, que cubren entre ambos la "
       "gerencia general y la de sistemas y absorben los puestos administrativos, comerciales y técnicos que no se "
-      "tercerizan; la hoja de recursos humanos despliega los quince puestos de la estructura y dice quién cubre cada uno y "
-      "dónde está su costo. Los fundadores perciben una remuneración reducida durante los dos primeros ejercicios; la "
-      "diferencia con el valor de su puesto es aporte de trabajo de los socios. El sueldo anual complementario se paga en "
-      "junio y en diciembre."
-      % (pct(min(comp[2])), pct(max(comp[2])), pct(min(comp[0])), pct(max(comp[0])), pct(min(comp[1])), pct(max(comp[1]))),
+      "tercerizan. La hoja de recursos humanos despliega los catorce puestos de las seis áreas de la estructura y marca cada "
+      "uno con el color de la referencia: rosa si lo cubre otro puesto, amarillo si está tercerizado y sin color si está en "
+      "relación de dependencia; la última columna dice quién lo cubre y en qué hoja se imputa su costo. Los dos fundadores "
+      "perciben un sueldo de fundador de USD %s mensuales, plano en los tres ejercicios y por debajo del valor de mercado "
+      "de su puesto; la diferencia es aporte de trabajo de los socios. El sueldo anual complementario se paga en junio y en "
+      "diciembre, con medio sueldo adicional en cada uno de esos meses."
+      % (pct(min(comp[2])), pct(max(comp[2])), pct(min(comp[0])), pct(max(comp[0])), pct(min(comp[1])), pct(max(comp[1])), n(fund)),
       "Lectura del modelo. ")
 texto(buscar("Costo del servicio."),
       "Valorizadas al costo horario del técnico freelance, siete dólares la hora, las altas cuestan 3,50, 21 y 84 dólares de "
@@ -511,4 +510,4 @@ for q in d.paragraphs:
 
 d.save(DOCX)
 print("Word actualizado: figuras reemplazadas, 8.5-8.7 y 9 escritos.")
-print("  UAII %s / %s / %s | acumulado %s | VAN %s | TIR %s | tecnico 2: %s" % (n(uaii[0]), n(uaii[1]), n(uaii[2]), n(acum), n(van), pct(tir, 1), mes_tec2))
+print("  UAII %s / %s / %s | acumulado %s | VAN %s | TIR %s" % (n(uaii[0]), n(uaii[1]), n(uaii[2]), n(acum), n(van), pct(tir, 1)))
