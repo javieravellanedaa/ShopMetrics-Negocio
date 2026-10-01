@@ -286,9 +286,12 @@ texto(buscar("Lectura del modelo. El ingreso se multiplica"),
       "Lectura del modelo. ")
 texto(buscar("Criterios adoptados."),
       "En primer lugar, el equipamiento que se instala en cada local —sensor de vidriera, contador de puerta, gateway y kit de "
-      "montaje— es un insumo del servicio y no un bien de uso: se imputa como costo variable por cada alta (USD %s en el Plan "
-      "Vidriera y USD %s en el Plan Cadena, que cubre cinco locales), no forma parte del modelo de inversión y no se amortiza. "
-      "El cargo de alta e instalación está fijado de modo de cubrirlo. En segundo lugar, la instalación y el soporte los "
+      "montaje— no es un insumo del servicio: se entrega en comodato, vuelve a la empresa cuando el comercio se da de baja y "
+      "se reinstala en otro local, de modo que es stock que rota y forma parte del modelo de inversión (USD %s por instalación "
+      "del Plan Vidriera y USD %s por instalación del Plan Cadena, que cubre cinco locales). No se amortiza, porque no es un "
+      "bien de uso que se consuma por el paso del tiempo sino capital inmovilizado que se recupera y se vuelve a colocar; la "
+      "cantidad a adquirir en cada ejercicio surge de las instalaciones previstas en la proyección de ventas. En costos "
+      "variables queda únicamente la reposición del equipamiento que no se recupera. En segundo lugar, la instalación y el soporte los "
       "hacen técnicos freelance contratados por hora según las horas que pide el anexo de capacidad, y por eso son costo "
       "variable y no de recursos humanos: se pagan según las altas y la cartera de cada mes, sin cargas patronales. Lo mismo "
       "vale para la venta, que se paga por comisión sobre cada alta concretada. En tercer lugar, el desarrollo y mantenimiento "
@@ -358,10 +361,12 @@ p = parrafo(h,
     "sostener el crecimiento. La inversión inicial —el año cero, que es 2025— asciende a USD %s y está dominada por el "
     "desarrollo de la plataforma, USD %s; el resto es el equipamiento informático y de oficina de los fundadores, el "
     "equipamiento de red y la registración de la marca y la constitución de la sociedad. Como la estructura es la de los "
-    "dos fundadores durante todo el horizonte, en 2026 y 2027 no hay inversiones, y en 2028 se renuevan las dos notebooks, "
-    "amortizadas a los tres años, por USD %s. El equipamiento que se instala en los locales no figura aquí: es insumo del "
-    "servicio y se imputa como costo variable, según el criterio explicado en el punto 8.4."
-    % (n(inv_anios[0]), n(desarrollo), n(inv_anios[3])))
+    "dos fundadores durante todo el horizonte, la inversión de los ejercicios siguientes es casi toda equipamiento que se "
+    "instala en los locales: USD %s en 2026, USD %s en 2027 y USD %s en 2028, este último incluida la renovación de las dos "
+    "notebooks. Los dispositivos de conteo se entregan en comodato y vuelven a la empresa en la baja, así que son stock que "
+    "rota y no se amortizan; la cantidad de cada ejercicio sale de las instalaciones previstas en la proyección de ventas, "
+    "según el criterio explicado en el punto 8.4."
+    % (n(inv_anios[0]), n(desarrollo), n(inv_anios[1]), n(inv_anios[2]), n(inv_anios[3])))
 p = figura_apaisada(p, "INV01_inversion_anio0.png", "Figura 8.31. Inversión inicial (año cero), con la referencia de precio de cada concepto. Fuente: planilla de presupuesto financiero, hoja Mod. inversión.")
 p = parrafo(p,
     "El desarrollo se contrata por fuera de la estructura: los fundadores gestionan la empresa y no participan de la "
