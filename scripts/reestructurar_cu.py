@@ -32,7 +32,7 @@ from docx.text.paragraph import Paragraph
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORD = os.path.join(RAIZ, "documento", "STF_Gomez_Javier_E2_v2.docx")
 
-CABECERA = re.compile(r"^(CU-\d{3}-\d{3}):\s*(.+)$")
+CABECERA = re.compile(r"^(CU-\d{3}-\d{3})\s*[:·]\s*(.+)$")
 
 # Los campos que se conservan tal cual estaban, con su nombre nuevo.
 RENOMBRES = {
@@ -159,7 +159,10 @@ def main():
     els, fichas = leer_fichas(doc)
     print("fichas halladas en el documento: %d" % len(fichas))
     hechas, sin_datos = 0, []
+    solo = set(sys.argv[1:])
     for f in reversed(fichas):              # de atras hacia adelante: los indices no se mueven
+        if solo and f["cu"] not in solo:
+            continue
         if f["cu"] not in FICHAS:
             sin_datos.append(f["cu"]); continue
         d = FICHAS[f["cu"]]
