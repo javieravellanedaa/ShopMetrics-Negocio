@@ -52,10 +52,24 @@ COLUMNAS = {
          "rango puede cruzar la medianoche."),
     ],
     ("id", "centro_id", "nombre", "rubro", "plan"): [
+        # DT-18: la cuenta del portal. La migracion 005 la agrego a la base en
+        # la semana 8 --es lo que vuelve cumplible la pre-condicion "el
+        # locatario tiene cuenta activa en el portal" del CU-027-001 y del
+        # CU-021-001-- y el diccionario nunca la sumo.
+        ("usuario_id", "UUID", "FK", "Cuenta del portal con la que entra este locatario. "
+         "Opcional y única: un locatario puede existir sin cuenta --lo carga el centro y "
+         "todavía no entró-- y una cuenta atañe a lo sumo un locatario."),
         ("estado", "VARCHAR(160)", "", "Estado del locatario (activo, dado de baja). Nulo "
          "cuenta como activo. La baja es lógica: su facturación histórica se conserva."),
         ("onboarding_paso", "SMALLINT", "", "Por dónde va el asistente de alta, para poder "
          "retomarlo donde se dejó."),
+    ],
+    # DT-05: el paso 2 del CU-018-001 muestra la descripcion del rol y el
+    # diagrama de clases la tiene; el diccionario era el unico que no.
+    ("id", "nombre"): [
+        ("descripcion", "TEXT", "", "Texto que explica el alcance del rol. El paso 2 del "
+         "CU-018-001 lo muestra al lado del nombre: dos roles pueden llamarse parecido y "
+         "hacer cosas muy distintas."),
     ],
     ("id", "centro_id", "nombre", "superficie"): [
         ("estado", "VARCHAR(160)", "", "Estado de la zona (activa, dada de baja). Nulo "
@@ -211,9 +225,24 @@ def filas_del_diccionario(doc):
         campos = tuple(f.cells[0].text.strip() for f in list(t.rows)[1:])
         nuevas = None
         for clave, filas in COLUMNAS.items():
-            if campos[:len(clave)] == clave and len(campos) == len(clave):
-                nuevas = filas
-                break
+            # Se compara por prefijo y no por igualdad, porque la tabla crece
+            # a medida que se le agregan columnas y exigir el largo exacto
+            # haria que el script dejara de encontrarla despues de la primera
+            # corrida.
+            #
+            # Pero un prefijo corto no alcanza para identificar una entidad:
+            # ("id", "nombre") es el principio de rol, de centro_comercial y
+            # de indicador. Cuando la clave tiene menos de tres campos se
+            # exige ademas que los campos que faltan sean solo los que se van
+            # a agregar.
+            if campos[:len(clave)] != clave:
+                continue
+            if len(clave) < 3:
+                sobrantes = set(campos[len(clave):]) - {c[0] for c in filas}
+                if sobrantes:
+                    continue
+            nuevas = filas
+            break
         if nuevas is None and campos and campos[0] == "id" and "rubro_objetivo" in campos:
             nuevas = RECOMENDACION
         if nuevas is None:
