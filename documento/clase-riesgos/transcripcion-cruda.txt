@@ -1,0 +1,4101 @@
+Transcripciones de la clase de riesgos — Scali
+==============================================================
+
+Hechas con whisper large-v3-turbo sobre el audio de las grabaciones de
+`grabaciones/`. El audio es de aula: donde el texto diga algo raro, vale
+lo que está en REGLAS-DE-LA-CLASE.md, que está contrastado contra lo que
+se ve en pantalla y contra el Excel de ejemplo.
+
+
+==============================================================
+IMG_9228  ·  Matriz de riesgos — cómo se arma
+==============================================================
+
+[00:00] El 15 de octubre, ya que voy a hacer llegar mi invitación directamente a los martes,
+[00:12] hay un evento que se llama Aprender a Entrender, que es una facultad de TI,
+[00:16] que es un evento virtual, a que ustedes están obligados a decirlo.
+[00:24] El fechazo de 10.
+[00:26] Obligado. No van a tener que venir acá, pero se tienen que sumar.
+[00:32] Va a haber una serie de emprendedores que van a contar, tienen base tecnológica,
+[00:41] van a contar cómo hicieron en su camino emprendedor, cómo lo fueron manejando.
+[00:51] Va a haber la posibilidad de esas preguntas.
+[01:00] Así que está muy ligado con lo que nosotros estamos haciendo.
+[01:04] Lo organizo yo a ese evento.
+[01:09] ¿A qué hora está?
+[01:10] ¿A qué hora está?
+[01:11] ¿En qué hora está?
+[01:10] 
+[01:10] ¿En qué hora está?
+[01:14] Va a estar acá en la matriz de riesgo.
+[01:21] El riesgo de no haber asistido acá, crítico.
+[01:28] Bueno, no, es el 13.
+[01:30] Yo después le hago...
+[01:32] Se van a inscribir y después sale el link para...
+[01:38] Ah, es virtual, ¿o qué?
+[01:40] Es virtual, es virtual.
+[01:42] Por eso no va a haber clase.
+[01:44] Perfecto.
+[01:45] Hay que sumar.
+[01:46] ¿En el mismo horario de la clase, profe?
+[01:48] En el mismo.
+[01:48] Ok.
+[01:51] Hasta las 21.
+[01:54] Para aquellos que son infras del mejor club de la Argentina,
+[01:59] después a la media hora está el partido, así que no hay excusas.
+[02:07] Justo cayó el partido.
+[02:10] Bien.
+[02:11] Ok.
+[02:12] Y el otro es el 28.
+[02:17] Acuérdense que va a estar la clase, el último curso del tema de legales.
+[02:22] Y ahí yo le pedí a la que hace el curso, la abogada de la guardia,
+[02:31] que nos genere un espacio, al final, para un compendio de todo lo que necesitamos
+[02:38] para validar el emprendimiento, al final, desde la línea legal.
+[02:44] Contratos, registración de marca.
+[02:46] Para esto que pusimos nosotros, ahí en medio, tirando un numerito,
+[02:51] eso voy a querer que esté un poquito más, mejor resuelto,
+[02:56] y va a tener que estar en punto 9.
+[03:00] ¿Sí?
+[03:01] Así que, ahí conseguimos que esta gente de la facultad de la abogacía
+[03:10] nos dé estos cursos.
+[03:11] Bueno, pues vamos a agradecer, ¿sí?
+[03:16] Porque nos dieron cuatro cursos.
+[03:22] Así que, bueno, eso nos va a servir para armar el punto 9,
+[03:27] que la parte principal de las viabilidades está en la parte comercial
+[03:34] y en la parte legal.
+[03:35] Después van a ver que está la viabilidad financiera,
+[03:39] que va a ser un compendio de lo que estamos haciendo acá,
+[03:43] en un presupuesto,
+[03:46] y la viabilidad tecnológica, que ahí tienen ustedes más expertise,
+[03:50] donde van a definir las tecnologías que estamos usando,
+[03:56] ¿sí?
+[03:58] Conocimiento de si hay algún cambio tecnológico,
+[04:02] nosotros estamos haciendo un monitoreo de esos cambios.
+[04:06] Entonces, las dos partes que nos van a costar un poquito más,
+[04:13] son la legal y la comercial.
+[04:18] Y ahí ya estaríamos como cerrando,
+[04:22] cerrando el tema del trabajo,
+[04:26] con esa clase,
+[04:27] después,
+[04:29] tengan clases a nosotros,
+[04:33] como para ya
+[04:34] hacer las presentaciones.
+[04:41] Bueno,
+[04:42] dicho esto,
+[04:43] 28,
+[04:45] igual,
+[04:47] voy a llegar,
+[04:49] que sumar a mi,
+[04:52] acuérdense que eso es de 16 a 18.
+[05:02] Bien.
+[05:05] Bueno,
+[05:06] ¿seguimos con esto?
+[05:08] Ya estamos terminando con todo el artículo,
+[05:11] punto 8,
+[05:12] que es la parte del presupuesto.
+[05:14] Bueno,
+[05:14] estamos acá,
+[05:17] recién estuvimos viendo,
+[05:18] a ver,
+[05:19] dónde podríamos tener algún problemita de relación
+[05:24] entre costos,
+[05:26] inversión,
+[05:27] y lo que estamos pretendiendo facturar.
+[05:30] Hay algunos que le quedó ahí medio justo,
+[05:34] que le quedó ahí pesadito,
+[05:36] que puede ser acá,
+[05:37] 20,
+[05:37] 25,
+[05:39] ¿no?
+[05:40] 20,
+[05:40] la tasa de corte,
+[05:41] 25 a la TIR,
+[05:43] que está bien,
+[05:44] está ajustada.
+[05:45] Recién vi uno,
+[05:46] que le dio,
+[05:48] 390% la TIR,
+[05:52] y lo miramos así,
+[05:53] rapidito,
+[05:54] no había hecho estas cuentas de Panará,
+[05:57] y nos dimos cuenta,
+[05:58] que en algún punto,
+[06:00] de los recursos humanos,
+[06:01] había problemas,
+[06:03] porque arrancaba con,
+[06:05] 50% de la anulación,
+[06:08] costo de recursos humanos,
+[06:09] la facturación,
+[06:10] y terminaba en 15.
+[06:13] Ahí hay algún problema,
+[06:15] ¿eh?
+[06:16] Entonces,
+[06:18] por eso hacemos esto.
+[06:20] Si a mí me está dando mucho acá,
+[06:23] es porque algún problema,
+[06:25] tengo con la estructura de costos,
+[06:27] o con la inversión,
+[06:30] o con la inversión,
+[06:31] me quedó muy baja la inversión.
+[06:35] Fíjense que acá,
+[06:36] tienen,
+[06:39] costo de inversión,
+[06:41] interesante,
+[06:42] a partir de lo que está diciendo,
+[06:44] que va a facturar,
+[06:45] ¿no?
+[06:45] Está diciendo,
+[06:46] bueno,
+[06:46] tengo que invertir,
+[06:48] 500 mil dólares,
+[06:49] para facturar esto.
+[06:51] Hay alguno que,
+[06:52] acá me puso,
+[06:53] un millón de dólares,
+[06:56] y acá me puso,
+[06:57] 23 mil dólares,
+[06:59] 20 mil dólares,
+[07:01] y nos,
+[07:02] revisemos,
+[07:04] el costo de esa inversión,
+[07:07] ¿eh?
+[07:08] Porque eso lo voy a realizar,
+[07:09] ¿en dónde?
+[07:10] En el proyecto,
+[07:12] ¿sí?
+[07:12] No sé,
+[07:15] vino alguien acá,
+[07:17] me va a decir,
+[07:18] ¿quién?
+[07:19] Tiene una solución para bancos.
+[07:22] El costo de la inversión,
+[07:23] 13 mil dólares.
+[07:25] No hace ruido,
+[07:27] ¿no?
+[07:27] Porque,
+[07:28] cuando son soluciones,
+[07:29] para empresas importantes,
+[07:32] donde,
+[07:32] tiene que haber,
+[07:34] alguna funcionalidad,
+[07:35] bueno,
+[07:36] revisemos,
+[07:37] borrarlo.
+[07:38] Aunque,
+[07:40] después me dijo,
+[07:41] que tenía,
+[07:42] así,
+[07:42] inversiones,
+[07:43] de desarrollo,
+[07:45] en los,
+[07:45] los,
+[07:46] años subsiguientes,
+[07:48] estaba bien,
+[07:49] pero ya,
+[07:50] como solución de arranque,
+[07:51] se ha ruido,
+[07:53] ese no.
+[07:54] No quita,
+[07:55] que después lo que dice,
+[07:56] no lo que dice,
+[07:56] no lo que dice,
+[07:57] pero,
+[07:59] con la duda,
+[08:00] previsen ustedes,
+[08:01] que tenga,
+[08:03] relación,
+[08:04] con,
+[08:05] lo que estamos facturando,
+[08:06] así.
+[08:08] Bien,
+[08:09] terminamos acá,
+[08:12] nos dio,
+[08:14] la TIR el 25%,
+[08:16] nos dio el banco,
+[08:17] el positivo,
+[08:20] lo,
+[08:21] que nos queda después,
+[08:22] es armar la matriz de riesgos,
+[08:24] acá nosotros,
+[08:26] dijimos de,
+[08:29] esto estoy tomando algo,
+[08:30] de un compañero de ustedes,
+[08:32] que lo armó acá,
+[08:33] ¿no?
+[08:33] Tomó los riesgos,
+[08:36] entonces,
+[08:36] definió los riesgos,
+[08:37] que se han hecho,
+[08:38] acá,
+[08:39] ¿esta la matriz?
+[08:42] Sí.
+[08:43] Bien,
+[08:43] acá me falta,
+[08:44] una cosa,
+[08:45] porque yo,
+[08:46] lo que pedí,
+[08:48] está un poquito,
+[08:49] más ampliado,
+[08:50] 
+[08:51] Entonces,
+[08:52] yo pedí,
+[08:52] definir el riesgo,
+[08:55] definir,
+[08:55] cuáles serán,
+[08:56] las causas,
+[08:58] de ese riesgo,
+[09:00] y,
+[09:01] después,
+[09:01] los efectos,
+[09:02] cuantitativos,
+[09:03] acá lo dividió,
+[09:05] en este caso,
+[09:06] en un efecto,
+[09:07] cuantitativo,
+[09:09] y cualitativo,
+[09:10] ¿sí?
+[09:12] Igual que la mar,
+[09:13] acá,
+[09:14] pero,
+[09:14] cualitativo,
+[09:16] uno podría decir,
+[09:17] afecta,
+[09:18] este riesgo,
+[09:19] afecta la relación,
+[09:20] con los clientes,
+[09:22] en los,
+[09:22] cuantitativos,
+[09:25] ahí,
+[09:25] sin poner,
+[09:26] las cifras,
+[09:27] qué impacto,
+[09:29] tiene en sí,
+[09:31] esto,
+[09:32] me gustaría,
+[09:33] que esté desarrollado así,
+[09:35] ¿no?
+[09:36] Y no así,
+[09:38] como hizo el compañero,
+[09:39] de ustedes,
+[09:41] intentó hacer algo,
+[09:42] lo puso todo,
+[09:43] acá adentro,
+[09:44] pero a mí,
+[09:45] me gusta más,
+[09:48] esto es lo más,
+[09:48] lo más fácil,
+[09:49] de visualizar,
+[09:51] ¿no?
+[09:52] El análisis,
+[09:53] que lo puede,
+[09:54] ¿qué vamos a hacer después?
+[09:59] Bueno,
+[10:00] íbamos a medir,
+[10:02] la probabilidad,
+[10:03] y el impacto,
+[10:04] del riesgo,
+[10:05] acuérdense,
+[10:07] que,
+[10:08] había,
+[10:09] ahí,
+[10:10] una grilla,
+[10:11] de evaluación,
+[10:13] donde,
+[10:14] estaba la ponderación,
+[10:17] en cuanto,
+[10:18] a la probabilidad,
+[10:19] y el impacto,
+[10:20] que iba,
+[10:21] de uno,
+[10:23] ¿sí?
+[10:23] muy probado,
+[10:24] la probabilidad,
+[10:26] muy improbable,
+[10:27] a cinco,
+[10:28] muy probado,
+[10:30] en el impacto,
+[10:33] insignificante,
+[10:35] valor uno,
+[10:36] catastrófico,
+[10:38] el impacto,
+[10:39] lo valoramos en cinco,
+[10:42] ¿sí?
+[10:43] A partir de esto,
+[10:44] bueno,
+[10:45] yo puedo empezar a medir,
+[10:46] ¿no?
+[10:47] cuánto creo yo,
+[10:49] que va,
+[10:50] que es probable,
+[10:52] que suceda,
+[10:54] este inconveniente,
+[10:55] que estoy planteando,
+[10:56] este riesgo,
+[10:57] que estoy planteando,
+[10:59] y qué impacto,
+[11:00] tendría,
+[11:00] sobre el negocio,
+[11:03] ¿no?
+[11:03] entonces,
+[11:04] en este caso,
+[11:05] considero,
+[11:06] que cuatro,
+[11:08] el nivel de la probabilidad,
+[11:09] es probable,
+[11:10] que pueda pasar,
+[11:12] y si pasa,
+[11:14] ¿eh?
+[11:15] el impacto,
+[11:16] va a ser,
+[11:17] catastrófico,
+[11:19] o muy importante,
+[11:22] digamos,
+[11:23] catastrófico,
+[11:24] parece,
+[11:25] que se fuera,
+[11:28] a un día,
+[11:28] de la certeza,
+[11:30] ok,
+[11:30] entonces,
+[11:31] yo,
+[11:31] ahí,
+[11:32] lo que,
+[11:33] este nivel,
+[11:35] de riesgo,
+[11:37] está ponderado acá,
+[11:40] estas tablitas,
+[11:41] también,
+[11:41] las quiero,
+[11:43] entonces,
+[11:44] si,
+[11:45] el impacto,
+[11:46] va de 13 puntos,
+[11:48] a 20,
+[11:50] yo considero,
+[11:51] que el impacto,
+[11:51] es alto,
+[11:53] ¿eh?
+[11:55] por eso,
+[11:55] acá,
+[11:56] jugó con esto,
+[11:56] el tema,
+[11:57] de los colores,
+[11:58] es alto,
+[12:03] después,
+[12:04] valúo,
+[12:05] el otro,
+[12:05] el riesgo,
+[12:06] es probabilidad,
+[12:07] cuatro,
+[12:08] impacto,
+[12:08] cuatro,
+[12:09] el 16,
+[12:10] está dentro,
+[12:12] del rango,
+[12:14] de nivel,
+[12:15] de riesgo,
+[12:16] alto,
+[12:18] acá,
+[12:19] o sea,
+[12:20] este fallo,
+[12:20] de infraestructura,
+[12:21] tecnológica,
+[12:23] es muy probable,
+[12:26] si,
+[12:27] el riesgo,
+[12:27] y el impacto,
+[12:30] es muy alto,
+[12:31] hasta aquí,
+[12:32] acá,
+[12:32] lo puntuó,
+[12:34] que al mayor nivel,
+[12:37] la puntuación,
+[12:38] le digo,
+[12:38] 25,
+[12:39] ya hay,
+[12:40] de 21 a 25,
+[12:43] es un impacto,
+[12:44] que es crítico,
+[12:46] si sucede,
+[12:48] ese riesgo,
+[12:49] ese riesgo,
+[12:51] entonces,
+[12:52] fue midiendo,
+[12:53] algunos lo han midiado,
+[12:54] como,
+[12:55] que es posible,
+[12:58] pero el impacto es moderado,
+[13:01] entonces,
+[13:02] fue,
+[13:03] midiendo,
+[13:06] esos niveles,
+[13:07] también,
+[13:07] entonces,
+[13:09] después,
+[13:09] yo,
+[13:09] empiezo a evaluar,
+[13:11] acá,
+[13:12] creo,
+[13:14] que hizo,
+[13:16] un cuadrito,
+[13:18] este cuadro,
+[13:19] podría,
+[13:19] también,
+[13:20] para acá,
+[13:22] donde,
+[13:26] fue midiendo,
+[13:28] ¿ok?
+[13:30] Entonces,
+[13:30] después,
+[13:30] colocando,
+[13:31] donde estaba,
+[13:32] cada uno de los riesgos,
+[13:33] entonces,
+[13:49] el riesgo,
+[13:51] 4,
+[13:52] 8 y 10,
+[13:55] son los ritmos más altos,
+[13:56] que el 4,
+[13:58] el 8 y el 10,
+[14:01] entonces,
+[14:02] sonpiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[14:32] Y los que están en esta zona, si es posible que tienen un impacto importante o acañolada,
+[14:45] son los que voy a tener en cuenta.
+[14:47] Los que están en una zona azul o verde son los que son moderados, son menores en el impacto,
+[14:58] tienen menor posibilidad de que suceda un riesgo.
+[15:05] Entonces voy a tener que ver con la zona azul.
+
+==============================================================
+IMG_9229  ·  Escenarios y plan de contingencia
+==============================================================
+
+[00:00] armar los planes de contingencia.
+[00:05] ¿Esto está?
+[00:07] Yo pensé que acá no sé.
+[00:09] Este creo que es el que le dije yo, ¿no?
+[00:13] Sí.
+[00:14] Pérdida de datos, retraso de entrega de los proyectos a los clientes,
+[00:21] problemas de comunicación con el equipo, entre el equipo,
+[00:25] parte de infraestructura, desviación del presupuesto.
+[00:32] Son bastante genéricos, salvo algunos que...
+[00:39] Ustedes pueden agregar algunos específicos o algunos específicos del negocio.
+[00:45] Este, por ejemplo, cambios regulatorios o aduaneros.
+[00:51] Aún importa algo, ¿sí?
+[00:56] Es algo crítico para dar el servicio.
+[01:02] Lo puso.
+[01:04] ¿Qué es?
+[01:07] También armen esta...
+[01:10] Acá puso 10 diez, pero yo diría que es casi un número mínimo de retos a tener.
+[01:17] Bien, entonces yo ya esto lo medí, lo calculé, lo posicioné en este cuadro de evaluación
+[01:30] y voy a tomar estos pedidos.
+[01:32] Quizás me enfoque más en los que son más altos.
+[01:38] Seguramente es lo que hizo acá.
+[01:40] Entonces, ¿qué hago yo acá?
+[01:44] Tengo el presupuesto normal, traigo este presupuesto,
+[01:51] lo traigo acá,
+[01:52] lo traigo acá.
+[02:00] Y después,
+[02:03] defino el riesgo que voy a aplicar.
+[02:05] Acá eligió el cual.
+[02:06] ¿Sí?
+[02:07] Que era uno de estos que habíamos dicho,
+[02:10] el otro era la falla de Inglaterra.
+[02:15] Bien.
+[02:16] A partir de eso,
+[02:18] dijo, bueno,
+[02:20] habíamos dicho que
+[02:21] había un problema ahí de pérdida de contratos,
+[02:27] a partir de...
+[02:28] ¿Qué dice acá?
+[02:30] Tres millones.
+[02:31] Tres millones de pérdidas de contratos.
+[02:34] Tres millones de pérdidas de contratos.
+[02:35] Algún sobrecosto
+[02:36] de no tener la plataforma,
+[02:43] que se suman los costos variables.
+[02:45] Entonces, ¿qué hace acá?
+[02:47] Le aplico esto
+[02:49] al presupuesto normal.
+[02:53] Bajo las ventas,
+[02:54] seguramente,
+[02:55] acá,
+[02:56] de 536 millones.
+[02:59] Acá está diciendo que bajan
+[03:02] 30 millones.
+[03:10] Se supone que esto son 30 millones
+[03:13] por lo que le bajó.
+[03:16] Bueno, eso,
+[03:17] ¿qué es?
+[03:17] Por supuesto que lo van a hacer.
+[03:20] No.
+[03:20] No sé qué dice.
+[03:22] Bueno,
+[03:23] Gracias.
+[03:53] Gracias.
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] 
+[03:54] No pongan signos ni nada para hacer estas separaciones
+[03:59] porque se me va a tomar.
+[04:07] Bien.
+[04:09] Entonces, bajó las ventas
+[04:11] y acá le sumó el tema de los costos baleados.
+[04:17] ¿Le va a cambiar qué cosa acá?
+[04:22] El grupo de fondos.
+[04:24] La grande de los costos.
+[04:27] Fíjense que acá le daba medio justito, ¿no?
+[04:32] Tenía un espíritu del 5% entre la casa de corte y la tierra.
+[04:39] Estaba, era un negocio viable a partir de la casa de corte que puse,
+[04:47] pero tenía poca sensibilidad a algún tema artístico,
+[04:54] que puse, como lo estamos viendo acá.
+[04:56] Si ya me tocás las ventas en algún porcentaje,
+[05:04] no me da.
+[05:08] ¿Sí?
+[05:08] Me bajó al 68% y me quedó el negativo del bajo.
+[05:15] En esta situación, pasamos a ser rentables con esta lucha.
+[05:20] Voy al otro riesgo.
+[05:24] Acá, bueno, bajó también.
+[05:27] Pérdida.
+[05:29] Pérdida.
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] 
+[05:30] Pérdida de datos, costos asociados al marketing, que subieron algún tema en dos costos.
+[05:45] Acá hay que revisarlo, está bien planteado porque acá pone que baja 3 millones.
+[05:56] Acá tiene 32.
+[06:06] Ah, no, le sube.
+[06:09] Le sube el apóstol.
+[06:11] Parece que es un poco más.
+[06:14] Ah, suma las dos.
+[06:17] Acá se le suma el millón y medio este, más los tres millones.
+[06:25] Le sumó costos variables por este problema de la falla de la red Zul.
+[06:32] Si volvemos acá, este, ¿qué pasa con este problema?
+[06:36] Se sigue salvando, creo.
+[06:38] Lo absorbe, pero queda...
+[06:41] Juntos, juntos, juntos.
+[06:43] Pero lo absorbe.
+[06:45] Si pasa esto, el negocio lo absorbe y sigue siendo arreglado.
+[06:51] En escenario 3, acá hay un tema de baja de ventas en el año 1 y hay una suba de costos variables también en el año 1.
+[07:16] Lo va a cambiar el grupo de fondos acá.
+[07:23] En este caso también queda negativo.
+[07:27] Digamos que está ahí, ¿no?
+[07:29] Si también está un punto bajo del corte.
+[07:32] Me gustaría...
+[07:34] Podríamos decir que este también...
+[07:37] Quedó muy poco por abajo.
+[07:40] Entonces podríamos decir que este escenario también lo...
+[07:44] Bueno, él tomó acá tres riesgos de los...
+[07:51] Tomó los tres que eran...
+[07:54] Los muy...
+[07:57] Los catatróficos, digamos.
+[07:59] Los dos que eran...
+[08:00] ¿Sí?
+[08:01] Y acá dos le resistieron y el que no anduvo fue este...
+[08:06] El primero.
+[08:07] Si nos hubiera dado todo mal, nosotros lo que podríamos hacer es tomar el que peor nos dio.
+[08:20] ¿Para qué?
+[08:21] Para armar el plan de contingencia.
+[08:23] Entonces elegimos el peor escenario y vamos a armar el plan de contingencia.
+[08:30] Si alguno me puede decir...
+[08:32] Me imagino que había alguno ahí que le dio el 300% latido.
+[08:39] Ni con un camionazo lo va a bajar.
+[08:42] Si tiene que caer el planeta.
+[08:45] Tiene que poner cualquier cosa acá.
+[08:47] Un riesgo más catastrófico.
+[08:53] Después de dar los tres bien ahí.
+[08:55] Entonces, seguramente lo que les voy a pedir es que hagan algún escenario combinado.
+[09:02] ¿Veis?
+[09:03] Que es lo que finalmente se hace.
+[09:05] Que se combinan riesgos.
+[09:08] ¿No?
+[09:09] Lo de pasar esto y esto.
+[09:11] Lo de pasar el riesgo cuatro y el ocho.
+[09:14] Entonces forzarlos un poco para que uno no dé mal.
+[09:18] Si es que ninguno nos dio mal en el primer análisis.
+[09:24] Vamos a forzar.
+[09:26] Tomamos ese escenario que dio peor y armamos un plan de contingencia.
+[09:34] Ojo que acá, si yo digo, me bajan las ventas acá.
+[09:41] Entonces aquellos que tenían, para darle un poquito más claro,
+[09:47] que tenían soluciones ligadas a alguna implementación de hardware.
+[09:54] Soluciones de IoT o que tenían que poner algún hardware ahí para prestar el servicio.
+[10:04] que no tienen que poner un poco más claro.
+[10:05] Si me bajan las ventas, ¿qué va a pasar?
+[10:07] ¿Me vas a bajar?
+[10:08] ¿Me vas a bajar?
+[10:09] ¿Me vas a bajar?
+[10:10] ¿Me vas a bajar?
+[10:11] ¿Me vas a bajar?
+[10:12] ¿Me vas a bajar?
+[10:13] ¿Qué tengo que bajar?
+[10:14] ¿Me vas a bajar?
+[10:15] ¿Me vas a bajar?
+[10:16] ¿Me vas a bajar?
+[10:17] El costo variable.
+[10:18] Si yo esto lo haría de una manera razonable,
+[10:23] y seguramente esto también va a pasar para aquellos que no tengan el hardware,
+[10:34] porque el costo variable se supone que está directamente relacionado a las ventas.
+[10:40] Entonces yo podría decir, bueno, si bajo esta acá, en la misma proporción voy a bajar mis costos variables.
+[10:49] ¿Sí?
+[10:50] En el escenario, ¿eh?
+[10:53] ¿Se entiende lo que es esto?
+[10:56] Bueno, entonces ahí me podrían decir, bueno, si me baja la venta acá, también bajo esto,
+[11:07] porque me va a quedar un poco mejor, ¿sí?
+[11:10] ¿Sí?
+[11:13] El club de fondos.
+[11:14] ¿Te acuerdas?
+[11:15] Profesor, con recursos humanos también podemos actuar ahí porque vamos a tener menos demanda de horas.
+[11:21] ¿También?
+[11:22] ¿Ok?
+[11:23] ¿Ok?
+[11:24] Imaginate vos me decís, bueno, yo a este nivel de ventas tenía la capacidad operativa que se vio,
+[11:32] y acá contraté a uno, y si no voy a tener este problema, ese no lo contratar, no lo contraté.
+[11:39] ¿Ok?
+[11:40] ¿Ok?
+[11:41] ¿Ok?
+[11:42] Eh...
+[11:43] Lo podría plantear acá, quizá me sigue dando mal, o lo podría plantear en el plan de contingencia.
+[11:51] ¿Sí?
+[11:52] Me gustaría que en el plan de contingencia planteemos algo sobre, algo que ya relacionamos a algunos,
+[12:02] algunos costos con la baja.
+[12:05] Y vengo acá y digo, bueno, tomo algunas medidas como para ver si puedo llevar el negocio de presupuesto a un estadio de rentabilidad.
+[12:18] Sí.
+[12:19] Entonces el plan de contingencia se ve...
+[12:22] No se puede cargar, no.
+[12:23] ¿Teor escenario?
+[12:24] No lo puedo cargar.
+[12:25] Claro.
+[12:26] Pero sin parar.
+[12:28] Traigo el peor escenario, ¿no?
+[12:31] No.
+[12:32] No.
+
+==============================================================
+IMG_9230  ·  La regla del plan de contingencia y el cierre
+==============================================================
+
+[00:00] Acá, por ejemplo, no sé qué hizo, hizo algunas acciones de marketing.
+[00:09] Como le había bajado la venta, digo, bueno, acá hago algún esfuerzo de marketing,
+[00:15] como para elevar un poco las ventas en esa relación, me genera algo de rentabilidad.
+[00:26] Por lo tanto, y esto es lo que quiero que también tengan en cuenta,
+[00:35] yo voy a armar algo para llevar el presupuesto a una rentabilidad que esté ahí, ¿no?
+[00:46] Con lo justo. Yo ya, si esto era el 75, lo llevé al 76, ya está, funcionó.
+[00:55] Va a funcionar este plan de contingencia para el 30.
+[01:00] Ahora, si yo vengo acá, dice, dio el 80, ¿no? El presupuesto normal dio el 80.
+[01:11] Vengo al escenario, acá, el plan de contingencia.
+[01:16] Hacen un plan de contingencia y acá me dio 95.
+[01:21] Y yo te agarro el plan de contingencia.
+[01:26] Es más rentable que el original.
+[01:28] No puede darme más rentabilidad el plan de contingencia.
+[01:35] Porque nosotros estamos armando algo como para nivelar el problema que tenemos.
+[01:42] No para...
+[01:44] Sería ilógico que quede más alta la TIR que el original.
+[01:54] ¿Entiendes esto?
+[01:55] Sí.
+[01:59] ¿Preguntas?
+[02:00] Entonces, si logramos armar esto, primero ocupémonos de terminar bien hasta el presupuesto, hacer esos ajustes.
+[02:14] Lo que vino estaba.
+[02:15] No estaba mal.
+[02:16] Lo que tenía, estaban dentro de lo razonable, había que hacer ajustes.
+[02:23] Teníamos que revisar ese cuadrito de evaluación que hicimos al final.
+[02:29] Esas relaciones.
+[02:31] Algunos quizás tenían que ajustar un poco porque se les fue la mano en cambiar el formato.
+[02:38] A él, por ejemplo, me cambió el cuadro, el resumen de recursos humanos.
+[02:43] Eso es el penólogo, ¿no?
+[02:46] Ya lo habíamos planteado y demás.
+[02:48] Y revisimos que nos quede algo razonable.
+[02:56] Viste, alguno que se le fue la TIR al demonio.
+[02:58] Alguno que le dieron un medio corto.
+[03:04] Revisemos.
+[03:07] Una vez que yo les dé lo que es de ahí, armamos esto.
+[03:11] Igualmente, vayan pensando, vayan armando la matriz, la pueden armar tranquilamente.
+[03:18] Después, si lo aplicamos, hay presupuesto que nos ha llegado.
+[03:24] Porque eso es solamente aplicar esos números.
+[03:31] Y ver cómo queda.
+[03:34] Y ya con esto estaríamos terminando el punto.
+[03:37] ¿Se acuerdan lo que había que pasar?
+[03:43] Esto.
+[03:45] Entra la presentación en Excel.
+[03:48] Entra la presentación en el Project.
+[03:51] Y entra la presentación en el Word.
+[03:56] ¿Qué teníamos que pasar de este S al Word?
+[04:02] En el punto 8.
+[04:04] ¿Qué era lo que teníamos que pasar?
+[04:09] ¿La hoja de las hipótesis?
+[04:11] Más que se la en un color.
+[04:15] Yo podría hacer esto como para no equivocar.
+[04:19] No quiero.
+[04:21] ¿Cómo era el color de la pintada?
+[04:28] Esto.
+[04:29] ¿La proyección de venta?
+[04:32] No.
+[04:34] ¿El anexo de la capacidad operativa?
+[04:37] No.
+[04:38] ¿El modelo de ingreso?
+[04:39] Sí.
+[04:44] ¿Costos fijos?
+[04:45] No.
+[04:46] ¿Valiables?
+[04:47] No.
+[04:48] ¿Recursos humanos?
+[04:49] No.
+[04:49] ¿Modero de ingreso?
+[04:50] Sí.
+[04:51] Este.
+[04:56] Después.
+[05:03] ¿Modero de ingresión?
+[05:09] Amortizaciones?
+[05:09] No.
+[05:11] ¿Resupuesto financiero?
+[05:13] Bajo.
+[05:15] ¿Y todo lo demás?
+[05:17] ¿Sí?
+[05:18] Bueno.
+[05:18] De acá para adelante va.
+[05:22] Va.
+[05:22] Ok.
+[05:25] ¿Estamos?
+[05:28] Si vamos consolidando esto, yo le doy el OK.
+[05:33] Armemos la carpetita, ¿no?
+[05:35] Vamos a abrir la carpeta.
+[05:41] ¿Cuánto?
+[05:42] ¿Quieres?
+[05:45] No, te voy a poner.
+[05:47] Ah, que es.
+[05:48] Bien.
+[05:51] Bien.
+[05:52] Aquí está abajo.
+[05:54] Pasar por la carpeta.
+[05:54] Pasar la carpeta.
+[05:55] Pasar la carpeta.
+[05:57] ¿Viste?
+[05:57] Ya este punto tiene que quedar.
+[06:00] Pasar por la carpeta es que quede súper prolijo.
+[06:06] No me quede el cuadro para un costado.
+[06:09] Quede todo.
+[06:11] Una joyita tiene que ser.
+[06:12] Y cuidado cuando pasan esto a PDF.
+[06:19] Y que quede súper bien presentado.
+[06:25] Vuelvo a repetirlo como para que lo tengan en cuenta.
+[06:28] Hay que colgar la carpeta cuando se anota al final.
+[06:35] Lleguen al final.
+[06:37] Le va a pedir.
+[06:37] Bueno, para anotarte tenés que colgar el trabajo.
+[06:41] El trabajo es un solo PDF.
+[06:43] Uno solo.
+[06:47] ¿Qué va a incluir el PDF?
+[06:49] Esta.
+[06:51] Total, ¿no?
+[06:52] La parte de negocio y la parte de tecnología.
+[06:55] ¿Por qué?
+[06:55] ¿Por qué les digo esto?
+[07:00] Abro el PDF.
+[07:03] La parte de negocio.
+[07:04] ¿La parte de tecnología?
+[07:05] No, no.
+[07:06] Yo quería que era la parte de negocio.
+[07:08] La carpeta final.
+[07:11] Toda la carpeta.
+[07:13] ¿Qué va a pasar?
+[07:14] Si eso lo revisamos en la mesa, emite la próxima.
+[07:20] Emite la próxima.
+[07:21] La te abuelta.
+[07:22] Se ve en la...
+[07:25] Le pondremos ausente.
+[07:29] Porque ahí no se puede cambiar.
+[07:33] ¿Está?
+[07:34] Entonces, antes de colgar,
+[07:36] la carpeta completa,
+[07:39] querida trabajo final de ingeniería,
+[07:43] en todos lados,
+[07:45] que esté súper provis,
+[07:47] una presentación final que no se reciba.
+[07:49] O sea, reciba.
+[07:52] No se la tengo que volver a repetir, ¿no?
+[07:55] Claro.
+[07:57] El que viene y tiene algún problemita con la verdad,
+[08:01] va a saber que es tu culpa, no es nuestra.
+[08:05] Porque a veces,
+[08:06] le digo, viene alguien a dar a opinar.
+[08:08] Si, si te vas a dar la carpeta,
+[08:11] volvete,
+[08:12] me da pena a mí,
+[08:13] no es que me pongo contento.
+[08:16] Todo lo contrario.
+[08:18] Pero la carpeta, si no está,
+[08:20] la carpeta no pasa.
+[08:24] Esa carpeta,
+[08:25] para la biblioteca,
+[08:26] tiene el nombre,
+[08:27] por lo menos mío,
+[08:28] Pablo, yo le digo.
+[08:29] Bueno,
+[08:29] lo hice en medio el chiste pero en medio el incendio también
+[08:34] bueno, va a estar...
+[08:38] muy bien
+[08:39] trabajo de un profesional
+[08:42] ¿a qué iba?
+[08:45] lo que tiene que tener en la carpeta
+[08:48] entonces lo callamos armándola
+[08:50] vayan revisando
+[08:52] no hay distintos
+[08:54] o sea, ¿se le va a poner la captura de los cuadros?
+[08:58] o también solamente...
+[09:00] pero que no quede la captura de los cuadros
+[09:03] pongan el fondo en blanco
+[09:06] para que quede algo prolífico
+[09:09] que no quede la marca de la...
+[09:12] de las celdas
+[09:15] eso se puede poner todo en blanco
+[09:17] ¡oja, pega!
+[09:19] en donde van...
+[09:23] donde van gráficos
+[09:25] que envíen los gráficos
+[09:27] no me...
+[09:28] esto así con lo gráfico acá
+[09:30] que la peor
+[09:31] tendría que esto está...
+[09:33] o en el medio
+[09:34] o los gráficos uno abajo del otro
+[09:37] que queda algo prolífico
+[09:39] ¿sí?
+[09:40] no, no hay...
+[09:41] esto lo copio y lo pego
+[09:43] que horrible así
+[09:45] por eso acá también
+[09:47] podrían ya dejar
+[09:49] como para copiar y pegar desde acá
+[09:52] bien armado
+[09:53] entonces si lo tengo bien armado
+[09:55] lo copio y lo pego
+[09:56] que da otro libro
+[09:57] lo pego
+[09:58] está listo
+[09:59] bueno
+[10:00] bueno
+[10:01] qué más
+[10:03] lo que más
+[10:05] lo que más es del proyecto
+[10:06] ah, ahí puede representar
+[10:07] ¿cómo?
+[10:08] del proyecto
+[10:09] ah, ahí puede representar
+[10:10] el form de...
+[10:11] la presentación
+[10:12] digamos para mí
+[10:14] va a ser el Word
+[10:16] el Excel
+[10:18] y aquí
+[10:20] la que tiene que colgar
+[10:23] es este PDF
+[10:25] piepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[10:55] Gracias.
+
+==============================================================
+whatsapp  ·  Repaso completo (audio de WhatsApp, 1:05:45)
+==============================================================
+
+[00:00] Gracias.
+[00:30] Gracias.
+[01:00] Gracias.
+[01:30] Gracias.
+[02:00] Gracias.
+[02:30] Gracias.
+[03:00] Gracias.
+[03:30] Gracias.
+[04:00] Gracias.
+[04:01] Gracias.
+[04:02] Gracias.
+[04:03] Gracias.
+[04:04] Gracias.
+[04:05] Gracias.
+[04:06] Gracias.
+[04:07] Gracias.
+[04:08] Gracias.
+[04:09] Gracias.
+[04:10] 
+[04:10] Gracias.
+[04:11] 
+[04:11] Gracias.
+[04:12] Gracias.
+[04:13] Gracias.
+[04:14] 
+[04:14] Gracias.
+[04:15] Gracias.
+[04:16] Gracias.
+[04:17] Gracias.
+[04:18] Gracias.
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:18] 
+[04:30] cuando desde ahí les va a salir el link del zoom
+[04:35] bien, después
+[04:40] yo les voy a también poner el tercer avance
+[04:47] necesito que me cuelguen el Excel
+[04:52] la versión final
+[04:56] hoy voy a hablar algo por arriba
+[05:26] por acá hay profesor
+[05:32] por acá hay
+[05:36] gracias
+[05:40] gracias
+[05:44] gracias
+[05:48] gracias
+[05:50] gracias
+[05:52] bien
+[05:54] para ese tercer avance necesito esa versión
+[05:58] y voy a necesitar el proyecto acompañando la presentación porque ahí se supone que cuantificamos la inversión del desarrollo
+[06:06] 
+[06:36] que se suma al punto 1.7 que ya habíamos resuelto
+[06:42] desde todo lo que hicimos en análisis financiero
+[06:48] y la parte de viabilidad seguramente algunos ajustes a los puntos anteriores
+[06:54] que vamos a tener que hacer
+[06:56] si alguno me cambió
+[06:58] algo sobre los precios
+[07:00] o me cambió
+[07:02] algo sobre
+[07:04] la fuerza comercial que teníamos
+[07:06] porque lo ajustó a partir de lo que hizo en el análisis financiero
+[07:08] por decir cambiarlo
+[07:10] donde corresponda
+[07:12] si alguien cambió
+[07:14] si alguien cambió
+[07:16] el tema de los gastos en promoción
+[07:18] lo ajustó
+[07:20] ajuste lo también
+[07:22] en el punto correspondiente
+[07:24] en el punto 6
+[07:26] en el punto 3
+[07:28] en el punto 3
+[07:30] en el punto 3
+[07:32] entonces estamos en cuenta
+[07:36] como para hacer esos contratos
+[07:40] porque esto lo reviso
+[07:42] y trato de hacer alguna auditoría con alguno de estos puntos
+[07:46] la clase del 3
+[07:58] el 27
+[08:00] se lo que estamos en el examen
+[08:02] y después
+[08:04] voy a dar una devolución de este avance
+[08:06] la clase del 3
+[08:10] vamos a participar de una actividad
+[08:14] que es la fundación blockchain
+[08:18] de Argentina
+[08:20] y nos va a dar
+[08:22] va a dar algunas exposiciones de
+[08:26] como utilizar blockchain
+[08:28] siendo emprendedores
+[08:30] así que
+[08:32] eso es la actividad
+[08:34] que la vamos a tener el día 3
+[08:36] el día 10
+[08:38] el día 10
+[08:40] el día 10
+[08:42] todavía está en duda
+[08:44] a ver si está en la
+[08:46] capa o no
+[08:48] si tiene
+[08:50] ese día es feriado
+[08:52] pero para mí
+[08:54] yo le voy a dejar la tarea
+[08:56] de la presentación final
+[08:58] ahí tiene que estar el Word
+[09:00] completo
+[09:02] el Excel
+[09:04] y el Word
+[09:06] el Excel
+[09:08] y el Word
+[09:10] el Excel
+[09:12] y el Word
+[09:14] las lejos
+[09:16] eh
+[09:18] acuérdense
+[09:20] que les dije
+[09:22] hace rato
+[09:24] ojo con
+[09:26] el formato
+[09:28] del project
+[09:30] del Word
+[09:32] que diga
+[09:34] que
+[09:36] esto
+[09:38] 
+[09:38] 
+[09:38] que tenga
+[09:40] toda la misma letra
+[09:44] 
+[09:44] ¿por qué?
+[09:46] porque
+[09:48] esa presentación
+[09:50] la van a tener que pasar al PDF
+[09:52] pero dicen que al pasar al PDF
+[09:54] no se rompa nada
+[09:56] y ahí va a ser toda la carpeta
+[09:58] que van a tener que pasar al PDF
+[10:00] yo lo que estoy pidiendo acá
+[10:02] en la entrada final
+[10:04] el avance de la parte de negocios
+[10:06] es solamente la pandemia
+[10:08] pero cuando
+[10:10] vayan al final de la asignatura
+[10:12] tienen que colgar
+[10:14] toda la carpeta
+[10:16] del 1 al 2
+[10:18] el 3
+[10:20] el 2
+[10:22] detpiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[10:52] y voy a hacer clarísimo con esto
+[10:54] si yo bajo el trabajo
+[10:56] esto lo voy a bajar
+[10:58] lo reviso
+[11:00] va a ser lo único que voy a hacer
+[11:02] en la pieza de final
+[11:04] revisar eso y
+[11:06] ya, no voy a tomar nada
+[11:08] en el final
+[11:10] ustedes me van a mandar el video pitch
+[11:12] ya lo voy a ver antes
+[11:14] voy a revisar el trabajo
+[11:16] y voy a rodar
+[11:18] el link del video pitch
+[11:20] eso lo único que voy a hacer yo
+[11:22] van a probar
+[11:24] trabajo
+[11:26] bien presentable
+[11:28] con el video pitch
+[11:30] y esto
+[11:32] aclaración
+[11:34] encuentro
+[11:36] algo que no está bien
+[11:38] es un trabajo
+[11:40] diferentes tipos de letras
+[11:42] un cuadro que está en una parte
+[11:44] en una hoja y en otra
+[11:46] lo que sea
+[11:48] lo que sea
+[11:50] vuelven la próxima
+[11:52] porque no se puede arreglar
+[11:54] lo que se colgó
+[11:56] se colgó
+[11:58] entonces antes de colgarlo
+[12:00] revisen ustedes
+[12:02] a lo revisar
+[12:04] lo que sea
+[12:06] 
+[12:06] con lo que juegan ahí
+[12:08] porque si yo lo que lo bajo
+[12:10] encuentro algún error
+[12:12] no voy a tener
+[12:14] 
+[12:14] distancia de decirles
+[12:16] volvemos a la próxima
+[12:18] por el trabajo
+[12:20] porque esto es casi
+[12:22] y ahí no escucho
+[12:24] nada
+[12:26] no me interesa nada
+[12:28] porque es esa carpeta
+[12:30] la que va a quedar con mi nombre
+[12:32] en la biblioteca
+[12:34] yo no voy a permitir que el nombre
+[12:36] esté en una carpeta
+[12:38] que está mal diseñada
+[12:40] o que tenga
+[12:42] diga seminario
+[12:44] cuando tiene que decir
+[12:46] en todo el lado del trabajo
+[12:48] final
+[12:50] que esté mal compaginada
+[12:52] que los cuadros queden mal
+[12:54] olvídense
+[12:56] con esto
+[12:58] que le estoy diciendo
+[13:00] tenemos todo el tiempo del mundo
+[13:02] lo que dicen
+[13:04] cuando la pasen a pedir
+[13:06] la revisen que quede todo bien
+[13:08] estamos
+[13:10] entonces
+[13:12] el punto 7
+[13:14] es que
+[13:16] que se quede todo bien
+[13:18] que se quede todo bien
+[13:20] que se quede todo bien
+[13:22] el punto 7
+[13:24] acuerden que en el punto 7
+[13:26] lo que tienen que poner
+[13:28] el punto 7
+[13:29] en el Word
+[13:30] estoy hablando
+[13:32] es
+[13:34] las hipótesis
+[13:36] vieron que las hipótesis
+[13:38] ojo con esto de copiar
+[13:40] y pegarle el Excel
+[13:42] el Excel
+[13:44] me informando que quizás no es A4
+[13:46] va a quedar mal
+[13:48] que no se noten
+[13:50] si
+[13:52] las líneas de las celdas
+[13:54] lo peor que puede hacer
+[13:58] entonces
+[14:00] ojo con lo que pegamos
+[14:02] de
+[14:04] el Excel
+[14:05] al Word
+[14:06] una
+[14:08] la descripción del negocio
+[14:10] no la necesito
+[14:12] la supone
+[14:14] la necesito
+[14:16] el Excel
+[14:17] piepiepie
+[14:19] tendría que ir al Word para evitar precios.
+[14:23] No lo pongan.
+[14:24] No pongan descripción del negocio.
+[14:27] No, pongan los supuestos para armar la proyección de ventas.
+[14:35] Cómo se midió el mercado, cómo se planteó la participación del mercado,
+[14:41] cómo quedó la tabla de los productos, los servicios y los precios.
+[14:47] No, nada más.
+[14:51] Y esto de que tiene todo prolífico, ¿no?
+[14:56] Quiere todo bien ordenado.
+[15:01] Entonces no es solamente copiar y pegar.
+[15:05] No es copiar y pegar.
+[15:09] Después, el modelo de ingresos,
+[15:15] la proyección de ventas no va.
+[15:18] Es imposible de poner.
+[15:25] Hay algunos que hacen el esfuerzo,
+[15:27] lo ponen y achicar, lo quiero poner en el título, lo pegan.
+[15:32] No lo hagan.
+[15:33] Solamente necesito los modelos.
+[15:39] Entonces, ¿qué van a poner?
+[15:40] El modelo de ingresos.
+[15:43] ¿Qué dice que si yo le voy a la proyección?
+[15:49] El modelo de ingresos que se hace acá,
+[15:52] me ponen los gráficos que están acá.
+[15:55] Si cortan y quedan,
+[15:56] me tienen un gráfico acá,
+[15:58] el otro acá.
+[16:01] Y después,
+[16:03] prolífico,
+[16:04] una cosa abajo de la otra,
+[16:06] y con algún diseño.
+[16:08] No.
+[16:11] 
+[16:12] No es un gráfico que sea representativo,
+[16:15] que diga algo,
+[16:16] no cualquier gráfico.
+[16:17] Yo ahí,
+[16:18] en el éxito había un gráfico de todo,
+[16:21] que era horrible,
+[16:23] que había 400 productos,
+[16:26] que eran una cabecita de colores.
+[16:31] No es que hasta feo de ver,
+[16:33] si no me pongan,
+[16:35] que en algo así,
+[16:36] porque tiene sentido acá.
+[16:41] Si van a hacer un gráfico,
+[16:43] que sea gráfico representativo,
+[16:46] visual,
+[16:47] que yo veo cómo es la proyección de ventas
+[16:51] en los diferentes años.
+[16:54] Pasamos por algo...
+[16:56] Después estaba el modelo de ingresos.
+[17:00] No necesito que me pongan.
+[17:05] La estructura de costo pico,
+[17:08] la estructura de costo variable,
+[17:09] la estructura de costo de los recursos humanos.
+[17:13] No quiero que esté en el presupuesto financiero.
+[17:19] Y claro,
+[17:20] no quiero que esté en el presupuesto.
+[17:22] No quiero.
+[17:24] Solamente en el modelo ingresos,
+[17:27] porque para eso tengo el éxito,
+[17:28] para mirar
+[17:29] que cada una
+[17:31] las proyecciones de costo.
+[17:35] En el quad,
+[17:38] solamente en el modelo ingresos.
+[17:41] En ese modelo ingresos,
+[17:43] era una línea de
+[17:44] costo pico,
+[17:45] otra de los costo variable,
+[17:47] otra de los costo variable.
+[17:48] Se sumaban los costos.
+[17:51] Y lo que se hizo
+[17:52] es poner una línea
+[17:54] de la proyección de ventas anuales.
+[17:59] Y para qué estaba eso.
+[18:00] Y para hacer esas comparaciones
+[18:02] entre costos,
+[18:03] ventas y cosas.
+[18:05] Y había gráficos.
+[18:06] Porque ese sí es bastante representativo,
+[18:09] porque quizás me marca
+[18:11] el punto de equilibrio.
+[18:14] ¿En qué momento
+[18:15] las ventas van a cubrir los costos?
+[18:19] Podría ser algo.
+[18:22] Este en algún sentido,
+[18:23] algún cuadro comparativo de los costos.
+[18:27] A partir de cuánto representan
+[18:29] la estructura de costos
+[18:31] cada uno de los costos.
+[18:35] También, ¿no?
+[18:36] El cuadrito,
+[18:37] abajo.
+[18:40] Los gráficos.
+[18:44] Siempre que el gráfico
+[18:47] nos ponga algún dato,
+[18:48] que sirva.
+[18:50] Quizás abajo
+[18:52] nos pueden poner
+[18:53] el gráfico X
+[18:55] que representa
+[18:57] la comparación de costos
+[18:59] en dos años.
+[19:02] ¿Con alguna clara?
+[19:03] Bien.
+[19:08] Bien.
+[19:08] Después,
+[19:10] el modelo de inversión.
+[19:14] Las amortizaciones,
+[19:16] tampoco las quiero,
+[19:17] sin más,
+[19:19] algo que decimos
+[19:20] aleatorio
+[19:20] para hacer un cálculo
+[19:24] de un costo de ganancias,
+[19:25] que no tiene nada que ver.
+[19:27] tampoco lo quiero ver
+[19:30] de ninguna manera
+[19:32] en el UO.
+[19:34] Quiero ver solamente
+[19:36] el modelo de inversión,
+[19:38] a partir de inversiones
+[19:40] del año 0,
+[19:41] del año 1, 2 y 3.
+[19:42] Si no hay inversiones
+[19:47] del año 1, 2 y 3,
+[19:48] lo ponen,
+[19:49] la clara.
+[19:50] En los años 1, 2 y 3
+[19:52] no hay inversión.
+[19:53] No pongan
+[19:54] los cuadros en nada.
+[19:55] Bien.
+[20:04] Bien.
+[20:05] Y ahí saltamos
+[20:07] al presupuesto financiero.
+[20:10] Acá nosotros
+[20:13] tenemos un sentido
+[20:14] bárbaro
+[20:15] ahí en el Excel
+[20:16] porque pusimos
+[20:17] algunos cuadros
+[20:19] que al diatorio
+[20:21] se habían costado
+[20:22] que lo estamos
+[20:22] a la derecha,
+[20:24] donde hicimos
+[20:24] algunos cálculos,
+[20:26] donde traíamos
+[20:26] algunos datos.
+[20:28] No los quiero ni ver,
+[20:29] esos cuadros.
+[20:31] No los quiero ni ver.
+[20:33] Quiero solamente
+[20:34] el presupuesto
+[20:35] y los ratios.
+[20:37] Tampoco quiero ver
+[20:39] ese cuadrito que hicimos,
+[20:40] porque esto
+[20:41] lo hicimos
+[20:42] para un control nuestro,
+[20:44] la comparación
+[20:45] que hicimos
+[20:46] entre los ingresos
+[20:47] y los cobros.
+[20:48] Eso era para ver
+[20:49] cómo,
+[20:51] ¿sí?,
+[20:52] nos daban
+[20:53] esas relaciones
+[20:54] y si era congruente
+[20:56] la relación.
+[20:57] Eso
+[20:57] era para nuestro control.
+[21:00] No lo pongan.
+[21:03] Solamente
+[21:03] el presupuesto
+[21:05] financiero
+[21:06] y los ratios.
+[21:08] La tasa de cobros
+[21:09] es un presupuesto
+[21:09] que va a vivir.
+[21:13] Una de las cosas
+[21:14] que no quiero ver
+[21:16] en el presupuesto financiero
+[21:18] es una línea
+[21:19] que era
+[21:20] amortizaciones.
+[21:23] ¿Sí?
+[21:23] Había algunos
+[21:24] que mintieron
+[21:25] las amortizaciones
+[21:27] del presupuesto.
+[21:29] No,
+[21:30] porque para eso
+[21:31] hicimos el cuadro
+[21:32] al costado
+[21:33] que decía
+[21:34] monte imponible
+[21:35] y ahí
+[21:36] les contaban
+[21:37] las amortizaciones.
+[21:39] Es un concepto
+[21:40] económico,
+[21:41] no tiene nada
+[21:42] que ver
+[21:42] con el flujo
+[21:42] de fondo.
+[21:44] Si ustedes
+[21:44] ponen
+[21:45] amortizaciones,
+[21:46] no está aprobada
+[21:50] la pesca,
+[21:51] ¿verdad?
+[21:51] es un óleo.
+[21:54] Un óleo.
+[21:56] Acuérdense
+[21:57] que cuando
+[21:58] calculan
+[21:59] el cálculo
+[22:01] del impuesto
+[22:04] del impuesto
+[22:06] que vi
+[22:06] que varios
+[22:06] se piden
+[22:07] el impuesto
+[22:09] a las ganancias.
+[22:11] Si yo tengo
+[22:12] ganancias
+[22:13] en el año
+[22:14] 27,
+[22:15] ¿cuándo
+[22:16] las voy a pagar?
+[22:18] Yo tengo
+[22:19] que esperar
+[22:20] todo el 27
+[22:21] para saber
+[22:21] si tengo
+[22:22] ganancias
+[22:23] en el 27,
+[22:24] las voy
+[22:25] a pagar
+[22:27] al año siguiente.
+[22:30] Y esto es así,
+[22:30] es como una novia.
+[22:32] Seguramente,
+[22:33] si tenemos
+[22:34] el 27,
+[22:35] el 28,
+[22:35] el 29,
+[22:36] las del 29
+[22:37] nos van a quedar
+[22:38] como un saldo
+[22:39] para el próximo
+[22:41] análisis.
+[22:43] Si alguno
+[22:45] tiene pérdida
+[22:46] en el primer año,
+[22:48] bueno,
+[22:49] al segundo
+[22:49] no va a pagar
+[22:50] ganancias
+[22:51] y recién
+[22:53] vemos
+[22:53] si hay ganancias
+[22:54] en el segundo
+[22:55] y para el tercero.
+[22:58] En el primer año
+[22:59] íbamos a pagar
+[23:00] ganancias,
+[23:00] ganancias
+[23:01] no,
+[23:03] porque no veníamos
+[23:04] con ningún
+[23:04] saldo anterior.
+[23:06] Atancamos ahora
+[23:07] el rendimiento
+[23:08] y no tendríamos
+[23:10] saldo
+[23:10] de ningún tipo.
+[23:12] Entonces,
+[23:12] el primer año
+[23:13] pasa en cero.
+[23:15] No vamos a pagar
+[23:16] el impuesto
+[23:16] porque no tenemos
+[23:17] que pagar.
+[23:19] Y si lo tuviéramos
+[23:20] que pagar
+[23:20] sería si nos da
+[23:22] ganancias
+[23:22] el año uno.
+[23:24] Si no,
+[23:25] también.
+[23:25] Bien.
+[23:25] piepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[23:55] Gracias.
+[24:25] Gracias.
+[24:55] Gracias.
+[25:25] ¿Había un listado de riesgos en una hoja? Bueno, ya en la matriz lo tenemos en el listado, no solamente la matriz. Matriz de riesgos. Los riesgos, la causa, el efecto cualitativo y cuantitativo, probabilidad de impacto y el nivel de riesgo medio alto.
+[25:53] Esa materia. Y bueno, cómo se pondera la probabilidad del impacto y cómo queda, había un grafiquito donde se ponía, dónde quedaba cada uno de los riesgos posicionados en la matriz, etc.
+[26:15] También. Si lo podemos, este tema, poner en una hoja bien, si no queda afectado, no queda nada.
+[26:26] Y después tenemos que poner los escenarios.
+[26:35] En la hoja bien, si no queda afectado, no queda nada.
+[26:37] En la hoja bien, si no queda afectado, no queda afectado.
+[26:42] Y para el escenario, si no hay un escenario malo, dos malos, tres malos, y vamos a decir el peor escenario para armar el plan de la hoja.
+[26:50] En los escenarios, acuérdense que cuando uno plantea un escenario me dicen, bueno, tomamos el riesgo de baja de ventas,
+[27:05] porque eso es muy probable y tiene un alto impacto a los negocios, porque entró un nuevo competidor y le baja la venta del año dos y del tres,
+[27:17] en cierto coste, en cierto valor.
+[27:21] Entonces, ustedes, en un escenario normal, que traje, por supuesto normal, que traje la venta del escenario y le aplican eso.
+[27:33] ¿Qué va a pasar? Va a cambiar el truco de fondos, por lo tanto, me va a cambiar, levanta, digo, ¿qué más deberían hacer si bajan los ingresos?
+[27:48] ¿Qué más deberían hacer ahí en el tercer año?
+[27:54] El riesgo de la baja de impuestos.
+[27:57] Pero, quizás, esa baja de impuestos, ¿qué va a pasar?
+[28:01] Menos de impuestos a la vida.
+[28:05] Y eso lo va a calcular, porque te va a cambiar la utilidad antes del impuesto, eso.
+[28:13] Si está bien limpiado todo, lo va a cambiar.
+[28:16] Pero, ¿qué otra cosa, que lo tenemos que cambiar nosotros?
+[28:22] Los recursos, ¿cuáles son los recursos humanos?
+[28:25] ¿Qué más deberían hacer?
+[28:26] ¿Qué más deberían hacer?
+[28:27] Quizás, yo dije que a un nivel de ventas iba a tomar algún recurso, si estoy diciendo que bajan, quizás algún recurso que se le iba a tomar no lo tomo.
+[28:37] Por lo tanto, me va a cambiar ahí, en ese escenario, los recursos humanos.
+[28:44] coachesualmentepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[29:14] Quizás me baja el costo variable, quizás no, me va a bajar el costo variable, quizás me baje el costo de recursos humanos,
+[29:21] porque es un nivel de ventas que a ese nivel de ventas no necesito,
+[29:27] pero el recurso que dije que iba a tomar, entonces lo saco de ahí.
+[29:32] Y también lo que puede llegar a pasar es que me baje algún costo de inversión,
+[29:38] que sea una enorme inversión, imagínense que dice, bueno, yo tomé un recurso y a ese recurso le armé un puesto de trabajo,
+[29:49] había comprado una computadora, había comprado, bueno, eso tampoco lo voy a tener y va a bajar.
+[29:57] Eso, esas relaciones, eso que tiene el escenario, no en el plan de corte, es el escenario.
+[30:04] Entonces, a partir de estos cambios, resiste, por supuesto no, lo vemos ahí.
+[30:19] Después, porque qué pasa, y uno me plantea, bueno, el plan de contingencias si baja la venta,
+[30:25] bueno, bajamos un poco de ahí.
+[30:27] Eso no es una contingencia, eso es algo que va a pasar naturalmente en el presupuesto.
+[30:39] Entonces, ahí sí, en el plan de contingencias, llevamos el escenario que lo dio,
+[30:50] y ahí planteamos algunas acciones que también van a tener que estar representadas en un cuadro de presupuesto,
+[31:01] si quieren que se va a trabajar.
+[31:04] Y esos cambios le tendrían que llevar el presupuesto a un salido de la venta de la vida,
+[31:12] bien cercano a la casa de corte.
+[31:19] Ojo, pero que el plan de contingencias, que es un cuadro normal,
+[31:26] que me quede más divertido, el plan de contingencias, que es un cuadro normal.
+[31:31] El plan de contingencias se hace para nivelar el proyecto,
+[31:38] quepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[32:08] detpiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[32:38] Tienen tiempo para revisarlo
+[32:42] Bien, y después tenemos el punto 9
+[32:47] Que son las viabilidades
+[32:49] Para fijar
+[32:52] Todo el tema de baja venta, de recursos
+[32:56] Puesto variable, puesto de animación
+[32:58] Todo lo que se me fija, eso va en el escenario
+[33:00] ¿O qué era en el escenario?
+[33:08] Si te lo explicás algo, tienes que tener en cuenta
+[33:14] Qué relación tiene con otros costos
+[33:18] Con la distorsión
+[33:20] Y si ese riesgo va aplicado
+[33:24] ¿Cómo le cambia a otras variadas?
+[33:26] ¿Cómo le cambia a hacer ahí en el escenario?
+[33:31] Mucho gracia
+[33:32] Eso sí, traten de marcarme lo que cambiaron
+[33:36] Con el color en la celda
+[33:38] De lo que cambia
+[33:39] En algún caso le ponían una flechita
+[33:43] Baja la venta
+[33:44] Le ponían una flechita
+[33:45] Que al costado de la línea de venta
+[33:50] Esto baja
+[33:51] El puesto variable baja
+[33:56] Mi intención baja
+[33:58] Entonces me mostraban en esa animación
+[34:01] Que pasó a él bajar la venta
+[34:04] Lo que también va a poder
+[34:06] Que quede muy claro
+[34:10] Tanto en el escenario
+[34:13] Como en el Word
+[34:15] Lo que pasa en el Word
+[34:17] ¿Algo más con respecto a esto?
+[34:20] Bien
+[34:24] Pasemos a la parte de
+[34:26] Las viabilidades
+[34:30] Vamos a tocar
+[34:33] Cuatro
+[34:36] Esto
+[34:38] Son cuatro pilares
+[34:40] Que cuando uno analiza la viabilidad
+[34:42] De un negocio
+[34:44] Hay que tener en cuenta
+[34:45] Que la viabilidad comercial
+[34:47] Que van a ver que nosotros ya
+[34:50] Teníamos
+[34:52] Bastante trabajado de esto
+[34:56] En el plan de negocio
+[34:57] Lo que tenemos que hacer
+[34:58] Es bajarlo acá
+[35:00] Y analizarlo un poco
+[35:01] Esto de la demanda
+[35:05] Esto de nosotros
+[35:07] Haber analizado
+[35:09] Cuál es nuestro mercado meta
+[35:11] Qué participación de mercado queremos
+[35:16] Eso se ve representado
+[35:18] En cantidad de clientes
+[35:19] En lo que queremos vender
+[35:20] Y como que nosotros eso
+[35:23] Hicimos un análisis profundo
+[35:25] Lo hicimos a un gímetro
+[35:30] Pero no
+[35:31] Hicimos
+[35:31] Hicimos todo un análisis
+[35:34] Bajamos datos
+[35:36] La parte comercial
+[35:39] Se viabiliza a partir de esos datos
+[35:44] Yo mostrando
+[35:46] Todo el análisis que hice
+[35:48] Demuestro que
+[35:50] Comercialmente es viable
+[35:52] Lo mismo con la tecnología
+[35:56] Yo tengo que garantizar
+[35:58] Que tengo la estructura tecnológica
+[36:02] Para llevar adelante
+[36:04] Este negocio
+[36:05] Que esa estructura
+[36:07] Se puede escalar
+[36:09] A medida que
+[36:11] Toda pretensión de un negocio
+[36:13] Es crecer
+[36:14] Entonces
+[36:17] La podemos tener
+[36:18] La podemos escalar
+[36:19] Eso lo vamos a ver
+[36:21] Toda la parte financiera
+[36:23] Que estuvimos hablando recién
+[36:25] Y la parte legal
+[36:28] Yo acá
+[36:29] Voy a pegar
+[36:31] Cuatro ítems
+[36:33] Pero el 28
+[36:35] Nos van a dar una clase
+[36:37] Sobre esto
+[36:38] Entonces
+[36:39] Nosotros acá
+[36:41] Partimos de
+[36:43] Que detectamos
+[36:45] Una necesidad
+[36:47] Que está
+[36:47] Un dolor
+[36:49] Que se despide
+[36:50] En cuanto a
+[36:52] Alguna necesidad
+[36:53] Concreta
+[36:54] Quizás
+[36:56] Hay alguna oportunidad
+[36:57] También que se da
+[36:58] Dentro del mercado
+[36:59] Y nosotros
+[37:00] Estamos aprovechando
+[37:02] Eso
+[37:03] Detestamos
+[37:04] Eso
+[37:05] Para hacer
+[37:06] Una propuesta
+[37:07] Valor
+[37:08] Esto lo vimos
+[37:09] En el 2
+[37:15] Primero en el
+[37:20] Carnaval
+[37:20] Analizamos
+[37:22] Un mercado
+[37:23] A partir de
+[37:24] La necesidad
+[37:25] De ese mercado
+[37:26] En el
+[37:28] Plan de negocio
+[37:29] En el 1.6
+[37:33] Donde
+[37:34] Tuvimos que
+[37:36] Bueno
+[37:36] Que tiene un mercado
+[37:37] En el
+[37:38] Punto 4
+[37:40] Donde hicimos
+[37:41] Un análisis
+[37:41] De segmentación
+[37:42] En el 1.7
+[37:44] Donde definimos
+[37:45] La propuesta
+[37:46] De valor
+[37:47] Y por qué
+[37:47] Hacemos
+[37:48] Esta propuesta
+[37:49] De valor
+[37:49] Entonces
+[37:50] Son todos
+[37:51] Datos que tenemos
+[37:52] Y acá
+[37:53] Lo que hacemos
+[37:54] Es
+[37:54] Bueno
+[37:55] Esto está
+[37:57] Planteado
+[37:57] De esta manera
+[37:58] Lo planteamos
+[37:59] Así
+[37:59] Hicimos
+[38:00] Un análisis
+[38:02] De lo que es
+[38:03] El mercado
+[38:03] De las necesidades
+[38:05] Del cliente
+[38:06] Eso lo tenemos
+[38:08] Clarísimo
+[38:08] En el que
+[38:09] Le apuntamos
+[38:10] A trancado
+[38:11] Por tal necesidad
+[38:12] De los clientes
+[38:14] Estos clientes
+[38:15] Vieron que nosotros
+[38:17] En el punto
+[38:18] 4
+[38:19] De segmentación
+[38:21] Primero planteamos
+[38:22] Unos criterios
+[38:23] Para segmentar
+[38:25] ¿Cuáles eran los criterios?
+[38:26] Unos criterios
+[38:27] Que tenían que
+[38:31] Que era un mercado
+[38:32] Venible
+[38:32] Accesible
+[38:35] Rentable
+[38:37] Es un poco
+[38:39] Lo que
+[38:40] Tenemos que
+[38:41] Repetar acá
+[38:42] Yo estoy diciendo
+[38:44] Que mi negocio
+[38:46] Es viable
+[38:46] Es que
+[38:46] Marcialmente
+[38:47] Es porque
+[38:47] Ya
+[38:48] No sé
+[38:48] Sí
+[38:49] Acá
+[38:50] Es rentable
+[38:51] Con tantas cosas
+[38:52] Él me dice
+[38:53] Sí
+[38:54] Tenemos datos
+[38:55] Son tantas
+[38:56] Empresas
+[38:57] La demanda
+[39:01] Está clara
+[39:02] Tenemos
+[39:04] Cómo medirlo
+[39:05] Sabemos
+[39:05] Cuántas
+[39:06] Empresas
+[39:06] Son
+[39:07] Esto ya
+[39:08] Lo hicimos
+[39:09] Lo bajamos
+[39:10] Acá
+[39:11] Declado
+[39:15] 
+[39:15] De la ventaja
+[39:15] Competitiva
+[39:16] ¿Hacemos algo?
+[39:17] ¿Hacemos alguna
+[39:18] La competencia?
+[39:24] ¿Sí?
+[39:25] ¿Dónde?
+[39:32] En el plan
+[39:34] De negocio
+[39:34] En el punto
+[39:40] Dos dos dos
+[39:41] Cuando hicimos
+[39:41] Todo el análisis
+[39:42] Competitivo
+[39:43] Dijimos
+[39:43] Estos son los competidores
+[39:45] Conjocamos la cadena
+[39:46] De valor
+[39:46] ¿Sí?
+[39:47] Hicimos toda una
+[39:48] Comparación
+[39:49] Con los competidores
+[39:50] Y dijimos
+[39:51] Estas son nuestras
+[39:52] Fortalezas
+[39:53] De la debilidad
+[39:54] ¿No?
+[39:54] Pero acá
+[39:55] Me está diciendo
+[39:56] Bueno
+[39:56] ¿Cuál es tu diferenciación?
+[40:00] ¿Sí?
+[40:00] ¿Dónde tenés
+[40:01] Ventajas?
+[40:03] ¿No?
+[40:03] ¿Dónde superás
+[40:05] A los competidores?
+[40:06] Acá
+[40:07] Tenemos que
+[40:08] Poner
+[40:09] Porque yo
+[40:09] Y analiza
+[40:11] Comercialmente
+[40:12] El negocio
+[40:13] Va a invertir
+[40:16] Y dice
+[40:16] Bueno
+[40:16] Los competidores
+[40:18] No lo hacen
+[40:19] Yo tengo
+[40:20] Herramientas
+[40:21] Customizadas
+[40:22] Para ciertos procesos
+[40:26] De negocios
+[40:26] Para este
+[40:27] Cliente
+[40:28] En concreto
+[40:29] Tengo la propiedad
+[40:31] Intelectual
+[40:31] De esto
+[40:32] ¿Sí?
+[40:34] Lo tengo patentado
+[40:35] Tengo la propiedad
+[40:36] Intelectual
+[40:37] Tengo
+[40:37] Mi propio
+[40:39] Know-how
+[40:40] Hice
+[40:40] Esto un análisis
+[40:41] De estos procesos
+[40:45] De negocios
+[40:45] De estos clientes
+[40:47] Esto
+[40:48] Mi competidor
+[40:49] No lo hace
+[40:50] Son
+[40:50] Más
+[40:51] Generalistas
+[40:52] Las soluciones
+[40:53] ¿No?
+[40:54] Ahí tiene una
+[40:55] De esta
+[40:57] Entonces
+[40:59] Tengo que
+[41:00] Trabajar
+[41:00] Sobre
+[41:01] Esto
+[41:01] También lo
+[41:06] Trabajamos
+[41:06] En
+[41:07] Un adicionamiento
+[41:07] Del mercado
+[41:08] Que lo vimos
+[41:09] En el punto
+[41:10] Cuatro
+[41:11] Con respecto
+[41:11] De
+[41:12] Sabemos
+[41:13] Que cantidad
+[41:14] De clientes
+[41:15] Tenemos
+[41:16] Que demanda
+[41:18] Potencial
+[41:20] Hay
+[41:20] Desde ese
+[41:21] Mercado
+[41:21] Sabemos
+[41:22] La cantidad
+[41:22] De clientes
+[41:23] Lo que gastan
+[41:25] Estos clientes
+[41:26] En soluciones
+[41:28] De
+[41:28] Productos
+[41:30] De
+[41:31] Nosotros
+[41:31] Fundamos
+[41:32] Tenemos
+[41:34] Definido
+[41:34] El mercado
+[41:35] Meta
+[41:35] ¿Sí?
+[41:38] De ese
+[41:39] Mercado
+[41:40] Nosotros
+[41:40] Analizamos
+[41:41] Poder
+[41:42] Venderles
+[41:43] A este
+[41:44] Segmento
+[41:45] Que está
+[41:45] Unicado
+[41:46] En
+[41:47] El
+[41:48] AMBA
+[41:48] Que
+[41:49] Tiene
+[41:50] Ciertas
+[41:50] Características
+[41:52] Estos clientes
+[41:53] Que son
+[41:53] Italianos
+[41:55] Todo eso
+[41:57] Ya lo hicimos
+[41:57] En la
+[41:58] Segmentación
+[41:58] Y después
+[42:02] ¿Cómo
+[42:03] Queremos
+[42:03] Participar
+[42:04] De ese
+[42:05] Mercado?
+[42:06] Nosotros
+[42:06] Somos
+[42:07] Conscientes
+[42:08] De que
+[42:09] Lo nuestro
+[42:10] Es un
+[42:10] Empre
+[42:10] Miento
+[42:11] Que tenemos
+[42:12] Cierta
+[42:12] Capacidad
+[42:13] De operación
+[42:14] Que es limitada
+[42:16] Somos
+[42:17] Conscientes
+[42:18] De eso
+[42:18] Entonces
+[42:18] Si definimos
+[42:20] Que queremos
+[42:21] Tad
+[42:21] Participación
+[42:22] De la
+[42:23] Donde
+[42:23] 
+[42:23] Donde hicimos
+[42:32] Tena de
+[42:32] Análisis
+[42:33] De
+[42:33] Participación
+[42:34] Participación
+[42:35] ¿En serio?
+[42:39] 
+[42:44] ¿Dónde hicimos
+[42:45] Ganancias
+[42:45] De participación?
+[42:46] Donde
+[42:47] Tenemos
+[42:47] Más
+[42:48] Claro
+[42:48] Dicimos
+[42:48] No, no
+[42:49] Queremos
+[42:50] Tener
+[42:51] Esta
+[42:52] Participación
+[42:53] En el año
+[42:53] Uno,
+[42:54] Dos,
+[42:54] Tres
+[42:54] Tres
+[42:56] ¿Eh?
+[42:57] Tres
+[42:58] Excelentes
+[42:58] ¿Eh?
+[42:59] Las hipótesis
+[43:00] Y si
+[43:01] La pudimos
+[43:01] Participar
+[43:02] Participación
+[43:04] De mercado
+[43:05] ¿Por qué?
+[43:06] Porque sabemos
+[43:07] Las presentaciones
+[43:09] ¿No?
+[43:11] A partir de nuestra
+[43:11] Capacidad
+[43:12] Obrera
+[43:12] Y que
+[43:13] Planteamos
+[43:14] Un crecimiento
+[43:15] Lógico
+[43:16] No es que
+[43:17] Decimos
+[43:18] Cualquier
+[43:18] Cosa
+[43:19] Esto
+[43:20] Lo tenemos
+[43:20] Analizado
+[43:21] Son
+[43:21] Tantas
+[43:22] Empresas
+[43:22] Queremos
+[43:23] Tener un
+[43:24] Crecimiento
+[43:25] En estos
+[43:25] Tres
+[43:25] Años
+[43:26] De esta
+[43:26] Manera
+[43:27] ¿Eh?
+[43:28] Queremos
+[43:29] Llegar
+[43:29] A tantas
+[43:30] Empresas
+[43:30] Lo tenemos
+[43:31] Tantas
+[43:32] Eso
+[43:36] En este
+[43:38] Punto
+[43:38] De
+[43:39] Dimensionamiento
+[43:40] De mercado
+[43:40] Son
+[43:41] Datos
+[43:41] Que
+[43:41] Tenemos
+[43:42] Que
+[43:42] Poner
+[43:43] Es
+[43:44] La
+[43:44] Viabilidad
+[43:45] De
+[43:45] Nación
+[43:45] Hay
+[43:47] También
+[43:48] Un
+[43:48] Tema
+[43:48] De
+[43:49] Validación
+[43:50] De
+[43:50] Lo que
+[43:52] Nosotros
+[43:52] Vamos
+[43:52] A ofrecer
+[43:53] A los
+[43:54] clientes
+[43:54] Nosotros
+[43:55] Sabemos
+[43:56] Que los
+[43:56] Clientes
+[43:57] Están
+[43:57] Procribiendo
+[43:58] Están
+[43:59] Necesitando
+[44:00] Algo
+[44:00] Pero
+[44:01] Eso
+[44:01] También
+[44:02] Lo podemos
+[44:02] Validar
+[44:03] A partir
+[44:04] De
+[44:05] Nosotros
+[44:05] Podremos
+[44:06] Bueno
+[44:07] Tenemos
+[44:08] Tres
+[44:09] Cartas
+[44:10] De
+[44:10] Intensión
+[44:11] De
+[44:11] Potenciar
+[44:12] De
+[44:12] Clientes
+[44:12] Que
+[44:13] Están
+[44:13] Muy
+[44:14] Interesados
+[44:14] En
+[44:15] La
+[44:16] Contra
+[44:17] Del
+[44:17] Servicio
+[44:18] De
+[44:18] Productos
+[44:20] Habíamos
+[44:22] Hecho
+[44:23] Una
+[44:23] Serie
+[44:24] De
+[44:24] Investigaciones
+[44:24] Del
+[44:25] Mercado
+[44:25] Hicimos
+[44:26] Escuestas
+[44:27] No
+[44:27] Hicimos
+[44:27] Nada
+[44:28] Digamos
+[44:29] Que
+[44:29] Así
+[44:30] Si
+[44:30] Evidentemente
+[44:33] Hay
+[44:33] Que
+[44:33] Hacernos
+[44:34] Donde
+[44:36] Bueno
+[44:38] Tuvimos
+[44:39] La
+[44:39] Confirmación
+[44:40] Que
+[44:40] Hay
+[44:42] Tales
+[44:43] Problemas
+[44:44] Están
+[44:45] Buscamos
+[44:46] Tres
+[44:47] Soluciones
+[44:48] Esto
+[44:50] Lo podemos
+[44:52] Poner
+[44:53] Como
+[44:54] Algo
+[44:54] De
+[44:54] Estas
+[44:56] Predestas
+[44:57] Activas
+[44:57] Alguno
+[44:59] Puede
+[44:59] Decir
+[44:59] Bueno
+[45:00] Nosotros
+[45:01] Planteamos
+[45:02] Que
+[45:03] Al inicio
+[45:04] Le vamos
+[45:05] A dar
+[45:05] A los
+[45:06] Clientes
+[45:06] Una
+[45:08] Verdad
+[45:08] La
+[45:09] Utiliza
+[45:09] Para
+[45:10] Que
+[45:10] Utilice
+[45:11] En
+[45:11] Cantidad
+[45:12] De
+[45:12] Meses
+[45:13] Lo
+[45:13] Cual
+[45:14] Va
+[45:15] A
+[45:16] Validar
+[45:17] Que
+[45:17] El
+[45:17] Cliente
+[45:18] Después
+[45:20] Compre
+[45:21] Versiones
+[45:22] Más
+[45:24] Alta
+[45:24] De
+[45:24] Servicio
+[45:25] Acá
+[45:27] Estamos
+[45:27] Como
+[45:28] Diciendo
+[45:29] Hicimos
+[45:30] Todo
+[45:30] El
+[45:30] Análisis
+[45:31] Consultamos
+[45:33] A
+[45:33] Los
+[45:33] Clientes
+[45:34] Tenemos
+[45:35] Clientes
+[45:37] Que
+[45:37] Están
+[45:37] Interesados
+[45:38] A
+[45:38] Partir
+[45:39] Es
+[45:39] 
+[45:39] Es
+[45:40] 
+[45:40] 
+[45:40] 
+[45:40] 
+[45:40] Es
+[45:41] 
+[45:41] Es
+[45:42] 
+[45:42] Es
+[45:43] Es
+[45:44] Es
+[45:45] Crédito
+[45:46] O
+[45:46] A
+[45:46] Pedir
+[45:47] Algún
+[45:47] Subtido
+[45:48] Generalmente
+[45:49] En
+[45:51] Algunos
+[45:51] Casos
+[45:51] La
+[45:52] Pida
+[45:52] Habrá
+[45:53] De
+[45:53] Algo
+[45:55] De
+[45:56] Alguna
+[45:56] Empresa
+[45:56] Que
+[45:57] Te
+[45:57] Interese
+[45:58] Esto
+[45:58] Es
+[45:59] Es
+[45:59] 
+[45:59] Es
+[46:01] 
+[46:01] 
+[46:01] 
+[46:01] 
+[46:01] 
+[46:01] 
+[46:01] 
+[46:01] Es
+[46:03] 
+[46:03] Es
+[46:04] No
+[46:04] Les
+[46:04] Voy
+[46:04] A
+[46:05] Ser
+[46:05] De
+[46:05] Es
+[46:05] Es
+[46:06] 
+[46:06] 
+[46:06] 
+[46:06] 
+[46:06] 
+[46:06] 
+[46:06] 
+[46:06] 
+[46:06] De
+[46:06] Es
+[46:07] Pero
+[46:07] En
+[46:08] Es
+[46:10] Punto
+[46:10] Si
+[46:11] La
+[46:11] Que
+[46:11] Si
+[46:13] Estamos
+[46:14] Validando
+[46:15] El
+[46:16] Placado
+[46:16] De
+[46:17] Mane
+[46:17] Algo
+[46:17] Bueno
+[46:20] A partir
+[46:21] De
+[46:21] Esto
+[46:21] Ahí
+[46:21] Estaría
+[46:22] La
+[46:23] Viabilidad
+[46:24] Comercial
+[46:24] Vamos
+[46:26] A
+[46:26] La
+[46:27] Viabilidad
+[46:27] Tecnológica
+[46:28] Bueno
+[46:29] Acá
+[46:29] Es
+[46:30] Esto
+[46:31] Que
+[46:31] Estábamos
+[46:32] Hablando
+[46:32] De
+[46:32] Ver
+[46:33] Cuál es
+[46:33] El
+[46:34] Tacto
+[46:34] Tecnológico
+[46:35] Y
+[46:35] La
+[46:35] Madurez
+[46:36] Tecnológica
+[46:37] Que
+[46:37] Requiere
+[46:38] El
+[46:38] Negocio
+[46:38] En
+[46:39] Mundo
+[46:39] De
+[46:40] Que
+[46:41] Tecnología
+[46:42] Que
+[46:42] Arquitectura
+[46:43] Estamos
+[46:43] Utilizando
+[46:44] Esta
+[46:46] La
+[46:46] Valuación
+[46:46] De
+[46:46] La
+[46:47] Madurez
+[46:47] Tecnológica
+[46:48] De
+[46:49] 
+[46:49] De
+[46:50] De
+[46:51] 
+[46:51] De
+[46:51] 
+[46:51] Estamos
+[46:52] Teniendo
+[46:54] Ver
+[46:56] En
+[46:56] Que
+[46:57] Se
+[46:58] Puede
+[46:58] Aplicar
+[46:59] Alguna
+[46:59] Innovación
+[47:00] En
+[47:01] La
+[47:02] Tecnológica
+[47:03] Si
+[47:04] Esto
+[47:04] Es
+[47:04] Así
+[47:05] Y
+[47:06] Por
+[47:06] El
+[47:06] Otro
+[47:07] Lado
+[47:07] Todo
+[47:08] Este
+[47:08] Tema
+[47:08] Del
+[47:09] Escalamiento
+[47:10] Del
+[47:10] Dependimiento
+[47:11] ¿No?
+[47:11] Esto
+[47:12] De
+[47:12] Hacer
+[47:13] Un
+[47:13] Control
+[47:13] De
+[47:14] La
+[47:14] Estructura
+[47:15] Esta
+[47:16] Platicación
+[47:18] Que
+[47:18] A
+[47:18] Nosotros
+[47:19] Intentamos
+[47:20] Es
+[47:20] De
+[47:21] Provear
+[47:23] Progresivamente
+[47:25] Ver
+[47:26] Que
+[47:26] Repar
+[47:27] Lo
+[47:27] Que
+[47:27] De
+[47:27] Un
+[47:28] Tecnológic
+[47:28] Al
+[47:28] Un
+[47:28] Tego
+[47:29] A
+[47:29] Tego
+[47:30] De
+[47:30] Un
+[47:30] Crecimiento
+[47:31] De
+[47:32] Tego
+[47:32] Y
+[47:33] Dijimos
+[47:33] Bueno
+[47:34] En
+[47:34] Algún
+[47:35] Caso
+[47:36] Alguna
+[47:37] Inversión
+[47:38] De
+[47:38] Que
+[47:38] Hacera
+[47:39] Siempre
+[47:40] Que
+[47:40] Sea
+[47:41] Inversión
+[47:41] De
+[47:43] De
+[47:44] Estar
+[47:44] Tecnológico
+[47:45] Pero
+[47:45] Ahora
+[47:46] Si
+[47:46] Decimos
+[47:48] Vamos
+[47:48] A
+[47:48] Comprar
+[47:48] Tres
+[47:49] Nod
+[47:49] Humanos
+[47:50] 
+[47:50] Bien
+[47:57] Otra
+[47:57] De
+[47:58] Las
+[47:58] Cosas
+[47:58] Que
+[47:58] Trabajar
+[47:59] Acá
+[48:00] Es
+[48:00] Validar
+[48:02] Desde
+[48:02] El
+[48:02] Equipo
+[48:03] Técnico
+[48:04] Los
+[48:05] Perfiles
+[48:05] En
+[48:06] Tecnología
+[48:06] Que
+[48:07] Requerimos
+[48:08] Los
+[48:09] Temas
+[48:09] De
+[48:10] Ciberseguridad
+[48:11] Estamos
+[48:12] Acá
+[48:12] Trabajando
+[48:14] Contatos
+[48:14] De
+[48:14] Los
+[48:15] Clientes
+[48:15] Desde
+[48:18] Desde
+[48:18] El
+[48:18] Lado
+[48:18] Del
+[48:18] Equipo
+[48:19] Los
+[48:19] Patriles
+[48:20] Que
+[48:20] Requiere
+[48:21] El
+[48:23] Negocio
+[48:24] En
+[48:24] Cuanto
+[48:24] A
+[48:25] No
+[48:26] Estar
+[48:26] Tecnológico
+[48:27] Seguramente
+[48:31] Hay
+[48:31] Equipos
+[48:32] Multidisciplinarios
+[48:33] Esto
+[48:33] Quizás
+[48:34] Estaba
+[48:34] Planteado
+[48:35] En
+[48:35] El
+[48:35] 7
+[48:36] En
+[48:37] El
+[48:37] Área
+[48:38] De
+[48:39] Desarrollo
+[48:40] De
+[48:41] Productos
+[48:41] Servicios
+[48:42] Quizás
+[48:42] Ahí
+[48:43] Había
+[48:43] Validado
+[48:44] Algunos
+[48:45] Puestos
+[48:46] Bien
+[48:48] Esto
+[48:49] De
+[48:53] Que
+[48:53] No
+[48:54] Dependemos
+[48:55] No
+[48:55] Hay
+[48:55] Una
+[48:56] Dependencia
+[48:56] De
+[48:57] Algún
+[48:57] Recurso
+[48:58] Esto
+[48:59] De
+[48:59] Que
+[48:59] Se
+[48:59] Va
+[49:00] Una
+[49:00] Persona
+[49:01] Esto
+[49:01] Suele
+[49:02] Pasar
+[49:02] A veces
+[49:03] Lo
+[49:04] Analizan
+[49:05] Muchos
+[49:06] Los
+[49:06] Inversores
+[49:07] Es
+[49:08] Que
+[49:08] Si
+[49:08] Hay
+[49:08] Tres
+[49:08] Socios
+[49:09] Se
+[49:10] Detecta
+[49:10] Que
+[49:11] Uno
+[49:11] Es
+[49:11] El
+[49:11] Que
+[49:11] Tiene
+[49:12] Todo
+[49:12] Know
+[49:12] How
+[49:13] Tecnológico
+[49:14] Van
+[49:16] A
+[49:17] Dudar
+[49:17] De
+[49:18] Tantir
+[49:18] Algo
+[49:18] Porque
+[49:19] Se
+[49:19] Va
+[49:19] Echa
+[49:20] Un
+[49:21] Negocio
+[49:21] Entonces
+[49:22] Como
+[49:22] No se
+[49:25] Depende
+[49:25] De
+[49:26] Alguien
+[49:26] Tecnológicamente
+[49:28] Hay
+[49:28] Un
+[49:28] Exifo
+[49:29] Hay
+[49:29] Algo
+[49:30] Formado
+[49:30] Todos
+[49:31] Pueden
+[49:32] Ser
+[49:32] Reemplazados
+[49:34] Quizás
+[49:35] Con
+[49:35] Un
+[49:35] Costo
+[49:36] Mayor
+[49:36] Menor
+[49:36] Pero
+[49:37] Hay
+[49:38] Reemplazos
+[49:39] Bueno
+[49:39] Eso
+[49:40] También
+[49:41] Valida
+[49:41] Un
+[49:42] Poco
+[49:42] El
+[49:42] Tema
+[49:42] De
+[49:43] La
+[49:43] Capacidad
+[49:43] De
+[49:44] Equipo
+[49:45] De
+[49:45] E
+[49:45] Por
+[49:47] Es
+[49:47] A veces
+[49:47] Algunos
+[49:48] Pone
+[49:48] Y
+[49:49] Bueno
+[49:49] Yo
+[49:49] Soy
+[49:49] El
+[49:50] Único
+[49:51] Soy
+[49:51] El
+[49:51] Emprendedor
+[49:52] Y
+[49:52] Yo
+[49:52] Me
+[49:52] Manejo
+[49:53] Solo
+[49:53] No
+[49:55] Hay
+[49:55] Un
+[49:55] Equipo
+[49:55] Atrás
+[49:56] Nadie
+[49:56] Va
+[49:57] A
+[49:57] Nadie
+[49:57] Va
+[49:58] A
+[49:59] Tener
+[49:59] Bola
+[50:00] Plata
+[50:01] Yo
+[50:03] Quiero
+[50:03] Validar
+[50:04] Esto
+[50:04] Para
+[50:05] Presentar
+[50:06] Un
+[50:06] Un
+[50:06] 
+[50:06] 
+[50:06] 
+[50:06] 
+[50:06] Un
+[50:08] 
+[50:08] 
+[50:08] 
+[50:08] Un
+[50:10] 
+[50:10] 
+[50:10] 
+[50:10] 
+[50:10] 
+[50:10] 
+[50:10] 
+[50:10] piepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[50:40] es una cuestión de gozo, no sé si alguno va a haber tomado eso,
+[50:46] pero bueno, siempre esto requiere de algún plan de contingencia.
+[50:52] ¿Qué pasa si tenés una tan grúa en esto?
+[50:55] ¿Vas a tratar de estar de alguna manera?
+[50:59] No nos pase lo de las torres de Meta, ¿no?
+[51:02] Tenían los datos en un edificio, en la sofillera, en otro,
+[51:06] en el caso de Meta, o tenían un marcado.
+[51:12] A partir de eso, nos preguntaron, nosotros también tendríamos que tener algún plan,
+[51:22] si sucede algún problema, deciros, algún plan que va acá, podría, o sea.
+[51:31] Para la parte financiera, es lo que ya habíamos visto,
+[51:36] en cuanto a los puntos importantes del modelo financiero.
+[51:44] Cómo habíamos planteado los ingresos,
+[51:48] esto de haber analizado todo el mercado,
+[51:54] haber analizado la participación del mercado,
+[51:58] tener un crecimiento lógico a partir de
+[52:01] tener claro cuál es,
+[52:05] cómo se mueve el mercado de los ingresos,
+[52:09] y ese crecimiento está planteado desde un análisis,
+[52:16] todo el análisis de costos,
+[52:20] ligados a estos ingresos,
+[52:22] y cómo fuimos escalando la capacidad de operación,
+[52:28] y asumiendo cada uno de los costos requeridos.
+[52:32] Esto a veces suele fallar en algunos emprendimientos que presentan,
+[52:41] ¿no?
+[52:41] ingresos que escalan así,
+[52:44] costos que no acompañan,
+[52:47] ¿no?
+[52:48] Están cogiendo costos de todo tipo,
+[52:50] a nosotros que estén claro que,
+[52:54] que no nos encuentran aquí,
+[52:56] que el crecimiento de ventas,
+[52:58] debe ser acompañado por los costos,
+[53:02] por la capacidad de operación,
+[53:04] y eso fue analizado.
+[53:07] No pongan ningún cuadro acá, ¿no?
+[53:11] ¿Algún dato?
+[53:12] Algún dato podemos tener,
+[53:14] pero no entregamos los cuadros de los costos,
+[53:16] ya lo pusimos en la parte financiera.
+[53:21] La inversión,
+[53:23] ¿qué es lo que vimos con la inversión?
+[53:26] Y aquí estamos abiertos a la participación,
+[53:31] si es que necesitamos un dato capital,
+[53:34] necesitamos otro tipo de participación,
+[53:37] hay un dato en el municipio,
+[53:40] ¿no?
+[53:40] que se lo ha olvidado ahí.
+[53:43] Esto que pongo acá,
+[53:44] no puede servir para llamar el video aquí.
+[53:52] Todo lo que es el presupuesto,
+[53:55] ¿quieren traer algún dato del grupo de fondo,
+[53:57] cómo vieron el grupo de fondo,
+[53:58] cómo vieron los ratios financieros,
+[54:01] ¿no?
+[54:03] Todamente eso, ¿sí?
+[54:06] Después,
+[54:07] el tema de riesgo,
+[54:10] ¿no?
+[54:11] Este tema de
+[54:13] cuán sensible es el presupuesto
+[54:17] a los riesgos que ponemos,
+[54:19] si nos quedó un pie,
+[54:24] un portazo entre la casa de fondo
+[54:27] y la de la TIN seguramente
+[54:31] tenga alguna baja de la sensibilidad,
+[54:38] o sea,
+[54:38] que es muy afectado,
+[54:40] la sensibilidad va a ser mayor.
+[54:42] Entonces,
+[54:43] ahí tendríamos que aclarar,
+[54:45] bueno,
+[54:45] el negocio es sensible,
+[54:48] hay unas cuestiones
+[54:51] que se plantean,
+[54:54] se plantean los planes de la vigencia
+[54:56] para estas cuestiones,
+[55:00] donde creemos que
+[55:02] podemos cubrir situaciones
+[55:06] las empresas
+[55:07] y las empresas
+[55:08] impregnistas,
+[55:08] solamente eso.
+[55:14] Y después,
+[55:16] ah, no,
+[55:16] la última es una
+[55:17] otra forma de las luces de
+[55:19] financiación.
+[55:20] Acá nosotros podríamos
+[55:22] decir,
+[55:23] si en parte
+[55:24] vamos a utilizar
+[55:26] recursos propios
+[55:27] para financiar
+[55:28] nuestro negocio,
+[55:29] que esto
+[55:30] es muy sano
+[55:32] ponerlo,
+[55:32] ¿no?
+[55:33] Nosotros vamos
+[55:34] a hacer nuestro aporte,
+[55:37] estamos buscando
+[55:37] financiamiento,
+[55:38] pero nosotros también
+[55:39] vamos a hacer
+[55:40] porque
+[55:42] cuando
+[55:43] uno se presenta
+[55:46] a su inversión
+[55:47] y dice,
+[55:47] bueno,
+[55:48] yo tengo financiamiento
+[55:49] que necesitar,
+[55:50] el 100%,
+[55:51] y vos te ponés,
+[55:53] y yo como
+[55:54] trabajo,
+[55:56] yo trabajo
+[55:57] solamente,
+[55:58] yo no,
+[55:58] no,
+[56:00] o dejar de
+[56:01] trabajar,
+[56:02] te vas,
+[56:03] porque nosotros
+[56:03] puse el sol,
+[56:04] puse la plata,
+[56:06] no haga eso,
+[56:08] uno tiene
+[56:09] que decir que,
+[56:10] bueno,
+[56:11] el 20%,
+[56:12] el 25%,
+[56:13] el 50%
+[56:15] de la inversión
+[56:16] es inversión propia,
+[56:17] lo vamos a tomar.
+[56:19] ¿Por qué
+[56:20] queremos quedarnos
+[56:22] con la propiedad
+[56:23] de la empresa
+[56:24] o no
+[56:25] estamos abiertos
+[56:27] a capitales
+[56:28] de riesgos,
+[56:29] a inversiones ángeles
+[56:31] que quieran invertir?
+[56:34] Estamos dispuestos
+[56:35] a ceder
+[56:36] la dirección
+[56:38] de la empresa
+[56:39] porque el saldo invierte
+[56:40] y se va,
+[56:41] yo te pongo la plata
+[56:41] porque quiero
+[56:42] mínimo
+[56:43] el 51%
+[56:44] de la empresa.
+[56:46] El segundo,
+[56:47] la gerencia
+[56:49] la ponen ellos,
+[56:50] y si no hay
+[56:52] lo nuestro
+[56:52] es más
+[56:53] la partida
+[56:53] tecnológica
+[56:54] nos quedamos
+[56:55] con eso,
+[56:58] que a veces
+[56:59] es más sano
+[57:00] eso
+[57:00] que no poder
+[57:02] hacer un negocio,
+[57:04] porque hay algunos
+[57:05] que se les
+[57:05] persiguen,
+[57:06] dicen,
+[57:07] no,
+[57:07] esta es una idea
+[57:09] y yo soy dueño
+[57:11] y yo soy ingenio,
+[57:13] no,
+[57:13] no la tratamos,
+[57:15] porque
+[57:18] vos
+[57:19] lo único que tenés
+[57:21] es una idea,
+[57:21] no tenés una idea,
+[57:23] es que la cosa
+[57:24] funciona.
+[57:26] Como no tenés
+[57:27] la plata,
+[57:29] tenés que aceptar
+[57:30] que uno
+[57:30] se quede
+[57:32] y ahí vas a tener
+[57:35] algo
+[57:36] como tú,
+[57:37] sino solamente
+[57:38] vas a tener
+[57:39] una idea.
+[57:40] Y las ideas
+[57:41] que
+[57:42] no te hablan
+[57:44] mucho
+[57:45] en replicarse,
+[57:49] a veces
+[57:49] hay que
+[57:51] marcar los tiempos,
+[57:52] si uno
+[57:53] consigue un
+[57:53] invasor,
+[57:56] he visto
+[57:56] muchos
+[57:57] que se han
+[57:57] quedado
+[57:58] con sus ideas
+[57:59] y
+[57:59] que ahí
+[58:01] están,
+[58:02] y se han
+[58:02] un
+[58:02] otro.
+[58:04] Otra
+[58:05] de las cosas
+[58:05] que podríamos
+[58:06] plantear,
+[58:07] como alguna
+[58:08] posibilidad
+[58:08] de financiamiento
+[58:09] que hoy
+[58:10] por hoy
+[58:10] no hay
+[58:11] tantas
+[58:11] empresas
+[58:12] y un
+[58:12] poco
+[58:12] más,
+[58:13] que son
+[58:14] las fotos
+[58:14] públicas,
+[58:15] ¿no?
+[58:17] Ver
+[58:18] si
+[58:18] podemos
+[58:20] aplicar
+[58:21] algún
+[58:22] pondeo
+[58:23] de que
+[58:24] el
+[58:25] gobierno
+[58:26] para la ciudad
+[58:26] de Buenos Aires
+[58:27] la requiere más
+[58:29] que la
+[58:29] preferida,
+[58:30] quizás
+[58:31] alguno
+[58:31] que ve en
+[58:31] Nación,
+[58:33] por eso hay
+[58:34] algunos
+[58:35] provincias,
+[58:37] que son
+[58:37] los que se
+[58:37] llaman
+[58:38] ANR,
+[58:39] aportes
+[58:40] no
+[58:40] reembolsar,
+[58:41] le ponen
+[58:42] la plata,
+[58:43] lo único
+[58:44] que van
+[58:44] a revisar
+[58:45] es que
+[58:45] vos le enviaste
+[58:46] el negocio
+[58:47] y otra
+[58:48] de las cosas
+[58:49] que van
+[58:49] a hacer
+[58:49] es decir,
+[58:51] bueno,
+[58:51] ¿cuánto
+[58:51] necesita el negocio
+[58:54] para bancar?
+[58:55] 100.000 dólares,
+[58:57] bueno,
+[58:57] yo te voy a dar
+[58:58] 40.000,
+[58:59] nosotros 60.000,
+[59:00] pero
+[59:01] te van a
+[59:02] los 40.000
+[59:03] y luego
+[59:03] lo tenés
+[59:03] que devolver,
+[59:05] pero ellos
+[59:05] te van
+[59:06] a ir
+[59:06] monitoreando
+[59:07] que vos pongas
+[59:07] los otros 60.000.
+[59:11] Entonces,
+[59:12] bueno,
+[59:13] ahí se asegura
+[59:14] el estado
+[59:15] que
+[59:15] va a
+[59:17] presen
+[59:17] tu negocio
+[59:17] con
+[59:18] la ruta.
+[59:21] Bueno,
+[59:21] acá
+[59:21] fijémonos
+[59:22] en qué
+[59:23] podríamos
+[59:24] aplicar
+[59:25] en cuanto
+[59:25] a
+[59:25] financiación.
+[59:28] Y por
+[59:29] último,
+[59:29] el tema
+[59:30] del marco
+[59:31] normativo.
+[59:34] Participen
+[59:35] de la
+[59:35] charla
+[59:36] porque
+[59:36] ahí
+[59:37] se van
+[59:38] a dar
+[59:38] detalles
+[59:39] que
+[59:40] ya
+[59:40] se
+[59:40] escapan,
+[59:41] ¿no?
+[59:41] Habíamos
+[59:42] ya
+[59:43] habíamos
+[59:44] visto
+[59:44] todo
+[59:44] el tema
+[59:45] de
+[59:45] la
+[59:46] propiedad
+[59:47] intelectual,
+[59:49] participamiento,
+[59:50] registro
+[59:50] de marca,
+[59:52] registro
+[59:55] del ecosistema
+[59:56] de marca
+[59:57] que era
+[59:58] quedarse
+[60:00] con la marca
+[60:01] de un sitio
+[60:01] web,
+[60:02] de las
+[60:03] redes
+[60:03] sociales,
+[60:04] ¿no?
+[60:04] Porque
+[60:05] había que
+[60:07] validar
+[60:08] todo
+[60:08] el sistema
+[60:10] de marca
+[60:11] y tener
+[60:12] todo,
+[60:13] aunque
+[60:13] no es
+[60:14] histórico,
+[60:15] no lo uso,
+[60:16] el sistema
+[60:16] es muy
+[60:17] importante.
+[60:18] ¿Sí?
+[60:18] Vos
+[60:18] te quedás
+[60:19] con todo.
+[60:20] Porque el día
+[60:20] de mañana,
+[60:21] lo tuyo es una
+[60:22] empresa,
+[60:24] viste la venta
+[60:25] para venderle
+[60:25] al consumidor
+[60:26] final.
+[60:27] 
+[60:27] 
+[60:27] Y
+[60:27] más
+[60:30] seguro,
+[60:30] esto es bueno
+[60:31] ahora,
+[60:31] y ya
+[60:33] el pictó
+[60:34] no tiene
+[60:34] otra,
+[60:35] otra
+[60:37] persona,
+[60:37] tiene
+[60:37] que más.
+[60:39] ¿Sí?
+[60:40] Ahí
+[60:40] tratemos
+[60:41] de
+[60:42] trabajar
+[60:43] esto.
+[60:44] Después
+[60:44] todo
+[60:45] lo que
+[60:45] vino
+[60:45] de
+[60:46] contrato
+[60:46] entre
+[60:47] socios,
+[60:49] esto
+[60:49] también
+[60:50] lo bajaron
+[60:52] bastante
+[60:53] el sistema.
+[60:54] hay que
+[60:56] trabajar
+[60:57] con el tema
+[60:57] de los datos,
+[61:00] estar a tono
+[61:03] de todas
+[61:03] las regulaciones,
+[61:06] conectar
+[61:06] un dato
+[61:07] de confidencialidad,
+[61:09] bases
+[61:09] y condiciones
+[61:10] para
+[61:11] el uso
+[61:12] de
+[61:13] los instrumentos
+[61:14] que nosotros
+[61:16] si hay
+[61:16] algo
+[61:17] que
+[61:18] cubrirse
+[61:19] realmente.
+[61:22] Este
+[61:23] tema
+[61:23] de
+[61:23] los contratos,
+[61:24] los contratos
+[61:25] de proveedores,
+[61:26] de
+[61:26] clientes,
+[61:28] los contratos
+[61:29] que tenemos que hacer
+[61:30] con los
+[61:31] propios
+[61:31] colaboradores,
+[61:33] conjunto
+[61:36] profundizado
+[61:38] a
+[61:39] lo que
+[61:40] se dieron
+[61:42] en estos
+[61:42] cuatro
+[61:43] módulos,
+[61:45] ahí sí
+[61:45] voy a
+[61:46] crear
+[61:46] alguna
+[61:46] precisión,
+[61:48] ya que
+[61:49] tuvieron
+[61:50] la
+[61:50] predisposición,
+[61:52] de
+[61:53] darnos
+[61:54] los
+[61:54] cursos,
+[61:55] de
+[61:55] darnos
+[61:56] de
+[61:57] forma
+[61:57] gratuita,
+[61:58] de
+[61:59] formar,
+[62:00] !
+[62:22] que
+[62:23] se
+[62:23] van a
+[62:23] tener
+[62:23] un
+[62:24] montón
+[62:25] de
+[62:25] cuestiones,
+[62:26] de
+[62:27] que
+[62:28] se
+[62:28] !
+[62:28] esto
+[62:29] 
+[62:29] 28
+[62:32] !
+[62:33] y acá
+[62:34] !
+[62:35] y acá
+[62:34] estaríamos
+[62:35] completando
+[62:36] esto,
+[62:36] esta visión
+[62:37] integral
+[62:38] de
+[62:38] cómo
+[62:41] !
+[62:41] y
+[62:42] realizamos
+[62:42] el negocio
+[62:43] a partir
+[62:43] de que
+[62:44] esto
+[62:45] lo estamos
+[62:46] generando,
+[62:49] estamos
+[62:49] despegando,
+[62:51] estamos
+[62:51] tratando
+[62:52] de arrancar
+[62:53] con el negocio
+[62:54] y tenemos
+[62:55] todas
+[62:56] estas
+[62:56] cuestiones
+[62:57] bien
+[62:58] sincronizadas,
+[62:59] no?
+[62:59] hay como
+[63:00] dice
+[63:00] el
+[63:01] director
+[63:01] que
+[63:02] primero
+[63:06] hago algo,
+[63:08] primero salgo al mercado
+[63:09] y le pongo
+[63:09] el pico
+[63:10] si tengo que hacer
+[63:12] contratos
+[63:13] o si tengo que
+[63:14] registrar la marca
+[63:15] y esto
+[63:16] le ha pasado
+[63:17] varios
+[63:18] empleadores
+[63:18] algunos que
+[63:19] se han acercado
+[63:22] al programa
+[63:23] que le han contado
+[63:24] que
+[63:25] estuvieron
+[63:26] tres o cuatro años
+[63:28] en el mercado
+[63:28] con
+[63:29] una marca
+[63:30] que
+[63:31] lo reconocían
+[63:33] ya por una marca
+[63:34] cuando
+[63:34] dijeron
+[63:35] si te no registrar
+[63:36] no,
+[63:36] la marca
+[63:36] no,
+[63:37] la barra
+[63:38] registrar
+[63:38] ya te empezaba
+[63:39] a registrar
+[63:40] cuando vas a
+[63:42] registrar
+[63:42] ya está registrada
+[63:43] después
+[63:44] te persiguen
+[63:45] al trabajo
+[63:45] de la marca
+[63:46] porque
+[63:46] sabe
+[63:47] que vos
+[63:48] estás con eso
+[63:49] y que
+[63:50] te averiguan
+[63:51] que no hay
+[63:51] tanta documento
+[63:53] salir de ahí
+[63:57] y hacer
+[63:57] un rebranding
+[63:59] un costo enorme
+[64:01] volver a posicionarte
+[64:03] con otra marca
+[64:05] en el mercado
+[64:06] con todo lo que
+[64:07] eso
+[64:07] lleva
+[64:08] que no hay que
+[64:08] cambiar la web
+[64:09] porque
+[64:10] es apres
+[64:11] total
+[64:12] lo que se hace
+[64:14] antes
+[64:15] no sé
+[64:17] no es
+[64:18] que yo
+[64:18] primero salgo
+[64:19] con el producto
+[64:20] que después
+[64:20] me ocupa
+[64:21] de otra cosa
+[64:22] bien
+[64:25] entonces
+[64:27] todo esto
+[64:28] para un inversor
+[64:30] es fundamental
+[64:31] que van a pedir
+[64:34] que explique
+[64:34] todo esto
+[64:35] y cómo lo está llevando
+[64:38] la parte
+[64:46] de negocio
+[64:49] de trabajo
+[64:50] es hasta el punto
+[64:51] nueve
+[64:53] y ya
+[64:56] como dije
+[64:57] esto tendría
+[64:58] que estar
+[64:59] resuelto
+[65:01] para el día
+[65:08] 10
+[65:09] que no viene
+[65:10] el 10
+[65:13] tenemos después
+[65:14] el 17
+[65:15] y el 24
+[65:15] para
+[65:16] cerrar
+[65:18] tenemos que
+[65:18] un par de días
+[65:19] más
+[65:20] para
+[65:21] hacer los ajustes
+[65:24] en el final
+[65:32] yo no voy a tomar
+[65:35] nada
+[65:35] en el final
+[65:37] lo que voy a hacer
+[65:39] es
+[65:40] bajar
+[65:41] el trabajo
+[65:42] que van a
+[65:44] poder
+[65:44] dar
+[65:45] detpie
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] det
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] 
+[65:46] !
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+[65:54] 
+
+==============================================================
+IMG_9218  ·  Revisión de inversión y amortizaciones
+==============================================================
+
+[00:00] que más o menos se mantiene parista.
+[00:03] Por la medida que suben la venta, suben también los costos, entonces dice que más o menos me quede...
+[00:10] Bien. Hay un esfuerzo de promoción.
+[00:15] Y podría ser más.
+[00:19] Podría ser.
+[00:21] No hay una proporción muy grande a partir del nivel de facturación.
+[00:30] Se podría revisar.
+[00:34] Bien. Y acá...
+[00:37] Apiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[01:07] los que absorben de esta alimentación
+[01:14] algunos me lo hacen al revés
+[01:18] o me lo ponen acá
+[01:20] es lo mismo
+[01:26] bien
+[01:27] calculaste el sal, lo calculaste
+[01:30] esto que te decía recién a vos
+[01:33] esto es el rosaje porque estaba calculado
+[01:39] en la plantilla
+[01:41] para que parados
+[01:43] bien
+[01:47] la inversión
+[01:59] esto sería
+[02:01] esto es acá
+[02:03] son los mismos que estaban en el primer año de la infraestructura
+[02:07] lo que necesitaba un rato
+[02:09] esto es el capital de trabajo inicial
+[02:14] inicial, sí
+[02:16] y acá tenés el servicio
+[02:20] que está
+[02:22] que está en el primer año de la piscina
+[02:24] que está en el primer año de la piscina
+[02:26] las aportesaciones
+[02:28] bien
+[02:30] acá
+[02:32] me lo comienzo así
+[02:34] es 10
+[02:35] es 10
+[02:36] es 10
+[02:37] igual
+[02:38] no te va a afectar a lo que está ahí
+[02:40] no, no, por un poquito
+[02:42] porque es justo
+[02:44] son más grandes
+[02:45] para el primer año de la piscina
+[02:46] y
+[02:47] no hizo algo que algunos hacen
+[02:48] por equivocación
+[02:49] que amortizan
+[02:50] el capital de trabajo
+[02:52] no
+[03:02] él tiene
+[03:04] como tiene
+[03:05] modem
+[03:06] esto que
+[03:07] instala los clientes
+[03:09] amortizan eso
+[03:10] no
+[03:11] en este caso
+[03:13] no
+[03:14] no
+[03:15] no
+[03:16] no
+[03:17] uno vino acá
+[03:18] hizo todos los cálculos
+[03:19] le dio
+[03:20] 15 la tasa de corte
+[03:23] lo baja
+[03:25] y le dio 19%
+[03:30] calculó
+[03:31] el impuesto al desilusivo bruto
+[03:34] como tiene ganancias acá
+[03:36] ya paga la ganancia
+[03:38] en el 28
+[03:40] en el 29
+[03:42] la del 29
+[03:44] la van a quedar
+[03:45] para después
+[03:47] y acá tiene solamente la inversión inicial
+[03:51] no tiene inversión en los otros tres años
+[03:55] que puede ser
+[03:56] no
+[03:57] no
+[03:58] no
+[03:59] no
+[04:00] no
+[04:01] no
+[04:02] no
+[04:03] no
+[04:04] no
+[04:05] no
+[04:06] no
+[04:07] no
+[04:08] no
+[04:09] no
+[04:10] no
+[04:11] no
+[04:12] no
+[04:13] no
+[04:14] no
+[04:15] no
+[04:16] no
+[04:17] está sirviendo esto
+[04:18] sí
+[04:19] detpie
+[04:21] detpie
+[04:22] det
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] 
+[04:28] Jorge.cali.com
+
+==============================================================
+IMG_9219  ·  Revisión de costos
+==============================================================
+
+[00:00] Bien.
+[00:30] ¿Y esto lo calculaste con los descuentos?
+[00:35] Claro, yo lo he dado y sé que está el tiempo de los descuentos.
+[00:40] No, gracias.
+[00:43] Ahora, eso lo ha hecho.
+[00:45] El tema de las promociones lo quiero ver.
+[00:49] El tema de las promociones lo quiero ver.
+[00:51] El tema de las promociones lo quiero ver.
+[00:53] El tema de las promociones lo quiero ver.
+[00:55] Eso, si, alcalo.
+[01:01] Pero el concepto de que me tiene que quedar la facturación,
+[01:05] lo que yo planifique, ahí en las hipótesis,
+[01:09] me corré esto, ¿no?
+[01:11] Le dio 700 acá, 380 acá, 112.
+[01:19] Acá qué sí, bien.
+[01:21] En la facturación.
+[01:23] Ahí es porque en realidad arriba yo tengo los ingresos,
+[01:27] pero después tengo que diferenciar cuáles son los ingresos de altas nuevas
+[01:30] o de renovaciones para seguir contando con cuántos clientes tengo.
+[01:34] Por ejemplo, en el año 1, yo tenía uno que entró para el precio de obligar, 1200.
+[01:39] En el año 2 paga 1600, por ejemplo.
+[01:42] ¿Planteaste algunas bajas?
+[01:44] Sí, hay un show del 5%.
+[01:47] ¿Bajas?
+[01:48] Bien.
+[01:49] Bien.
+[01:50] Bien.
+[01:51] Bien.
+[01:52] Bien.
+[01:53] Bien.
+[01:54] Bien.
+[01:55] Bien, perdón.
+[01:56] En el 2017 puse ninguna baja porque con una suscripción anual,
+[01:58] por más que salga de baja, el plan les queda de la petrolar.
+[02:01] Ya a partir del segundo.
+[02:02] Claro.
+[02:03] Bueno, arreglame ese tema.
+[02:04] Sí.
+[02:05] Eh, costos picos, ámbitos para la actividad,
+[02:07] la capacidad operativa, como la financiación.
+[02:08] Sí.
+[02:09] El primer año somos mis socios y yo, el turmón.
+[02:10] No, no tenemos porque la base de clientes es baja y podemos hacer el soporte.
+[02:12] ¿Y por qué tenemos todo esto?
+[02:13] Porque ahí dicen que está cubierto por... o sea, son los puestos, los señores puestos.
+[02:15] Y no tenemos porque la base de clientes es baja y podemos hacer el soporte.
+[02:19] Enpiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepiepie
+[02:49] al gerente comercial y demás?
+[02:50] Para el tipo, son dos personas.
+[02:54] Están representados por dos puestos.
+[02:58] Dos puestos de teléfono.
+[03:00] No me pongan otra cosa.
+[03:03] Eso que le estás diciendo
+[03:04] me lo explicas acá.
+[03:07] Entonces yo vengo acá
+[03:09] y vos me pones...
+[03:12] No le dice consultor, le dice contratilo de socios
+[03:17] porque somos un piso así que ya no tenemos empleados.
+[03:21] Por eso todo lo que es aporte
+[03:25] lo calculamos acá.
+[03:30] Si vos me decís...
+[03:32] Me está diciendo que
+[03:34] estos dos
+[03:35] están como empleados
+[03:38] y están como monotributistas
+[03:41] y...
+[03:43] no sé, metenme
+[03:45] alguna filita por acá.
+[03:48] Ok, lo pongo arriba.
+[03:49] Pero no me lo pongas acá.
+[03:51] Porque si no...
+[03:53] te cuesta alguna con la puso.
+[03:57] Quizás hacerlo aparte
+[03:59] y agregarlo.
+[04:06] Digamos, como que la empresa le está pagando
+[04:09] la carga de auto...
+[04:14] Calcularlo.
+[04:16] Claro.
+[04:17] Calcularlo.
+[04:19] Bien, son estos dos.
+[04:21] Y después...
+[04:23] siguen siendo los dos
+[04:24] y empezamos a sumar en el segundo año.
+[04:27] Sí.
+[04:28] Segurario, a partir de julio
+[04:29] tenemos aquí tenis soporte.
+[04:33] ¿Pusiste autímetro
+[04:35] o lo calculaste acá por capacidad operativa?
+[04:37] No, por...
+[04:39] La operación operativa
+[04:40] yo lo hice
+[04:41] pero yo creo por...
+[04:42] por más que nada
+[04:42] por solo que...
+[04:44] En la parte de abajo
+[04:46] hay en general
+[04:47] tres personas
+[04:48] de soporte
+[04:49] y son las tres personas
+[04:50] que puse.
+[04:52] Pero en cuanto a...
+[04:52] Lo relacionaste acá
+[04:53] por la cantidad de clientes.
+[04:55] Sí, sí.
+[04:56] En el hecho
+[04:57] se lo había dado dos
+[04:58] con algo en un pico
+[05:00] en realidad
+[05:00] en un pico
+[05:01] pero puse uno más
+[05:02] por la duda
+[05:03] de la rotación
+[05:03] cobertura
+[05:04] o este tipo
+[05:05] ese más
+[05:06] consulta de marca
+[05:07] consulta de marca
+[05:08] consulta de marca
+[05:10] la agencia de marketing
+[05:12] la agencia de marketing
+[05:14] y la parte contable, legal
+[05:18] sí, para los mencionarios
+[05:19] eso
+[05:20] de contable, legal
+[05:22] y...
+[05:23] hay promoción
+[05:24] hay promoción
+[05:26] que...
+[05:27] hay promoción
+[05:28] bueno
+[05:31] ya me voy
+[05:32] la...
+[05:34] le pagás una agencia
+[05:36] por un menos
+[05:36] como un horario
+[05:37] la promoción son
+[05:40] es el gasto efectivo
+[05:41] en hacer algo
+[05:43] en acto
+[05:45] o hacer un...
+[05:47] esto que pusiste
+[05:48] de evento
+[05:49] hacer algo
+[05:51] de marketing digital
+[05:52] diferenciamos
+[05:54] porque
+[05:54] uno es honorario
+[05:57] y lo otro
+[05:58] es lo que vos gastás
+[05:59] en promoción
+[06:00] esto es importante
+[06:02] porque yo después
+[06:03] vengo acá
+[06:04] y digo
+[06:06] bueno
+[06:06] ¿cuánto gastaste
+[06:07] en promoción?
+[06:10] ¿lo sacaste?
+[06:12] ¿de acá?
+[06:13] y esto tiene incluido
+[06:15] el costo
+[06:16] de la agencia
+[06:17] entonces
+[06:18] si son los de arriba
+[06:20] de 17, 28 y 30
+[06:22] ah
+[06:26] bien
+[06:29] ¿qué sumaste?
+[06:32] ¿quién es?
+[06:38] claro
+[06:39] porque hay
+[06:40] ¿cómo sumaste?
+[06:42] el costo
+[06:42] de la promoción
+[06:43] ¿cuál es?
+[06:45] ¿cuál es promoción?
+[06:46] las promociones
+[06:46] de...
+[06:47] sí
+[06:48] están
+[06:50] costos variables
+[06:51] y costos fijos
+[06:51] de...
+[06:52] no lo dice
+[06:56] por la celda
+[06:57] que se llama
+[06:57] hoy creciendo
+[06:59] la promoción
+[06:59] porque como es
+[07:00] un nicho
+[07:00] nuevo
+[07:01] que está
+[07:02] sin tratar
+[07:02] no, pero
+[07:03] el tema es
+[07:04] los costos
+[07:06] de promoción
+[07:06] relacionados
+[07:07] con las ventas
+[07:08] son los que yo
+[07:10] sumo
+[07:11] desde los
+[07:12] costos fijos
+[07:13] ¿no?
+[07:15] en este caso
+[07:16] sería los que están acá
+[07:18] sacando esto
+[07:19] y agregando
+[07:20] algún costo
+[07:21] de...
+[07:22] no sé si
+[07:23] poner banner
+[07:24] o algo
+[07:25] alguna campaña
+[07:27] de...
+[07:29] mailmark
+[07:30] algo relacionado
+[07:33] con la promoción
+[07:33] y lo que voy a sacar
+[07:35] es variable
+[07:36] y vos
+[07:38] me estás diciendo
+[07:39] que vamos a hacer
+[07:40] promociones de ventas
+[07:41] eso es un costo
+[07:44] de discusión
+[07:45] por más que sea
+[07:47] un evento fijo
+[07:47] para la CAFI
+[07:48] le encanta
+[07:48] porque yo con eso
+[07:51] lo puse
+[07:51] el costo
+[07:52] de promoción
+[07:52] variable
+[07:53] puse cero
+[07:54] porque es una
+[07:57] hora mensual
+[07:58] a...
+[07:59] con la agencia
+[08:00] ¿cómo?
+[08:01] ahí arriba
+[08:02] de todo
+[08:02] en las tablitas
+[08:04] la derecha
+[08:05] hay una que dice
+[08:06] costo de promoción
+[08:07] totales
+[08:07] y es ahorita
+[08:08] 27.0
+[08:08] 28.0
+[08:09] 29.0
+[08:10] y al lado
+[08:11] está explicado
+[08:11] lo de
+[08:13] lo de
+[08:15] por qué lo registré
+[08:16] en costos fijos
+[08:17] pero
+[08:17] si está mal
+[08:18] lo de va a enviar
+[08:19] no
+[08:20] el tema es que vos
+[08:22] cuando armás
+[08:23] el modelo
+[08:24] de ingresos
+[08:27] me dijiste
+[08:28] que bajaste
+[08:29] el precio
+[08:31] porque tenía
+[08:31] incluida
+[08:32] una promoción
+[08:33] ¿por qué eso
+[08:35] también va a
+[08:35] promoción?
+[08:36] eso
+[08:36] por eso
+[08:37] te digo
+[08:39] te da el precio
+[08:40] ¿cómo está?
+[08:42] y poneme
+[08:42] el costo de promoción
+[08:43] porque yo no sé
+[08:44] ahí
+[08:46] vos estás haciendo
+[08:47] un esfuerzo
+[08:48] de promoción
+[08:48] y eso es lo que
+[08:50] hay que sumar
+[08:51] a los costos fijos
+[08:53] que pusimos
+[08:54] de promociones
+[08:54] más relacionadas
+[08:56] a cuestiones
+[08:57] de eventos
+[08:58] y demás
+[08:59] yo eso
+[09:00] lo sumo
+[09:01] y vengo acá
+[09:03] al presupuesto
+[09:04] y veo
+[09:05] cómo lo relaciono
+[09:06] con
+[09:06] las ventas
+[09:08] debería dar
+[09:10] lo mismo
+[09:10] a salvo
+[09:11] ese resultado
+[09:11] nominalmente
+[09:13] me debería dar
+[09:14] lo mismo
+[09:14] porque es moverlo
+[09:15] de una a la otra
+[09:16] pero el porcentaje
+[09:17] de promoción
+[09:18] sobrevenida
+[09:18] es
+[09:19] también
+[09:21] es algo
+[09:21] que es un esfuerzo
+[09:24] al principio
+[09:25] importante
+[09:27] y acá
+[09:28] nos dio
+[09:31] dio un medio
+[09:34] justito
+[09:35] pero le está pidiendo
+[09:36] una talla
+[09:37] interesante
+[09:38] la agregue
+[09:39] solo de valor
+[09:39] terminal
+[09:40] porque algo
+[09:41] que estaba
+[09:42] viendo
+[09:42] justamente
+[09:43] con medio
+[09:43] un medio
+[09:43] justo
+[09:44] pero como yo
+[09:44] estaba aplicando
+[09:45] la promoción
+[09:46] en los números
+[09:46] en realidad
+[09:47] la proyección
+[09:48] de los tres años
+[09:49] no muestra
+[09:50] el valor real
+[09:51] o completo
+[09:52] por eso
+[09:52] no
+[09:53] nada
+[09:53] le agregue
+[09:54] también
+[09:54] la inversión
+[10:00] que hiciste
+[10:00] desarrollo
+[10:04] esto está
+[10:05] en el
+[10:06] en el project
+[10:07] me dio
+[10:08] 60.000
+[10:09] así
+[10:09] poquito
+[10:10] si
+[10:10] más o menos
+[10:11] más o menos
+[10:12] es que bueno
+[10:14] haber guardado
+[10:15] por los puestos
+[10:16] y nada
+[10:16] las cosas que puse
+[10:17] en el project
+[10:17] me dio
+[10:18] eso
+[10:18] si no hay inversión
+[10:29] yo prefiero
+[10:29] acá
+[10:30] por ejemplo
+[10:31] esto
+[10:34] acá
+[10:37] esto
+[10:39] que está
+[10:40] prefiero
+[10:46] que este
+[10:46] yo
+[10:47] que está
+[10:47] si no
+[10:48] es unido
+[10:50] acá
+[10:50] veo números
+[10:51] acá
+[10:51] vemoslo
+[10:54] cómo va
+[10:54] y
+[10:56] yo
+[10:56] lo que hace
+[10:56] pues yo
+[11:01] también
+[11:01] me puedo
+[11:01] acá
+[11:02] tengo
+[11:03] más claridad
+[11:04] de ver
+[11:04] que estos
+[11:04] son todos
+[11:05] bienes amortizables
+[11:06] entonces
+[11:07] se supone
+[11:08] que el
+[11:09] uno acá
+[11:09] y
+[11:10] tiene
+[11:11] bienes amortizables
+[11:12] que compro
+[11:13] acá
+[11:13] que lo
+[11:14] tiene
+[11:14] eso
+[11:14] acá
+[11:15] así
+[11:16] bien
+[11:16] bueno
+[11:17] 
+[11:17] yo después voy a revisar
+[11:36] desde
+[11:37] hasta mañana
+[11:38] 12
+[11:39] de la noche
+[11:41] como última instancia
+[11:42] para poder colgarlo
+[11:44] a partir de ahí
+[11:46] voy a empezar
+[11:46] ahora
+[11:47] detualualmente
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] detualualmente
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[11:56] 
+[12:17] Gracias.
+[12:47] Gracias.
