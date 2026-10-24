@@ -202,7 +202,7 @@ ESCENARIOS = [
 
     Escenario(
         "Escenario 2",
-        "R2 · Rotación de comercios antes de recuperar el costo del alta",
+        "R2 · Baja anticipada de comercios adheridos",
         "R 2",
         "- Alta rotación propia del comercio minorista de barrio\n"
         "- Bajo uso de la plataforma tras las primeras semanas\n"
