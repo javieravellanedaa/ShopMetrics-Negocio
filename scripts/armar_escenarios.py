@@ -185,20 +185,21 @@ def escribir_plan(hoja, esc: Escenario):
 ESCENARIOS = [
     Escenario(
         "Escenario 1",
-        "R1 · No alcanzar el volumen mínimo de comercios adheridos",
+        "R1 · Caída de la plataforma o de la infraestructura en la nube",
         "R 1",
-        "- Tasa de conversión por visita menor a la proyectada\n"
-        "- Resistencia del comerciante a instalar el sensor\n"
-        "- Densidad efectiva del eje menor a la estimada",
-        "- Altas del año 3 un 25% por debajo de las 510 proyectadas\n"
-        "- Ingreso 2027 y 2028 un 25% menor\n"
-        "- Los costos variables acompañan la baja en la misma proporción",
-        "- Estructura sobredimensionada frente al ingreso\n"
-        "- Pérdida de la masa crítica de pares que da valor al benchmarking",
-        ventas=(1, 0.75, 0.75),
-        variables=(1, 0.75, 0.75),
-        menos_rrhh=(0, COMERCIAL, COMERCIAL),
-        menos_inv=(0, 1200, 1200)),
+        "- Falla del proveedor de nube o de la base de datos\n"
+        "- Error en un despliegue que deja la API sin servicio\n"
+        "- Ataque de denegación de servicio",
+        "- 72 horas sin servicio para toda la base: se bonifica el abono y una de "
+        "cada diez cuentas se da de baja\n"
+        "- Ingreso 2027 y 2028 un 10% menor\n"
+        "- Recuperación y horas de DevOps: USD 3.000 por ejercicio\n"
+        "- Los costos variables acompañan la baja de ventas",
+        "- Pérdida de confianza en un servicio vendido como tiempo real\n"
+        "- Daño reputacional en el corredor",
+        ventas=(1, 0.90, 0.90),
+        variables=(1, 0.90, 0.90),
+        mas_variables=(0, 3000, 3000)),
 
     Escenario(
         "Escenario 2",
@@ -218,16 +219,17 @@ ESCENARIOS = [
 
     Escenario(
         "Escenario 3",
-        "Combinado · R1 volumen + R2 rotación + R6 salto cambiario",
-        "R1+R2+R6",
-        "- Las altas no alcanzan el volumen previsto\n"
-        "- Los comercios que entran rotan antes del año\n"
-        "- El abono en pesos se licúa entre la facturación y la cobranza",
-        "- Ingreso 2027 y 2028 un 40% por debajo del presupuesto\n"
-        "- Reposición de equipamiento retirado: USD 15.000 por ejercicio\n"
+        "Combinado · R1 caída de plataforma + R2 baja anticipada + R10 competidor",
+        "R1+R2+R10",
+        "- Una caída prolongada de la plataforma\n"
+        "- Los comercios que entran se van antes del año\n"
+        "- Un competidor local con precio agresivo",
+        "- Ingreso 2027 y 2028 un 40% por debajo: la caída hace perder cuentas, "
+        "las bajas no se reponen y el competidor presiona el precio\n"
+        "- Reposición y reinstalación de equipamiento: USD 15.000 por ejercicio\n"
         "- Los costos variables acompañan la baja de ventas",
         "- El proyecto deja de cubrir su costo de capital\n"
-        "- Dependencia del aporte de los socios para sostener la operación",
+        "- Se pierde la masa crítica que da sentido al benchmarking",
         ventas=(1, 0.60, 0.60),
         variables=(1, 0.60, 0.60),
         mas_variables=(0, 15000, 15000),
@@ -237,10 +239,10 @@ ESCENARIOS = [
     Escenario(
         "Plan de Contingencia",
         "Plan sobre el escenario 3, que es el que no resiste",
-        "R1+R2+R6",
+        "R1+R2+R10",
         "- Escenario 3 con las medidas aplicadas",
-        "- Retención y referidos: +USD 6.000 de costo fijo\n"
-        "- Permanencia bonificada: +USD 3.000",
+        "- Segunda nube y monitoreo: +USD 4.000 de costo fijo\n"
+        "- Retención y referidos: +USD 5.000",
         "- Vuelve a cubrir el costo de capital\n"
         "- Conserva la masa crítica",
         ventas=(1, 0.66, 0.66),
@@ -250,28 +252,30 @@ ESCENARIOS = [
         mas_fijos=(0, 9000, 9000),
         menos_inv=(0, 1200, 1200),
         objetivos=(
-            "· Sostener la base instalada y la masa crítica del benchmarking.",
+            "· Sostener el servicio aunque falle la nube principal.",
             "· Devolver el proyecto por encima de su costo de capital.",
-            "· Proteger el servicio comprometido con los comercios adheridos."),
+            "· Proteger la base instalada frente al competidor."),
         plan=(
-            "El plan se aplica sobre el escenario 3, que es el único de los "
-            "tres que no resiste: con los tres riesgos a la vez la TIR cae a "
-            "22,54% contra una tasa de corte del 30% y el VAN queda negativo.\n"
+            "El plan se aplica sobre el escenario 3, que es el único de los tres "
+            "que no resiste: con la caída de la plataforma, las bajas anticipadas "
+            "y el competidor a la vez, la TIR cae a 22,54% contra una tasa de "
+            "corte del 30% y el VAN queda negativo.\n"
             "\n"
-            "1ª medida: campaña de retención sobre la base instalada y segundo "
-            "canal de captación por referidos. Suma USD 6.000 por ejercicio al "
-            "costo fijo.\n"
-            "2ª medida: extensión del plazo de permanencia bonificada a cambio "
-            "de un abono menor, que sostiene la facturación recurrente. Suma "
-            "USD 3.000 por ejercicio.\n"
+            "1ª medida: respaldo en una segunda nube con conmutación automática y "
+            "monitoreo permanente, para que una caída del proveedor principal no "
+            "deje a la base sin servicio. Suma USD 4.000 por ejercicio al costo "
+            "fijo.\n"
+            "2ª medida: campaña de retención sobre la base instalada y canal de "
+            "captación por referidos, que es donde el competidor no llega. Suma "
+            "USD 5.000 por ejercicio.\n"
             "\n"
-            "Entre las dos recuperan 6 de los 40 puntos de caída de ventas. "
-            "La dotación se mantiene en la del escenario: no se incorpora el "
-            "segundo ejecutivo comercial.\n"
+            "Entre las dos recuperan 6 de los 40 puntos de caída de ventas. La "
+            "dotación se mantiene en la del escenario: no se incorpora el segundo "
+            "ejecutivo comercial.\n"
             "\n"
-            "El plan nivela, no mejora: la TIR queda en 31,34%, apenas por "
-            "encima de la tasa de corte y muy por debajo del 91,70% del "
-            "presupuesto original.")),
+            "El plan nivela, no mejora: la TIR queda en 31,34%, apenas por encima "
+            "de la tasa de corte y muy por debajo del 91,70% del presupuesto "
+            "original.")),
 ]
 
 
