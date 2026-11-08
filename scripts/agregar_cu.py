@@ -37,6 +37,29 @@ CLS = os.path.join(TECNOLOGIA, "documentacion", "modelo-ea", "export", "clases")
 NUEVOS = [
     ("CU-032-001", "032: Padrón de locatarios"),
     ("CU-033-001", "033: Zonas del centro"),
+    ("CU-034-001", "034: Actividad en vivo del local"),
+]
+
+# Las entidades nuevas del diccionario, con la entidad despues de la cual van:
+# se clona el parrafo y la tabla de esa, y se reescriben.
+ENTIDADES = [
+    ("evento_local", "evento_trafico",
+     "Lo que un contador de puerta o un sensor de vidriera contó en un intervalo: las "
+     "entradas y salidas del local, o las personas detenidas frente a la vidriera y cuánto "
+     "se quedaron. Cada fila llena las columnas de su tipo de sensor y deja las otras nulas.",
+     [
+         ("id", "UUID", "PK", "Identificador único del evento."),
+         ("dispositivo_id", "UUID", "FK", "Sensor de local que generó el evento."),
+         ("ts", "TIMESTAMP", "", "Marca temporal del intervalo contado."),
+         ("entradas", "INT", "", "Personas que entraron al local en el intervalo. Nulo en un "
+          "sensor de vidriera."),
+         ("salidas", "INT", "", "Personas que salieron del local en el intervalo. Nulo en un "
+          "sensor de vidriera."),
+         ("detenidos", "INT", "", "Personas que se detuvieron frente a la vidriera en el "
+          "intervalo. Nulo en un contador de puerta."),
+         ("permanencia_seg", "INT", "", "Cuánto se quedaron frente a la vidriera en promedio, "
+          "en segundos. Nulo en un contador de puerta."),
+     ]),
 ]
 
 # Las columnas que la migracion 008 agrego, por entidad. La entidad se
@@ -74,6 +97,11 @@ COLUMNAS = {
     ("id", "centro_id", "nombre", "superficie"): [
         ("estado", "VARCHAR(160)", "", "Estado de la zona (activa, dada de baja). Nulo "
          "cuenta como activa. No se borra: el histórico de tráfico cuelga de ella."),
+    ],
+    # CU-034-001: los dos sensores de un local cuelgan del local ademas de la zona.
+    ("id", "zona_id", "tipo", "modelo", "ip"): [
+        ("local_id", "UUID", "FK", "Local al que está atado el sensor, cuando es un contador de "
+         "puerta o un sensor de vidriera. Nulo para los sensores de zona."),
     ],
     ("id", "usuario_id", "tipo", "formato", "hash", "fecha", "centro_id"): [
         ("desde", "DATE", "", "Primer día del período exportado. Sin el período el hash no "
@@ -261,6 +289,50 @@ def filas_del_diccionario(doc):
     return agregadas
 
 
+def entidades_nuevas(doc):
+    """Agrega al diccionario las entidades de ENTIDADES que falten, clonando
+    el parrafo de nombre y la tabla de la entidad despues de la cual van."""
+    agregadas = []
+    els = parrafos(doc)
+    nombres = {}
+    for i, el in enumerate(els):
+        m = re.match(r"^([a-z][a-z_]+):\s", re.sub(r"\s+", " ", texto_de(doc, el)))
+        if m:
+            nombres[m.group(1)] = i
+    for nombre, despues, descripcion, filas in ENTIDADES:
+        if nombre in nombres or despues not in nombres:
+            continue
+        i = nombres[despues]
+        tabla = next(e for e in els[i + 1:] if e.tag.endswith("}tbl"))
+        # lo que haya entre el parrafo y la tabla (un vacio, a veces) se clona tambien
+        bloque = els[i:els.index(tabla) + 1]
+        ancla = tabla
+        copias = []
+        for el in bloque:
+            ancla = clonar_despues(el, ancla)
+            copias.append(ancla)
+        poner_texto(doc, copias[0], "%s: %s" % (nombre, descripcion))
+        t = Table(copias[-1], doc)
+        # se deja la cabecera y una fila modelo, y se reescriben las que hagan falta
+        filas_xml = [f._tr for f in t.rows]
+        for tr in filas_xml[2:]:
+            tr.getparent().remove(tr)
+        modelo = filas_xml[1]
+        for k, (campo, tipo, clave, desc) in enumerate(filas):
+            if k == 0:
+                tr = modelo
+            else:
+                tr = copy.deepcopy(modelo)
+                Table(copias[-1], doc).rows[-1]._tr.addnext(tr)
+            fila = Table(copias[-1], doc).rows[k + 1]
+            for celda, texto in zip(fila.cells, (campo, tipo, clave, desc)):
+                poner_texto(doc, celda.paragraphs[0]._p, texto)
+                for p in celda.paragraphs[1:]:
+                    p._p.getparent().remove(p._p)
+        agregadas.append(nombre)
+    return agregadas
+
+
 # ------------------------------------------------------------------ 10.5.3
 
 
@@ -333,6 +405,9 @@ def main():
 
     columnas = filas_del_diccionario(doc)
     print("10.5.8  columnas agregadas: %s" % (", ".join(columnas) or "ninguna"))
+
+    entidades = entidades_nuevas(doc)
+    print("10.5.8  entidades agregadas: %s" % (", ".join(entidades) or "ninguna"))
 
     doc.save(WORD)
     return 0
