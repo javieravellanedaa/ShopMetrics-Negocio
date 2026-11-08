@@ -102,6 +102,8 @@ COLUMNAS = {
     ("id", "zona_id", "tipo", "modelo", "ip"): [
         ("local_id", "UUID", "FK", "Local al que está atado el sensor, cuando es un contador de "
          "puerta o un sensor de vidriera. Nulo para los sensores de zona."),
+        ("credencial_enc", "TEXT", "", "Credencial con la que se consulta al dispositivo, cifrada "
+         "como la del conector POS (CU-003-001 paso 8). Nula si el equipo no pide ninguna."),
     ],
     ("id", "usuario_id", "tipo", "formato", "hash", "fecha", "centro_id"): [
         ("desde", "DATE", "", "Primer día del período exportado. Sin el período el hash no "

@@ -153,7 +153,7 @@ def _ajustar_alto(parrafo, png, viejo):
 
 # Los diagramas que cambiaron. Las fichas pueden cambiar solo en el texto de
 # extension sin tocar el diagrama; estos son los que se redibujaron.
-SECUENCIAS = ["CU-003-001", "CU-004-001", "CU-034-001", "CU-008-001", "CU-009-001", "CU-012-001", "CU-027-001", "CU-031-001"]
+SECUENCIAS = ["CU-022-001", "CU-024-001", "CU-003-001", "CU-004-001", "CU-034-001", "CU-008-001", "CU-009-001", "CU-012-001", "CU-027-001", "CU-031-001"]
 CLASES = ["CU-034-001", "CU-009-001", "CU-012-001", "CU-031-001"]
 
 
